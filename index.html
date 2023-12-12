@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mohammad Hossein Bamorovat Abadi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        #About { background: no-repeat center center; background-size: cover; }
+        #Skills { background: no-repeat center center; background-size: cover; }
+        #Experience { background: no-repeat center center; background-size: cover; }
+        #Publications { background: no-repeat center center; background-size: cover; }
+        header {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+<footer>
+    <style>
+        footer {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #00008b; /* Dark blue color for links */
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        footer a:hover {
+            color: #ffffff; /* White color on hover */
+            text-decoration: underline;
+        }
+    </style>
+
+</footer>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohammad Hossein Bamorovat Abadi</h1>
+        <p>PhD Researcher | Robotics Software Engineer</p>
+    </header>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+      <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+      <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+      <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
+      <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About Me</h3>
+      <p>Mohammad is a highly skilled and accomplished individual with a diverse background in
+robotics, computer vision, and machine learning. With a Ph.D. in Computer Science from
+the University of Hertfordshire, he has conducted extensive research in the field of human ac-
+tivity detection in ambient assisted living scenarios. Under the supervision of Prof. Farshid
+Amirabdollahian, he has excelled in creating datasets for indoor human action recognition and
+implementing deep learning models for visual human action recognition. Mohammad’s exper-
+tise extends to robotic software engineering, where he has contributed significantly to projects
+at Conigital, a leading autonomous car company. His responsibilities included driving monitor-
+ing system development, vision fusion, lidar camera fusion, and designing sensor suites. Also,
+he developed deep learning models using vision, point cloud, and sensor fusion techniques for
+object detection at Conigital. With a strong command of programming languages such as C++,
+Python, and C, he has also demonstrated proficiency in using software tools and platforms such
+as MATLAB, ROS, ROS2, OpenCV, PyTorch, Keras, TensorFlow, and LaTex. Mohammad’s
+dedication to his field is evident through his contributions as an R&D manager at GEIT.Co,
+where he led research groups and played a crucial role in designing and implementing innovative
+industrial and hospital robots. His exceptional leadership skills and ability to secure funded
+projects highlight his talent for writing proposals. Additionally, Mohammad’s teaching experi-
+ence as a robotic and programming lecturer at various educational institutions in the UK and
+Iran underscores his commitment to knowledge sharing. With a strong foundation in robotics,
+computer vision and machine learning, Mohammad’s expertise and accomplishments make him
+a highly capable and sought-after professional.</p>
+    </div>
+
+<div id="Skills" class="tabcontent">
+  <h3>Skills</h3>
+  <ul>
+    <li>Topics:
+      <ul>
+        <li>Robotics, Computer Vision, Machine/Deep Learning, Vision Navigation</li>
+      </ul>
+    </li>
+    <li>Programming Languages:
+      <ul>
+        <li>C++, Python, C, MATLAB</li>
+      </ul>
+    </li>
+    <li>Software Libraries and Tools:
+      <ul>
+        <li>ROS, ROS2, RVIZ, Gazebo, OpenCV, PyTorch, SciKit-Learn, Keras, TensorFlow, Docker, AWS, GPU/CPU Clusters</li>
+      </ul>
+    </li>
+    <li>IoT:
+      <ul>
+        <li>RASPBERRY PI, ARDUINO, NVIDIA (Jetson Nano, Jetson Xavier)</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<div id="Experience" class="tabcontent">
+  <h3>Professional Experience</h3>
+
+  <div class="experience-item">
+    <h4>Robotics Software Engineer (Perception Team) - Conigital</h4>
+    <p>Jan 2022 - Present</p>
+    <ul>
+      <li>Development of a driver monitoring system.</li>
+      <li>Implementation of real-time multi-camera fusion to create panoramic views.</li>
+      <li>Calibration of multi-sensor setups (camera, lidar, radar).</li>
+      <li>Design and development of 2D/3D visual object detection models.</li>
+      <li>Advancement in lidar-camera sensor fusion for enhanced object detection.</li>
+      <li>Creation of new AV sensor suites.</li>
+      <li>Retraining and validation of object detection models with various AV datasets.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>Ph.D. Research Candidate - University of Hertfordshire</h4>
+    <p>Feb 2019 - Dec 2023</p>
+    <ul>
+      <li>Conducted comprehensive research on visual datasets for Human Action Recognition (HAR).</li>
+      <li>Generated a multiview HAR dataset tailored for human-robot interaction.</li>
+      <li>Evaluated deep learning models for HAR, such as C3D, R3D, and Slow-Fast.</li>
+      <li>Developed multiview C3D models to utilize the Robot House Multiview dataset (RHM).</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>Visiting Lecturer - Department of Computer Science, University of Hertfordshire</h4>
+    <p>Oct 2019 - Feb 2022 </p>
+    <ul>
+      <li>Delivered lectures on Machine Learning and Neural Computing, Advanced Computer Science Masters Project, Legal and Ethical Practice Exercise, and Human Dimensions of Computing.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>R&D Manager - GEIT.Co</h4>
+    <p>Apr 2009 - Nov 2018</p>
+    <ul>
+      <li>Directed research in developing robotics and computer vision solutions.</li>
+      <li>Implemented industrial and hospital robots.</li>
+      <li>Developed a ROS node for SOSCO's Mobile Robot for enhanced system integration.</li>
+      <li>Organized National Student RoboCup Competitions in Iran.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div id="Publications" class="tabcontent">
+  <h3>Publications</h3>
+  <ul>
+    <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “RHM: Robot House Multi-
+view Human Activity Recognition Dataset.” ACHI 2023, Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank">Publication Link</a>
+    </li>
+    <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “RHM-HAR-SK: A Multi-
+view Dataset with Skeleton Data for Ambient Assisted Living Research.” ACHI 2023,
+Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/26988" target="_blank">Publication Link</a>
+    </li>
+    <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Lightweight human activity
+recognition for ambient assisted living.” ACHI 2023, Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/26987" target="_blank">Publication Link</a>
+    </li>
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Affordable robot mapping
+using omnidirectional vision.” 4th UK-RAS Conference: Robotics at Home (UKRAS21),
+29–30. Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Robot house human activity
+recognition dataset.” 4th UK-RAS Conference: Robotics at Home (UKRAS21), 19–20.
+Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27119" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Human activity recogni-
+tion in robocup@home: inspiration from online benchmarks.” 4th UK-RAS Conference:
+Robotics at Home (UKRAS21), 27–28. Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27097" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, Ahmad
+Fakharian, “Side Sonar Vision Applied to Omni-directional Images to Navigate Mobile
+Robots.”, 5th Iranian joint congress on Fuzzy and Intelligent systems- cfis2017, IEEE,
+2017.</p>
+      <a href="https://ieeexplore.ieee.org/abstract/document/8003665" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, “Effects
+of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision.” 8th Interna-
+tional Conference, ICIRA 2015, Portsmouth, UK, August 24-27, 2015.</p>
+      <a href="https://link.springer.com/chapter/10.1007/978-3-319-22873-0_4" target="_blank">Publication Link</a>
+    </li>
+
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, Ahmad
+Fakharian, “Mobile robot navigation using sonar vision algorithm applied to omnidirec-
+tional vision.” AI & Robotics (IRANOPEN), 2015,IEEE, 1–6, 2015.</p>
+      <a href="https://ieeexplore.ieee.org/abstract/document/7270728" target="_blank">Publication Link</a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div id="Education" class="tabcontent">
+  <h3>Education</h3>
+  
+  <div class="education-item">
+    <h4>University of Hertfordshire, Hatfield, UK</h4>
+    <p>Ph.D. Student, Computer Science, Dec 2023</p>
+    <ul>
+      <li>Research Topic: Human activity detection in ambient assisted living scenarios.</li>
+      <li>Principal Supervisor: Prof. Farshid Amirabdollahian.</li>
+      <li>Second Supervisors: Dr. Catherine Menon & Dr. Patrick Holthaus.</li>
+      <li>Main Activities included creating datasets for indoor human action recognition, implementing deep learning for visual human action recognition, and developing human tracking visual systems with Fetch Robot.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h4>Islamic Azad University, Qazvin Branch, Qazvin, Iran</h4>
+    <p>M.S., Mechatronics Engineering, 2015</p>
+    <ul>
+      <li>Thesis Topic: Implementation of Mobile Robot Navigation using Omnidirectional Vision.</li>
+      <li>Supervisor: Mohammadreza Asghari Oskoei, Assistant Professor.</li>
+      <li>Advisors: Alireza Mohammadi Shahri & Ahmad Fakharian, Assistant Professors.</li>
+      <li>Courses included Mechatronics I & II, Advanced Robotics, and Robot Vision & Navigation.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h4>Islamic Azad University, Sabzevar Branch, Sabzevar, Iran</h4>
+    <p>B.S., Electrical & Electronics Engineering, 2009</p>
+    <ul>
+      <li>Thesis Topic: Design and Implementation of Advance Path Following Robot.</li>
+      <li>Supervisor: Freidoon Javashi, M.S.</li>
+      <li>Relevant Courses: Image Processing, Neural Networks, Microprocessors, Control Systems.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<footer>
+    <p>Contact: <a href="mailto:m.bamorovvat@gmail.com">m.bamorovvat@gmail.com</a> | Phone: 07931232478</p>
+    <p>
+        <!--Connect with me:--> 
+        <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-linkedin"></i> LinkedIn | 
+        <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-google-scholar"></i> Scholar |
+        <a href="https://github.com/Bamorovat" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-github"></i> GitHub | 
+        <a href="https://www.researchgate.net/profile/Mohammad-Hossein-Bamorovat-Abadi" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-researchgate"></i> ResearchGate 
+    </p>
+</footer>
+
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it to open the default tab
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
