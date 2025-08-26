@@ -26,7 +26,7 @@ body {
 
 /* Header Styles */
 .hero {
-    background: url('../images/av_banner.gif');
+    background: url('../images/hero-banner.png');
     background-size: cover;
     background-position: center 80%;
     background-attachment: fixed;
