@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammad Hossein Bamorovat Abadi - Senior Robotics/Computer Vision Software Engineer, Ph.D. in Computer Science">
+    <meta name="keywords" content="robotics, computer vision, machine learning, deep learning, autonomous vehicles, PhD">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Mohammad Hossein Bamorovat Abadi | Robotics & Computer Vision Engineer</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #06d6a0;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background: #ffffff;
+            --section-bg: #f8fafc;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background);
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,0 1000,0 1000,20 0,100"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            margin: 0 auto 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
+
+        /* Navigation */
+        .nav-container {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+        }
+
+        .nav-btn {
+            background: transparent;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            color: var(--primary-color);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .nav-btn.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            display: none;
+            padding: 3rem 0;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .skill-category h4 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--section-bg);
+            color: var(--text-primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #e5e7eb;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-left: 1rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 2rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--primary-color);
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        /* Publications */
+        .publication-item {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .publication-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .nav { flex-wrap: wrap; }
+            .nav-btn { padding: 0.75rem 1rem; font-size: 0.9rem; }
+            .timeline { padding-left: 1rem; }
+            .timeline-item { margin-left: 0.5rem; padding: 1.5rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .main-content { padding: 0 1rem; }
+            .hero-content { padding: 0 1rem; }
+            .section { padding: 2rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-photo">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>Mohammad Hossein Bamorovat Abadi</h1>
+            <p class="subtitle">Senior Robotics/Computer Vision Software Engineer</p>
+            <div class="cta-buttons">
+                <a href="mailto:m.bamorovvat@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav">
+            <button class="nav-btn active" onclick="openSection('about')">
+                <i class="fas fa-user"></i> About
+            </button>
+            <button class="nav-btn" onclick="openSection('skills')">
+                <i class="fas fa-cogs"></i> Skills
+            </button>
+            <button class="nav-btn" onclick="openSection('experience')">
+                <i class="fas fa-briefcase"></i> Experience
+            </button>
+            <button class="nav-btn" onclick="openSection('publications')">
+                <i class="fas fa-book"></i> Publications
+            </button>
+            <button class="nav-btn" onclick="openSection('education')">
+                <i class="fas fa-graduation-cap"></i> Education
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="section active">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    I am a highly skilled and accomplished professional with a diverse background in <strong>robotics</strong>, 
+                    <strong>computer vision</strong>, and <strong>machine learning</strong>. With a Ph.D. in Computer Science 
+                    from the University of Hertfordshire, I have conducted extensive research in the field of human activity 
+                    detection in ambient assisted living scenarios.
+                </p>
+                <br>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    My expertise extends to robotic software engineering, where I have contributed significantly to projects at 
+                    <strong>Conigital</strong>, a leading autonomous car company. My responsibilities include driving monitoring 
+                    system development, vision fusion, lidar camera fusion, and designing sensor suites. I develop deep learning 
+                    models using vision, point cloud, and sensor fusion techniques for object detection.
+                </p>
+                <br>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.5rem;">
+                        <i class="fas fa-robot" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h4>Robotics Engineering</h4>
+                        <p>Industrial & hospital robots, ROS/ROS2 development</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.5rem;">
+                        <i class="fas fa-eye" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h4>Computer Vision</h4>
+                        <p>Object detection, sensor fusion, autonomous vehicles</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.5rem;">
+                        <i class="fas fa-brain" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h4>Machine Learning</h4>
+                        <p>Deep learning, neural networks, PyTorch, TensorFlow</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="card skill-category">
+                    <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">MATLAB</span>
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h4><i class="fas fa-robot"></i> Robotics & Vision</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ROS</span>
+                        <span class="skill-tag">ROS2</span>
+                        <span class="skill-tag">RVIZ</span>
+                        <span class="skill-tag">Gazebo</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">SciKit-Learn</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h4><i class="fas fa-cloud"></i> Infrastructure & IoT</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GPU/CPU Clusters</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">NVIDIA Jetson</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2022 - Present</div>
+                    <h3 class="timeline-title">Robotics Software Engineer (Perception Team)</h3>
+                    <div class="timeline-company">Conigital - Autonomous Vehicle Company</div>
+                    <ul>
+                        <li>Development of driver monitoring systems for autonomous vehicles</li>
+                        <li>Implementation of real-time multi-camera fusion for panoramic views</li>
+                        <li>Calibration of multi-sensor setups (camera, lidar, radar)</li>
+                        <li>Design and development of 2D/3D visual object detection models</li>
+                        <li>Advanced lidar-camera sensor fusion for enhanced object detection</li>
+                        <li>Creation of new autonomous vehicle sensor suites</li>
+                        <li>Retraining and validation of object detection models with various AV datasets</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2019 - Dec 2023</div>
+                    <h3 class="timeline-title">Ph.D. Research Candidate</h3>
+                    <div class="timeline-company">University of Hertfordshire, UK</div>
+                    <ul>
+                        <li>Conducted comprehensive research on visual datasets for Human Action Recognition (HAR)</li>
+                        <li>Generated multiview HAR dataset tailored for human-robot interaction</li>
+                        <li>Evaluated deep learning models for HAR (C3D, R3D, Slow-Fast)</li>
+                        <li>Developed multiview C3D models utilizing the Robot House Multiview dataset (RHM)</li>
+                        <li>Published multiple peer-reviewed papers in international conferences</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2019 - Feb 2022</div>
+                    <h3 class="timeline-title">Visiting Lecturer</h3>
+                    <div class="timeline-company">Department of Computer Science, University of Hertfordshire</div>
+                    <ul>
+                        <li>Machine Learning and Neural Computing</li>
+                        <li>Advanced Computer Science Masters Project</li>
+                        <li>Legal and Ethical Practice Exercise</li>
+                        <li>Human Dimensions of Computing</li>
+                        <li>Master/Bachelor Student final project supervisor</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2009 - Nov 2018</div>
+                    <h3 class="timeline-title">R&D Manager</h3>
+                    <div class="timeline-company">GEIT.Co</div>
+                    <ul>
+                        <li>Directed research in developing robotics and computer vision solutions</li>
+                        <li>Implemented industrial and hospital robots</li>
+                        <li>Developed ROS nodes for SOSCO's Mobile Robot for enhanced system integration</li>
+                        <li>Organized National Student RoboCup Competitions in Iran</li>
+                        <li>Led research groups and secured funded projects</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="card">
+                <div class="publication-item">
+                    <div class="publication-title">RHM: Robot House Multi-view Human Activity Recognition Dataset</div>
+                    <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                    <p><em>ACHI 2023, Venice, Italy, IARIA</em></p>
+                    <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">RHM-HAR-SK: A Multi-view Dataset with Skeleton Data for Ambient Assisted Living Research</div>
+                    <p>Mohamad Reza Shahabian Alashti, <strong>Mohammad Hossein Bamorovat Abadi</strong>, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                    <p><em>ACHI 2023, Venice, Italy, IARIA</em></p>
+                    <a href="https://uhra.herts.ac.uk/handle/2299/26988" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Lightweight human activity recognition for ambient assisted living</div>
+                    <p>Mohamad Reza Shahabian Alashti, <strong>Mohammad Hossein Bamorovat Abadi</strong>, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                    <p><em>ACHI 2023, Venice, Italy, IARIA</em></p>
+                    <a href="https://uhra.herts.ac.uk/handle/2299/26987" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Affordable robot mapping using omnidirectional vision</div>
+                    <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                    <p><em>4th UK-RAS Conference: Robotics at Home (UKRAS21), Hatfield, UK, 2021</em></p>
+                    <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Effects of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision</div>
+                    <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohammad Reza Asghari Oskoei</p>
+                    <p><em>8th International Conference, ICIRA 2015, Portsmouth, UK</em></p>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-22873-0_4" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2019 - Dec 2023</div>
+                    <h3 class="timeline-title">Ph.D. in Computer Science</h3>
+                    <div class="timeline-company">University of Hertfordshire, Hatfield, UK</div>
+                    <p><strong>Research Topic:</strong> Human activity detection in ambient assisted living scenarios</p>
+                    <p><strong>Principal Supervisor:</strong> Prof. Farshid Amirabdollahian</p>
+                    <p><strong>Second Supervisors:</strong> Dr. Catherine Menon & Dr. Patrick Holthaus</p>
+                    <ul>
+                        <li>Created datasets for indoor human action recognition</li>
+                        <li>Implemented deep learning for visual human action recognition</li>
+                        <li>Developed human tracking visual systems with Fetch Robot</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2013 - 2015</div>
+                    <h3 class="timeline-title">M.S. in Mechatronics Engineering</h3>
+                    <div class="timeline-company">Islamic Azad University, Qazvin Branch, Iran</div>
+                    <p><strong>Thesis:</strong> Implementation of Mobile Robot Navigation using Omnidirectional Vision</p>
+                    <p><strong>Supervisor:</strong> Mohammadreza Asghari Oskoei, Assistant Professor</p>
+                    <ul>
+                        <li>Advanced Robotics and Robot Vision & Navigation</li>
+                        <li>Mechatronics Systems Design</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2005 - 2009</div>
+                    <h3 class="timeline-title">B.S. in Electrical & Electronics Engineering</h3>
+                    <div class="timeline-company">Islamic Azad University, Sabzevar Branch, Iran</div>
+                    <p><strong>Thesis:</strong> Design and Implementation of Advanced Path Following Robot</p>
+                    <ul>
+                        <li>Image Processing and Neural Networks</li>
+                        <li>Microprocessors and Control Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Let's Connect</h3>
+            <p>Feel free to reach out for collaborations or opportunities</p>
+            <div class="social-links">
+                <a href="mailto:m.bamorovvat@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="social-link" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/Bamorovat" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Mohammad-Hossein-Bamorovat-Abadi" target="_blank" class="social-link" title="ResearchGate">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Mohammad Hossein Bamorovat Abadi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openSection(sectionName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav buttons
+            const navButtons = document.querySelectorAll('.nav-btn');
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(sectionName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav-container');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+            } else {
+                nav.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Mohammad Hossein Bamorovat Abadi</h1>
+        <p>Senior Robotics/Computer Vision Software Engineer</p>
+    </header>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+      <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+      <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+      <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
+      <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About Me</h3>
+      <p>Mohammad is a highly skilled and accomplished individual with a diverse background in robotics, computer vision, and machine learning. With a Ph.D. in Computer Science from the University of Hertfordshire, he has conducted extensive research in the field of human activity detection in ambient assisted living scenarios. Under the supervision of Prof. Farshid Amirabdollahian, he has excelled in creating datasets for indoor human action recognition and implementing deep learning models for visual human action recognition. Mohammad’s expertise extends to robotic software engineering, where he has contributed significantly to projects at Conigital, a leading autonomous car company. His responsibilities included driving monitoring system development, vision fusion, lidar camera fusion, and designing sensor suites. Also, he developed deep learning models using vision, point cloud, and sensor fusion techniques for object detection at Conigital. With a strong command of programming languages such as C++, Python, and C, he has also demonstrated proficiency in using software tools and platforms such as MATLAB, ROS, ROS2, OpenCV, PyTorch, Keras, TensorFlow, and LaTex. Mohammad’s dedication to his field is evident through his contributions as an R&D manager at GEIT.Co, where he led research groups and played a crucial role in designing and implementing innovative industrial and hospital robots. His exceptional leadership skills and ability to secure funded projects highlight his talent for writing proposals. Additionally, Mohammad’s teaching experience as a robotic and programming lecturer at various educational institutions in the UK and Iran underscores his commitment to knowledge sharing. With a strong foundation in robotics, computer vision and machine learning, Mohammad’s expertise and accomplishments make him a highly capable and sought-after professional.</p>
+    </div>
+
+<div id="Skills" class="tabcontent">
+  <h3>Skills</h3>
+  <ul>
+    <li>Topics:
+      <ul>
+        <li>Robotics, Computer Vision, Machine/Deep Learning, Vision Navigation</li>
+      </ul>
+    </li>
+    <li>Programming Languages:
+      <ul>
+        <li>C++, Python, C, MATLAB</li>
+      </ul>
+    </li>
+    <li>Software Libraries and Tools:
+      <ul>
+        <li>ROS, ROS2, RVIZ, Gazebo, OpenCV, PyTorch, SciKit-Learn, Keras, TensorFlow, Docker, AWS, GPU/CPU Clusters</li>
+      </ul>
+    </li>
+    <li>IoT:
+      <ul>
+        <li>RASPBERRY PI, ARDUINO, NVIDIA (Jetson Nano, Jetson Xavier)</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<div id="Experience" class="tabcontent">
+  <h3>Professional Experience</h3>
+
+  <div class="experience-item">
+    <h4>Robotics Software Engineer (Perception Team) - Conigital</h4>
+    <p>Jan 2022 - Present</p>
+    <ul>
+      <li>Development of a driver monitoring system.</li>
+      <li>Implementation of real-time multi-camera fusion to create panoramic views.</li>
+      <li>Calibration of multi-sensor setups (camera, lidar, radar).</li>
+      <li>Design and development of 2D/3D visual object detection models.</li>
+      <li>Advancement in lidar-camera sensor fusion for enhanced object detection.</li>
+      <li>Creation of new AV sensor suites.</li>
+      <li>Retraining and validation of object detection models with various AV datasets.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>Ph.D. Research Candidate - University of Hertfordshire</h4>
+    <p>Feb 2019 - Dec 2023</p>
+    <ul>
+      <li>Conducted comprehensive research on visual datasets for Human Action Recognition (HAR).</li>
+      <li>Generated a multiview HAR dataset tailored for human-robot interaction.</li>
+      <li>Evaluated deep learning models for HAR, such as C3D, R3D, and Slow-Fast.</li>
+      <li>Developed multiview C3D models to utilize the Robot House Multiview dataset (RHM).</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>Visiting Lecturer - Department of Computer Science, University of Hertfordshire</h4>
+    <p>Oct 2019 - Feb 2022 </p>
+    <ul>
+        Delivered lectures on:
+        <li>Machine Learning and Neural Computing</li>
+        <li>Advanced Computer Science Masters Project</li>
+        <li>Legal and Ethical Practice Exercise</li>
+        <li>Human Dimensions of Computing</li>
+        <li>Master/Bachelaor Student final project supervisor</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h4>R&D Manager - GEIT.Co</h4>
+    <p>Apr 2009 - Nov 2018</p>
+    <ul>
+      <li>Directed research in developing robotics and computer vision solutions.</li>
+      <li>Implemented industrial and hospital robots.</li>
+      <li>Developed a ROS node for SOSCO's Mobile Robot for enhanced system integration.</li>
+      <li>Organized National Student RoboCup Competitions in Iran.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div id="Publications" class="tabcontent">
+  <h3>Publications</h3>
+  <ul>
+    <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “RHM: Robot House Multi-
+view Human Activity Recognition Dataset.” ACHI 2023, Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank">Publication Link</a>
+    </li>
+    <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “RHM-HAR-SK: A Multi-
+view Dataset with Skeleton Data for Ambient Assisted Living Research.” ACHI 2023,
+Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/26988" target="_blank">Publication Link</a>
+    </li>
+    <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Lightweight human activity
+recognition for ambient assisted living.” ACHI 2023, Venice, Italy, IARIA.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/26987" target="_blank">Publication Link</a>
+    </li>
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Affordable robot mapping
+using omnidirectional vision.” 4th UK-RAS Conference: Robotics at Home (UKRAS21),
+29–30. Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Robot house human activity
+recognition dataset.” 4th UK-RAS Conference: Robotics at Home (UKRAS21), 19–20.
+Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27119" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick
+Holthaus, Catherine Menon, and Farshid Amirabdollahian. “Human activity recogni-
+tion in robocup@home: inspiration from online benchmarks.” 4th UK-RAS Conference:
+Robotics at Home (UKRAS21), 27–28. Hatfield, UK, 2021.</p>
+      <a href="https://uhra.herts.ac.uk/handle/2299/27097" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, Ahmad
+Fakharian, “Side Sonar Vision Applied to Omni-directional Images to Navigate Mobile
+Robots.”, 5th Iranian joint congress on Fuzzy and Intelligent systems- cfis2017, IEEE,
+2017.</p>
+      <a href="https://ieeexplore.ieee.org/abstract/document/8003665" target="_blank">Publication Link</a>
+    </li>
+    
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, “Effects
+of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision.” 8th Interna-
+tional Conference, ICIRA 2015, Portsmouth, UK, August 24-27, 2015.</p>
+      <a href="https://link.springer.com/chapter/10.1007/978-3-319-22873-0_4" target="_blank">Publication Link</a>
+    </li>
+
+        <li>
+      <p>Mohammad Hossein Bamorovat Abadi, Mohammad Reza Asghari Oskoei, Ahmad
+Fakharian, “Mobile robot navigation using sonar vision algorithm applied to omnidirec-
+tional vision.” AI & Robotics (IRANOPEN), 2015,IEEE, 1–6, 2015.</p>
+      <a href="https://ieeexplore.ieee.org/abstract/document/7270728" target="_blank">Publication Link</a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div id="Education" class="tabcontent">
+  <h3>Education</h3>
+  
+  <div class="education-item">
+    <h4>University of Hertfordshire, Hatfield, UK</h4>
+    <p>Ph.D. Student, Computer Science, Dec 2023</p>
+    <ul>
+      <li>Research Topic: Human activity detection in ambient assisted living scenarios.</li>
+      <li>Principal Supervisor: Prof. Farshid Amirabdollahian.</li>
+      <li>Second Supervisors: Dr. Catherine Menon & Dr. Patrick Holthaus.</li>
+      <li>Main Activities included creating datasets for indoor human action recognition, implementing deep learning for visual human action recognition, and developing human tracking visual systems with Fetch Robot.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h4>Islamic Azad University, Qazvin Branch, Qazvin, Iran</h4>
+    <p>M.S., Mechatronics Engineering, 2015</p>
+    <ul>
+      <li>Thesis Topic: Implementation of Mobile Robot Navigation using Omnidirectional Vision.</li>
+      <li>Supervisor: Mohammadreza Asghari Oskoei, Assistant Professor.</li>
+      <li>Advisors: Alireza Mohammadi Shahri & Ahmad Fakharian, Assistant Professors.</li>
+      <li>Courses included Mechatronics I & II, Advanced Robotics, and Robot Vision & Navigation.</li>
+    </ul>
+  </div>
+
+  <div class="education-item">
+    <h4>Islamic Azad University, Sabzevar Branch, Sabzevar, Iran</h4>
+    <p>B.S., Electrical & Electronics Engineering, 2009</p>
+    <ul>
+      <li>Thesis Topic: Design and Implementation of Advance Path Following Robot.</li>
+      <li>Supervisor: Freidoon Javashi, M.S.</li>
+      <li>Relevant Courses: Image Processing, Neural Networks, Microprocessors, Control Systems.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+<footer>
+    <p>Contact: <a href="mailto:m.bamorovvat@gmail.com">m.bamorovvat@gmail.com</a></p>
+    <p>
+        <!--Connect with me:--> 
+        <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-linkedin"></i> LinkedIn | 
+        <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-google-scholar"></i> Scholar |
+        <a href="https://github.com/Bamorovat" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-github"></i> GitHub | 
+        <a href="https://www.researchgate.net/profile/Mohammad-Hossein-Bamorovat-Abadi" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-researchgate"></i> ResearchGate 
+    </p>
+</footer>
+
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it to open the default tab
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
