@@ -267,17 +267,9 @@ body {
     background: var(--section-bg);
 }
 
-/* Add visual elements to specific sections */
+/* Remove overlay for about section */
 #about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, var(--primary-color) 0%, transparent 70%);
-    opacity: 0.05;
-    border-radius: 50%;
+    display: none;
 }
 
 #skills::before {
@@ -327,7 +319,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #fff;
     margin-bottom: 3rem;
     padding-bottom: 1rem;
 }
@@ -346,7 +338,61 @@ body {
 
 /* Add background patterns for sections */
 #about {
-    background: linear-gradient(135deg, var(--section-bg) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url('../images/about-me-banner.png');
+    background-size: cover, cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 70vh;
+    color: #fff;
+}
+
+/* Dark overlay for better text contrast on top of the banner */
+#about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+/* About content should sit above the overlay */
+#about .card,
+#about .card * {
+    position: relative;
+    z-index: 2;
+}
+
+/* About features grid */
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-feature {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+}
+
+.about-feature h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.about-feature p {
+    color: var(--text-secondary);
 }
 
 #skills {
@@ -370,12 +416,15 @@ body {
 }
 
 .card {
-    background: white;
+    color: #fff;
+    background: transparent;
     border-radius: 0.75rem;
     padding: 2rem;
     box-shadow: var(--card-shadow);
     margin-bottom: 2rem;
     transition: var(--transition);
+    position: relative;
+    z-index: 2;
 }
 
 .card:hover {
