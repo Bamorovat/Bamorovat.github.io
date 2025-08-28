@@ -399,6 +399,34 @@ body {
     color: var(--text-secondary);
 }
 
+/* Icon motion: zoom/rotate on hover, accessible via keyboard focus */
+.about-feature i {
+    display: inline-block;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), filter 0.25s ease;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.about-feature:hover i,
+.about-feature:focus i {
+    transform: translateY(-6px) scale(1.12) rotate(-8deg);
+}
+
+.about-feature:active i {
+    transform: translateY(-2px) scale(1.06) rotate(-4deg);
+}
+
+/* Card lift on hover/focus */
+.about-feature {
+    transition: transform 0.28s var(--transition), box-shadow 0.28s var(--transition);
+}
+
+.about-feature:hover,
+.about-feature:focus {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(16, 24, 40, 0.12);
+}
+
 #skills {
     background: linear-gradient(45deg, rgba(59, 130, 246, 0.03) 0%, var(--section-bg) 50%, rgba(6, 214, 160, 0.03) 100%);
 }
