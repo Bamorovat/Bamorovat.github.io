@@ -346,10 +346,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    /* make section stretch edge-to-edge */
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
     min-height: 70vh;
     color: #fff;
 }
