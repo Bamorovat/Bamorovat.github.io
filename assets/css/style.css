@@ -319,7 +319,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--text-primary); /* dark title color by default */
     margin-bottom: 3rem;
     padding-bottom: 1rem;
 }
@@ -355,6 +355,11 @@ body {
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
     min-height: 70vh;
+    color: #fff;
+}
+
+/* Keep the About section title white for contrast against its dark banner */
+#about .section-title {
     color: #fff;
 }
 

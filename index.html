@@ -1,764 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohammad Hossein Bamorovat Abadi - Autonomy Scientist, AIDRIVERS, Ph.D. in Computer Science">
-    <meta name="keywords" content="robotics, computer vision, machine learning, deep learning, autonomous vehicles, PhD">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mohammad Hossein Bamorovat Abadi | Autonomy Scientist - AIDRIVERS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mohammad Hossein Bamorovat Abadi - Autonomy Scientist">
+  <title>Mohammad Hossein Bamorovat Abadi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Client-side fragment loader with debug logging: fetch sections/<id>.html and inject into the matching <section id="...">
+    document.addEventListener('DOMContentLoaded', function () {
+      const sectionIds = ['about','skills','experience','projects','publications','education'];
+      sectionIds.forEach(id => {
+        const container = document.getElementById(id);
+        if (!container) return;
+        // skip if we've already loaded this section previously
+        if (container.dataset.loaded === 'true') {
+          console.debug(`[loader] section '${id}' already loaded previously, skipping`);
+          return;
+        }
+        const url = `sections/${id}.html`;
+        console.debug(`[loader] fetching ${url}`);
+        fetch(url).then(r => {
+          if (!r.ok) throw new Error(`fetch failed: ${r.status} ${r.statusText}`);
+          return r.text();
+        }).then(html => {
+          container.innerHTML = html;
+          container.dataset.loaded = 'true';
+          console.info(`[loader] loaded section '${id}'`);
+        }).catch(err => {
+          console.error(`[loader] failed to load '${id}':`, err);
+          // leave placeholder in place so the page doesn't break
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-    <!-- Hero Section -->
+  <header>
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-header">
-                <div class="profile-photo">
-                    <img src="assets/images/profile-photo.jpg" alt="Mohammad Hossein Bamorovat Abadi">
-                </div>
-                <div class="hero-text">
-                    <h1>Mohammad Hossein Bamorovat Abadi</h1>
-                    <p class="subtitle">Autonomy & Perception Specialist</p>
-                    <div class="cta-buttons">
-                        <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Bamorovat" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://www.researchgate.net/profile/Mohammad-Bamorovat-Abadi" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-researchgate"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="hero-content">
+        <div class="hero-header">
+          <div class="profile-photo">
+            <img src="assets/images/profile-photo.jpg" alt="Profile photo">
+          </div>
+          <div class="hero-text">
+            <h1>Mohammad Hossein Bamorovat Abadi</h1>
+            <p class="subtitle">Autonomy & Perception Specialist</p>
+            <div class="cta-buttons">
+              <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-outline"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Bamorovat" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="btn btn-outline"><i class="fas fa-graduation-cap"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Navigation -->
     <nav class="nav-container">
-        <div class="nav">
-            <a href="#about" class="nav-btn active">
-                <i class="fas fa-user"></i> About
-            </a>
-            <a href="#skills" class="nav-btn">
-                <i class="fas fa-cogs"></i> Skills
-            </a>
-            <a href="#experience" class="nav-btn">
-                <i class="fas fa-briefcase"></i> Experience
-            </a>
-            <a href="#projects" class="nav-btn">
-                <i class="fas fa-project-diagram"></i> Projects
-            </a>
-            <a href="#publications" class="nav-btn">
-                <i class="fas fa-book"></i> Publications
-            </a>
-            <a href="#education" class="nav-btn">
-                <i class="fas fa-graduation-cap"></i> Education
-            </a>
-        </div>
+      <div class="nav">
+        <a href="#about" class="nav-btn active"><i class="fas fa-user"></i> About</a>
+        <a href="#skills" class="nav-btn"><i class="fas fa-cogs"></i> Skills</a>
+        <a href="#experience" class="nav-btn"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="nav-btn"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#publications" class="nav-btn"><i class="fas fa-book"></i> Publications</a>
+        <a href="#education" class="nav-btn"><i class="fas fa-graduation-cap"></i> Education</a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">About Me</h2>
-            <div class="card">
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    I am an <strong>Autonomy Scientist</strong> at AIDRIVERS, London, with over 15 years of experience in robotics, 
-                    autonomous systems, and machine learning. I hold a <strong>Ph.D. in Computer Science</strong> from the University of 
-                    Hertfordshire, where I specialized in human activity recognition for ambient assisted living scenarios under the supervision 
-                    of Prof. Farshid Amirabdollahian.
-                </p>
-                <br>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    Currently, I work at <strong>AIDRIVERS</strong> leading the development of real-time autonomy stack for autonomous vehicles 
-                    in PSA Singapore smart port. Previously, I worked as a Robotic Software Specialist at the University of Manchester 
-                    and as a Perception Team Engineer at Conigital, where I developed advanced driver monitoring systems, multi-sensor fusion 
-                    algorithms, and deep learning models for autonomous vehicles. My expertise spans the entire perception pipeline, from sensor 
-                    calibration to real-time processing and validation of safety-critical systems.
-                </p>
-                <br>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    Throughout my career, I have successfully led research teams, published numerous peer-reviewed papers, and delivered innovative 
-                    solutions in both academic and industrial settings. My passion lies in bridging the gap between theoretical research and 
-                    practical applications, particularly in robotics and computer vision technologies that enhance human life and safety.
-                </p>
-                <br>
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-robot" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Robotics Engineering</h4>
-                        <p>15+ years in industrial & service robots, Self drivingn cars</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-eye" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Computer Vision</h4>
-                        <p>Advanced perception systems, sensor fusion, real-time object detection for AV</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-brain" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Machine Learning</h4>
-                        <p>Deep learning architectures, neural networks, AI model optimization and deployment</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-flask" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Research & Innovation</h4>
-                        <p>Ph.D. graduate, 9+ published papers, dataset creation, multi-view learning architectures</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-chalkboard-teacher" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Teaching & Mentorship</h4>
-                        <p>University lecturer, 15+ graduate projects supervised, ML & robotics curriculum development</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-users" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Leadership & Collaboration</h4>
-                        <p>R&D team lead, international research collaboration, project management & mentoring</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main class="main-content">
+  <section id="about" class="section">Loading about...</section>
+  <section id="skills" class="section">Loading skills...</section>
+  <section id="experience" class="section">Loading experience...</section>
+  <section id="projects" class="section">Loading projects...</section>
+  <section id="publications" class="section">Loading publications...</section>
+  <section id="education" class="section">Loading education...</section>
+  </main>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="card skill-category">
-                    <h4><i class="fas fa-code"></i> Programming Languages</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">MATLAB</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Shell Scripting</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-robot"></i> Robotics & Autonomous Systems</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ROS</span>
-                        <span class="skill-tag">ROS2</span>
-                        <span class="skill-tag">RVIZ</span>
-                        <span class="skill-tag">Gazebo</span>
-                        <span class="skill-tag">MoveIt</span>
-                        <span class="skill-tag">Navigation Stack</span>
-                        <span class="skill-tag">SLAM</span>
-                        <span class="skill-tag">Path Planning</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-eye"></i> Computer Vision & Perception</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">PCL</span>
-                        <span class="skill-tag">Object Detection</span>
-                        <span class="skill-tag">Sensor Fusion</span>
-                        <span class="skill-tag">Camera Calibration</span>
-                        <span class="skill-tag">LIDAR Processing</span>
-                        <span class="skill-tag">Stereo Vision</span>
-                        <span class="skill-tag">Omnidirectional Vision</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-brain"></i> Machine Learning & AI</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Keras</span>
-                        <span class="skill-tag">SciKit-Learn</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">CNN</span>
-                        <span class="skill-tag">RNN/LSTM</span>
-                        <span class="skill-tag">Transfer Learning</span>
-                        <span class="skill-tag">Model Optimization</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-car"></i> Autonomous Vehicles</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Driver Monitoring</span>
-                        <span class="skill-tag">Multi-Camera Fusion</span>
-                        <span class="skill-tag">LIDAR-Camera Fusion</span>
-                        <span class="skill-tag">RADAR Integration</span>
-                        <span class="skill-tag">Real-time Processing</span>
-                        <span class="skill-tag">Safety Systems</span>
-                        <span class="skill-tag">Sensor Suites</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-cloud"></i> Development & Infrastructure</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">GPU Computing</span>
-                        <span class="skill-tag">CUDA</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Embedded Systems</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-microchip"></i> Hardware & IoT</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Raspberry Pi</span>
-                        <span class="skill-tag">Arduino</span>
-                        <span class="skill-tag">NVIDIA Jetson</span>
-                        <span class="skill-tag">Sensors Integration</span>
-                        <span class="skill-tag">Microcontrollers</span>
-                        <span class="skill-tag">Real-time Systems</span>
-                    </div>
-                </div>
-                
-                <div class="card skill-category">
-                    <h4><i class="fas fa-tools"></i> Research & Analysis</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Dataset Creation</span>
-                        <span class="skill-tag">Statistical Analysis</span>
-                        <span class="skill-tag">Performance Evaluation</span>
-                        <span class="skill-tag">Academic Writing</span>
-                        <span class="skill-tag">LaTeX</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Team Leadership</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <button class="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">January 2025 - Present</div>
-                    <h3 class="timeline-title">Autonomy Scientist</h3>
-                    <div class="timeline-company">AIDRIVERS, London, UK</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Leading development of real-time autonomy stack for autonomous vehicles in PSA Singapore smart port operations.
-                    </p>
-                    <ul>
-                        <li><strong>Real-time Autonomy Stack:</strong> Lead development of autonomous vehicle systems using C++ and ROS2 for smart port operations</li>
-                        <li><strong>Deep Learning Models:</strong> Designed and deployed advanced models for LiDAR-camera fusion, curb detection, and rain resilience</li>
-                        <li><strong>Path Planning Framework:</strong> Built comprehensive framework for dynamic routing and safety-critical path planning</li>
-                        <li><strong>Smart Port Integration:</strong> Implementing AV solutions specifically tailored for PSA Singapore smart port environment</li>
-                        <li><strong>Performance Optimization:</strong> Ensuring real-time performance for safety-critical autonomous vehicle operations</li>
-                    </ul>
-                </div>
+  <footer>
+    <div class="footer-content">
+      <h3>Let's Connect</h3>
+      <p>Feel free to reach out for collaborations or opportunities</p>
+      <div class="social-links">
+        <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="social-link" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/Bamorovat" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2025 Mohammad Hossein Bamorovat Abadi. All rights reserved.</p>
+    </div>
+  </footer>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">March 2024 - December 2024</div>
-                    <h3 class="timeline-title">Robotic Software Specialist</h3>
-                    <div class="timeline-company">University of Manchester, Manchester, UK</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Advanced robotics software development for UAV, UGV, and AUV systems with focus on autonomous navigation and mapping.
-                    </p>
-                    <ul>
-                        <li><strong>Multi-Platform Development:</strong> Developed software for UAV, UGV, and AUV using ROS1/2, Docker, and C++/Python</li>
-                        <li><strong>Visual-Inertial SLAM:</strong> Integrated advanced SLAM systems for real-time localization and mapping</li>
-                        <li><strong>LiDAR-based Mapping:</strong> Implemented tunnel mapping solutions using LiDAR sensor technology</li>
-                        <li><strong>UAV Tracking Systems:</strong> Developed UAV Vicon tracking for precise indoor navigation</li>
-                        <li><strong>Documentation & Automation:</strong> Authored comprehensive technical documentation and built automation pipelines using Power Automate</li>
-                        <li><strong>Research Collaboration:</strong> Collaborated with research teams on cutting-edge robotics projects</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">February 2022 - February 2024</div>
-                    <h3 class="timeline-title">Robotics Software Engineer - Perception Team</h3>
-                    <div class="timeline-company">Conigital, Birmingham, UK</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Built deep learning pipelines for autonomous vehicle perception with focus on safety-critical applications.
-                    </p>
-                    <ul>
-                        <li><strong>Deep Learning Pipelines:</strong> Built comprehensive pipelines for object detection using YOLOv5/v6, PointPillars, and FCOS3D</li>
-                        <li><strong>LiDAR-Camera Fusion:</strong> Fused LiDAR and camera data for enhanced perception in urban autonomous vehicle scenarios</li>
-                        <li><strong>Dataset Integration:</strong> Worked with industry-standard datasets including NuScenes and KITTI for model training and validation</li>
-                        <li><strong>Multi-Sensor AV Suites:</strong> Developed comprehensive autonomous vehicle sensor suites for real-world deployment</li>
-                        <li><strong>Driver Monitoring Systems:</strong> Led development of DMS pipeline for driver state monitoring and safety</li>
-                        <li><strong>Urban AV Scenarios:</strong> Specialized in perception challenges specific to urban autonomous driving environments</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">February 2019 - February 2024</div>
-                    <h3 class="timeline-title">PhD Researcher in Computer Science</h3>
-                    <div class="timeline-company">University of Hertfordshire, Hatfield, UK</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Specialized research in Human Activity Recognition for human-robot interaction and ambient assisted living applications.
-                    </p>
-                    <ul>
-                        <li><strong>Dataset Creation:</strong> Created Robot House Multiview Dataset for Human Activity Recognition in human-robot interaction</li>
-                        <li><strong>Deep Learning Architectures:</strong> Designed SlowFast and Dual-Stream C3D architectures for multi-view learning</li>
-                        <li><strong>Research Publications:</strong> Published research at IEEE RA-L, BioRob, ACHI, UKRAS conferences and journals</li>
-                        <li><strong>Multi-view Learning:</strong> Developed novel approaches for human activity recognition from multiple camera perspectives</li>
-                        <li><strong>Human-Robot Interaction:</strong> Focused on visual understanding for ambient assisted living and elderly care applications</li>
-                        <li><strong>Academic Collaboration:</strong> Collaborated with international research teams and supervised graduate student projects</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">October 2019 - February 2022 (2.5 years)</div>
-                    <h3 class="timeline-title">Visiting Lecturer</h3>
-                    <div class="timeline-company">Department of Computer Science, University of Hertfordshire</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Teaching and mentoring graduate students in advanced computer science topics while conducting Ph.D. research.
-                    </p>
-                    <ul>
-                        <li><strong>Machine Learning & Neural Computing:</strong> Delivered comprehensive courses covering theoretical foundations and practical applications</li>
-                        <li><strong>Advanced Masters Projects:</strong> Supervised 15+ graduate capstone projects in robotics and AI</li>
-                        <li><strong>Ethics in Computing:</strong> Taught legal and ethical considerations in AI and robotics applications</li>
-                        <li><strong>Human-Computer Interaction:</strong> Explored user-centered design principles for intelligent systems</li>
-                        <li><strong>Student Mentorship:</strong> Guided 8 Master's and 3 Bachelor's thesis projects to successful completion</li>
-                        <li><strong>Curriculum Development:</strong> Contributed to course material development and assessment design</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">April 2009 - November 2018</div>
-                    <h3 class="timeline-title">R&D Team Lead</h3>
-                    <div class="timeline-company">GEIT.Co, Iran</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Led research in robotics and vision technologies, delivering innovative solutions for healthcare and competitive robotics.
-                    </p>
-                    <ul>
-                        <li><strong>Research Leadership:</strong> Led research in robotics and computer vision technologies</li>
-                        <li><strong>Hospital Robotics:</strong> Delivered hospital robots for healthcare applications and patient assistance</li>
-                        <li><strong>RoboCup Development:</strong> Developed coaching tools and systems for RoboCup competitions</li>
-                        <li><strong>ROS-based Solutions:</strong> Developed comprehensive ROS-based solutions for robot coordination and navigation</li>
-                        <li><strong>Technology Innovation:</strong> Drove innovation in service robotics and autonomous navigation systems</li>
-                        <li><strong>Team Management:</strong> Managed interdisciplinary R&D teams and project delivery</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2009 - 2018</div>
-                    <h3 class="timeline-title">Lecturer</h3>
-                    <div class="timeline-company">Universities in Guilan, Iran</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Teaching undergraduate and graduate courses in embedded systems, robotics, and programming.
-                    </p>
-                    <ul>
-                        <li><strong>Embedded Systems:</strong> Taught comprehensive courses on embedded system design and implementation</li>
-                        <li><strong>Robotics Education:</strong> Delivered robotics courses covering theory and practical applications</li>
-                        <li><strong>Programming Languages:</strong> Taught C/C++ programming with focus on system-level development</li>
-                        <li><strong>Curriculum Development:</strong> Developed course materials and practical laboratory exercises</li>
-                        <li><strong>Student Mentorship:</strong> Supervised student projects and thesis work in robotics and embedded systems</li>
-                        <li><strong>Industry Connections:</strong> Bridged academic learning with industry requirements and practices</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200/1e3a8a/ffffff?text=RHM+Dataset" alt="RHM Dataset" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            <i class="fas fa-video"></i>
-                            RHM Dataset for Human Activity Recognition
-                        </h3>
-                        <p class="project-description">
-                            Developed a comprehensive multi-view dataset for human activity recognition in smart home environments. 
-                            This groundbreaking dataset serves as a benchmark for ambient assisted living research and has received 
-                            international recognition in the robotics community.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">Multi-Camera Systems</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Dataset Creation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> View Dataset
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="project-link">
-                                <i class="fas fa-file-alt"></i> Publications
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200/3b82f6/ffffff?text=Autonomous+Vehicle+AI" alt="Autonomous Vehicle Perception" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            <i class="fas fa-car"></i>
-                            Autonomous Vehicle Perception System
-                        </h3>
-                        <p class="project-description">
-                            Led the development of a comprehensive perception system for autonomous vehicles at Conigital, featuring 
-                            multi-sensor fusion, real-time object detection, and driver monitoring capabilities. Achieved real-time 
-                            performance with safety-critical reliability standards.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Autonomous Vehicles</span>
-                            <span class="tech-tag">LIDAR</span>
-                            <span class="tech-tag">Camera Fusion</span>
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">YOLO</span>
-                            <span class="tech-tag">PointNet</span>
-                            <span class="tech-tag">Real-time Processing</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-shield-alt"></i> Industry Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200/06d6a0/ffffff?text=Robot+SLAM+Mapping" alt="Robot SLAM Mapping" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            <i class="fas fa-robot"></i>
-                            Affordable Omnidirectional Robot Mapping
-                        </h3>
-                        <p class="project-description">
-                            Developed an innovative SLAM solution using omnidirectional vision for cost-effective robot navigation. 
-                            This project received the Best Paper Award nomination at UKRAS21 conference and provides an open-source 
-                            implementation for the robotics community.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">ROS</span>
-                            <span class="tech-tag">SLAM</span>
-                            <span class="tech-tag">Omnidirectional Vision</span>
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Navigation</span>
-                            <span class="tech-tag">Open Source</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> View Paper
-                            </a>
-                            <a href="https://github.com/Bamorovat" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">
-                        <i class="fas fa-brain"></i>
-                        Multi-View C3D for Action Recognition
-                    </h3>
-                    <p class="project-description">
-                        Designed and implemented novel multi-view 3D convolutional neural networks for human action recognition. 
-                        This research advanced the state-of-the-art in video understanding by leveraging spatial-temporal information 
-                        from multiple camera perspectives.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">C3D</span>
-                        <span class="tech-tag">Multi-View Learning</span>
-                        <span class="tech-tag">Video Analysis</span>
-                        <span class="tech-tag">CNN</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="project-link">
-                            <i class="fas fa-graduation-cap"></i> Research Paper
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">
-                        <i class="fas fa-microchip"></i>
-                        IoT-Based Smart Home Monitoring
-                    </h3>
-                    <p class="project-description">
-                        Developed an integrated IoT system for smart home monitoring combining multiple sensors, real-time data 
-                        processing, and machine learning for activity recognition. The system provides ambient assisted living 
-                        capabilities for elderly care applications.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Raspberry Pi</span>
-                        <span class="tech-tag">Sensors</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Edge Computing</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-cog"></i> Research Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">
-                        <i class="fas fa-industry"></i>
-                        Industrial Robot Automation System
-                    </h3>
-                    <p class="project-description">
-                        Led the development of automated manufacturing solutions during tenure at GEIT.Co, achieving 35% reduction 
-                        in operational costs. The system integrated multiple industrial robots with advanced vision systems for 
-                        quality control and process optimization.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Industrial Robotics</span>
-                        <span class="tech-tag">Manufacturing</span>
-                        <span class="tech-tag">Quality Control</span>
-                        <span class="tech-tag">Vision Systems</span>
-                        <span class="tech-tag">Process Automation</span>
-                        <span class="tech-tag">ROI Optimization</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-industry"></i> Industry Solution
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="margin-top: 3rem; text-align: center;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                    <i class="fas fa-lightbulb"></i> Open to Collaboration
-                </h3>
-                <p style="margin-bottom: 2rem; color: var(--text-secondary);">
-                    I'm always interested in collaborating on innovative robotics and AI projects. 
-                    Whether it's research partnerships, industry consultations, or open-source contributions, 
-                    feel free to reach out to discuss potential collaborations.
-                </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i> Contact for Projects
-                    </a>
-                    <a href="https://github.com/Bamorovat" target="_blank" class="btn btn-outline" style="border-color: var(--primary-color); color: var(--primary-color);">
-                        <i class="fab fa-github"></i> GitHub Portfolio
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <h2 class="section-title">Research Publications & Academic Contributions</h2>
-            
-            <!-- Publication Statistics -->
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-robot" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Robotics Engineering</h4>
-                        <p>15+ years in industrial & service robots, Self drivingn cars</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-eye" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Computer Vision</h4>
-                        <p>Advanced perception systems, sensor fusion, real-time object detection for AV</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-brain" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Machine Learning</h4>
-                        <p>Deep learning architectures, neural networks, AI model optimization and deployment</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h4>Research & Education</h4>
-                        <p>Ph.D. graduate, published researcher, university lecturer and project supervisor</p>
-                    </div>
-                </div>
-                </h3>
-                
-                <div class="publication-item">
-                    <div class="publication-title">RHM: Robot House Multi-view Human Activity Recognition Dataset</div>
-                    <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
-                    <p><em>ACHI 2023 - The Sixteenth International Conference on Advances in Computer-Human Interactions, Venice, Italy, IARIA, 2023</em></p>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
-                        <strong>Impact:</strong> First multiview dataset for HAR in smart homes • 45+ citations • Benchmark dataset for ambient assisted living research
-                    </p>
-                    <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="publication-link">
-                        <i class="fas fa-external-link-alt"></i> View Publication
-                    </a>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">Affordable Robot Mapping Using Omnidirectional Vision</div>
-                    <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
-                    <p><em>4th UK-RAS Conference: Robotics at Home (UKRAS21), pp. 29-30, Hatfield, UK, 2021</em></p>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
-                        <strong>Achievement:</strong> Cost-effective SLAM solution • Best Paper Award nominee • Open-source implementation
-                    </p>
-                    <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank" class="publication-link">
-                        <i class="fas fa-external-link-alt"></i> View Publication
-                    </a>
-                </div>
-            </div>
-
-            <div class="card" style="margin-top: 2rem; text-align: center;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                    <i class="fas fa-graduation-cap"></i> View Complete Research Profile
-                </h3>
-                <p style="margin-bottom: 2rem; color: var(--text-secondary);">
-                    Explore my complete academic profile with detailed citation metrics, co-author networks, and research impact.
-                </p>
-                <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-external-link-alt"></i> Google Scholar Profile
-                </a>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section">
-            <h2 class="section-title">Academic Background</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">February 2019 - December 2023</div>
-                    <h3 class="timeline-title">Ph.D. in Computer Science</h3>
-                    <div class="timeline-company">University of Hertfordshire, Hatfield, United Kingdom</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Doctoral research in Computer Vision and Human Activity Recognition for Ambient Assisted Living
-                    </p>
-                    <p><strong>Dissertation:</strong> "Human Activity Detection in Ambient Assisted Living Scenarios using Multi-view Computer Vision"</p>
-                    <p><strong>Principal Supervisor:</strong> Prof. Farshid Amirabdollahian (Professor of Interactive AI & Robotics)</p>
-                    <p><strong>Co-Supervisors:</strong> Dr. Catherine Menon (Senior Lecturer) & Dr. Patrick Holthaus (Lecturer)</p>
-                    <p><strong>GPA:</strong> Distinction</p>
-                    <ul>
-                        <li><strong>Research Contributions:</strong> Created the Robot House Multiview (RHM) dataset with 8 synchronized cameras for human action recognition</li>
-                        <li><strong>Technical Innovation:</strong> Developed novel multiview C3D deep learning architectures for spatio-temporal action understanding</li>
-                        <li><strong>Practical Applications:</strong> Integrated human tracking systems with Fetch Robot for elderly care monitoring</li>
-                        <li><strong>Academic Impact:</strong> Published 8 peer-reviewed papers in top-tier conferences and journals</li>
-                        <li><strong>Collaboration:</strong> Worked with interdisciplinary teams including healthcare professionals and robotics engineers</li>
-                        <li><strong>Teaching:</strong> Served as visiting lecturer while completing doctoral studies</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">September 2013 - July 2015</div>
-                    <h3 class="timeline-title">Master of Science in Mechatronics Engineering</h3>
-                    <div class="timeline-company">Islamic Azad University, Qazvin Branch, Iran</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Specialized in robotics, automation, and intelligent control systems
-                    </p>
-                    <p><strong>Thesis:</strong> "Implementation of Mobile Robot Navigation using Omnidirectional Vision"</p>
-                    <p><strong>Supervisor:</strong> Dr. Mohammadreza Asghari Oskoei, Assistant Professor</p>
-                    <p><strong>Advisory Committee:</strong> Dr. Alireza Mohammadi Shahri & Dr. Ahmad Fakharian</p>
-                    <p><strong>GPA:</strong> 3.8/4.0 (First Class Honours)</p>
-                    <ul>
-                        <li><strong>Core Coursework:</strong> Advanced Robotics, Robot Vision & Navigation, Mechatronics Systems I & II</li>
-                        <li><strong>Specialization:</strong> Computer Vision for Mobile Robot Navigation, Omnidirectional Vision Systems</li>
-                        <li><strong>Research Focus:</strong> Developed novel algorithms for robot localization using 360-degree vision</li>
-                        <li><strong>Technical Skills:</strong> Embedded systems programming, sensor integration, real-time control</li>
-                        <li><strong>Projects:</strong> Autonomous navigation system with obstacle avoidance and path planning</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">September 2005 - July 2009</div>
-                    <h3 class="timeline-title">Bachelor of Science in Electrical & Electronics Engineering</h3>
-                    <div class="timeline-company">Islamic Azad University, Sabzevar Branch, Iran</div>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-                        Foundation in electrical engineering with focus on control systems and signal processing
-                    </p>
-                    <p><strong>Thesis:</strong> "Design and Implementation of Advanced Path Following Robot"</p>
-                    <p><strong>Supervisor:</strong> Freidoon Javashi, M.S.</p>
-                    <p><strong>GPA:</strong> 3.6/4.0</p>
-                    <ul>
-                        <li><strong>Core Subjects:</strong> Digital Signal Processing, Control Systems, Microprocessors & Microcontrollers</li>
-                        <li><strong>Specialized Courses:</strong> Image Processing, Neural Networks, Pattern Recognition</li>
-                        <li><strong>Laboratory Work:</strong> Extensive hands-on experience with embedded systems and sensor interfaces</li>
-                        <li><strong>Capstone Project:</strong> Developed autonomous robot with advanced path following capabilities</li>
-                        <li><strong>Research Interest:</strong> Early focus on robotics and intelligent control systems</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Additional Qualifications -->
-            <div class="card" style="margin-top: 2rem;">
-                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                    <i class="fas fa-certificate"></i> Additional Qualifications & Training
-                </h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                    <div>
-                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Professional Development</h4>
-                        <ul style="margin: 0; color: var(--text-secondary);">
-                            <li>Advanced Deep Learning Specialization (Coursera)</li>
-                            <li>Computer Vision Nanodegree (Udacity)</li>
-                            <li>ROS2 Professional Certification</li>
-                            <li>AWS Machine Learning Specialty</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Research Skills</h4>
-                        <ul style="margin: 0; color: var(--text-secondary);">
-                            <li>Grant Writing & Project Management</li>
-                            <li>Academic Publishing & Peer Review</li>
-                            <li>Statistical Analysis & Data Science</li>
-                            <li>International Conference Presentations</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Languages</h4>
-                        <ul style="margin: 0; color: var(--text-secondary);">
-                            <li>English: Fluent (Academic & Professional)</li>
-                            <li>Persian/Farsi: Native</li>
-                            <li>Arabic: Conversational</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h3>Let's Connect</h3>
-            <p>Feel free to reach out for collaborations or opportunities</p>
-            <div class="social-links">
-                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="social-link" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/bamorovat/" target="_blank" class="social-link" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=brVh080AAAAJ&hl=en" target="_blank" class="social-link" title="Google Scholar">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://github.com/Bamorovat" target="_blank" class="social-link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.researchgate.net/profile/Mohammad-Hossein-Bamorovat-Abadi" target="_blank" class="social-link" title="ResearchGate">
-                    <i class="fab fa-researchgate"></i>
-                </a>
-            </div>
-            <p>&copy; 2025 Mohammad Hossein Bamorovat Abadi. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
