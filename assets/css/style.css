@@ -67,9 +67,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* (Removed duplicate gradient override for #skills so the image banner rule remains) */
 }
 
 .profile-photo {
@@ -363,6 +361,66 @@ body {
     color: #fff;
 }
 
+/* Skills banner: mirror about banner styling for full-bleed image with overlay */
+#skills {
+        background:
+            linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+            url('../images/skills-banner.png');
+        background-size: cover, cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    min-height: 70vh;
+    color: #fff;
+}
+
+
+    #skills::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
+        z-index: 1;
+    }
+
+/* Ensure skills title is readable on the banner */
+#skills .section-title {
+    color: #fff;
+}
+
+/* Ensure skill cards sit above the overlay */
+#skills .card,
+#skills .card * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Make text readable on the skills banner */
+/* stronger contrast for skills text and tags on the blue banner */
+#skills .skill-category h4 {
+    color: #ffffff;
+}
+
+#skills .card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+}
+
+#skills .skill-tag {
+    background: rgba(255,255,255,0.12);
+    color: #04203a; /* dark text on light tag for legibility */
+    border-color: rgba(255,255,255,0.18);
+}
+
 /* Dark overlay for better text contrast on top of the banner */
 #about::before {
     content: '';
@@ -432,9 +490,7 @@ body {
     box-shadow: 0 14px 40px rgba(16, 24, 40, 0.12);
 }
 
-#skills {
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.03) 0%, var(--section-bg) 50%, rgba(6, 214, 160, 0.03) 100%);
-}
+/* duplicate gradient override removed so skills section uses the image banner defined earlier */
 
 #experience {
     background: linear-gradient(135deg, rgba(30, 58, 138, 0.02) 0%, var(--background) 100%);
