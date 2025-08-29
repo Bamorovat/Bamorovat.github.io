@@ -416,9 +416,11 @@ body {
 }
 
 #skills .skill-tag {
-    background: rgba(255,255,255,0.12);
-    color: #04203a; /* dark text on light tag for legibility */
-    border-color: rgba(255,255,255,0.18);
+    /* Slightly darker translucent background so near-white text remains legible on the banner */
+    background: rgba(255,255,255,0.08);
+    /* Make the tag text near-white for much better contrast on the dark banner */
+    color: rgba(255,255,255,0.95);
+    border-color: rgba(255,255,255,0.16);
 }
 
 /* Dark overlay for better text contrast on top of the banner */
@@ -558,6 +560,26 @@ body {
     font-weight: 500;
     border: 1px solid #e5e7eb;
     transition: var(--transition);
+}
+
+/* Sub-details: make card paragraphs and small notes more readable */
+.section .card p,
+.section p,
+.about-feature p,
+.skill-note {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Override for dark banner sections so subtext is light and readable */
+#about .card p,
+#about p,
+#skills .card p,
+#skills p,
+#about .about-feature p,
+#skills .about-feature p {
+    color: rgba(255,255,255,0.92);
 }
 
 .skill-tag:hover {
