@@ -464,6 +464,34 @@ body {
     color: var(--text-secondary);
 }
 
+/* Make About-section category cards translucent (match skills look) when on the dark/about banner */
+#about .about-feature {
+    background: rgba(255,255,255,0.08);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.95);
+}
+
+#about .about-feature h4 {
+    color: rgba(255,255,255,0.95);
+}
+
+#about .about-feature p {
+    color: rgba(255,255,255,0.88);
+}
+
+/* Make the small logos/icons inside About category cards white/silver for contrast */
+#about .about-feature i {
+    color: rgba(255,255,255,0.95);
+    /* for inline SVG icons, ensure they use the parent's color */
+}
+
+#about .about-feature i svg,
+#about .about-feature i svg * {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+
 /* Icon motion: zoom/rotate on hover, accessible via keyboard focus */
 .about-feature i {
     display: inline-block;
