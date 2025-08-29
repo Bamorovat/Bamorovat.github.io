@@ -364,7 +364,8 @@ body {
 /* Skills banner: mirror about banner styling for full-bleed image with overlay */
 #skills {
         background:
-            linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+            /* slightly more opaque overlay for the skills banner */
+            linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
             url('../images/skills-banner.png');
         background-size: cover, cover;
         background-position: center center;
@@ -387,7 +388,8 @@ body {
         content: '';
         position: absolute;
         inset: 0;
-        background: rgba(0,0,0,0.35);
+    /* slightly increased overlay opacity */
+    background: rgba(0,0,0,0.65);
         z-index: 1;
     }
 
