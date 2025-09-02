@@ -1,0 +1,195 @@
+/* Hero Section Styles */
+.hero {
+    background: url('../images/av_banner.gif');
+    background-size: cover;
+    background-position: center 80%;
+    background-attachment: fixed;
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 70vh;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: none;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 60vh;
+    padding-top: 3rem;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* (Removed duplicate gradient override for #skills so the image banner rule remains) */
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text .cta-buttons {
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .hero-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text .cta-buttons {
+        justify-content: center;
+    }
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 0 8px rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.profile-photo i {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    animation: fadeInUp 0.8s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.hero .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 0;
+    animation: fadeInUp 0.8s ease 0.2s both;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.btn {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    height: 2.5rem;
+}
+
+.btn i {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #059669;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    border-color: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive styles for hero */
+@media (min-width: 768px) {
+    .hero-header {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .profile-photo {
+        border: 4px solid rgba(255, 255, 255, 0.2);
+    }
+}

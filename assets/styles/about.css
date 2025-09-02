@@ -1,0 +1,138 @@
+/* About Section Styles */
+#about {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+        url('../images/about-me-banner.png');
+    background-size: cover, cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    /* make section stretch edge-to-edge */
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    min-height: 70vh;
+    color: #fff;
+}
+
+/* Keep the About section title white for contrast against its dark banner */
+#about .section-title {
+    color: #fff;
+}
+
+/* Dark overlay for better text contrast on top of the banner */
+#about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+
+/* About content should sit above the overlay */
+#about .card,
+#about .card *,
+#about .section-title,
+#about .about-features,
+#about .about-feature {
+    position: relative;
+    z-index: 2;
+}
+
+/* About section card should be transparent on the banner */
+#about .card {
+    background: transparent;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+/* About features grid */
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-feature {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.28s var(--transition), box-shadow 0.28s var(--transition);
+}
+
+.about-feature h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.about-feature p {
+    color: var(--text-secondary);
+}
+
+/* Icon motion: zoom/rotate on hover, accessible via keyboard focus */
+.about-feature i {
+    display: inline-block;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), filter 0.25s ease;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.about-feature:hover i,
+.about-feature:focus i {
+    transform: translateY(-6px) scale(1.12) rotate(-8deg);
+}
+
+.about-feature:active i {
+    transform: translateY(-2px) scale(1.06) rotate(-4deg);
+}
+
+/* Card lift on hover/focus */
+.about-feature:hover,
+.about-feature:focus {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(16, 24, 40, 0.12);
+}
+
+/* Make About-section category cards translucent (match skills look) when on the dark/about banner */
+#about .about-feature {
+    background: rgba(255,255,255,0.08);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.95);
+}
+
+#about .about-feature h4 {
+    color: rgba(255,255,255,0.95);
+}
+
+#about .about-feature p {
+    color: rgba(255,255,255,0.88);
+}
+
+/* Make the small logos/icons inside About category cards white/silver for contrast */
+#about .about-feature i {
+    color: rgba(255,255,255,0.95);
+    /* for inline SVG icons, ensure they use the parent's color */
+}
+
+#about .about-feature i svg,
+#about .about-feature i svg * {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+
+/* Override for dark banner sections so subtext is light and readable */
+#about .card p,
+#about p,
+#about .about-feature p {
+    color: rgba(255,255,255,0.92);
+}
