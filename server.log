@@ -1,0 +1,1077 @@
+nohup: ignoring input
+127.0.0.1 - - [01/Sep/2025 23:50:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Sep/2025 23:50:58] code 404, message File not found
+127.0.0.1 - - [01/Sep/2025 23:50:58] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 00:01:24] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:01:24] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:01:45] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:01:45] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:01:46] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:12] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:12] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:08:19] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:19] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:20] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:20] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:08:39] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:13:49] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:16:18] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:16:23] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:16:31] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:17:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:17:51] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:18:00] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:19:59] "GET /?id=9990e776-a9b1-4620-a5f4-2fdbbc082865&vscodeBrowserReqId=1756768799983 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:00] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:17] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:20:23] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:20:23] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:20:29] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:22:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:22:18] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:22:30] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:22:30] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:22:30] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:22:50] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:22:53] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:22:53] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:25:23] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 00:25:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 00:26:13] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:26:13] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:26:13] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:26:13] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:28:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:24] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:24] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:28:25] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 00:28:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:30:39] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:34:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:34:00] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:34:00] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:34:00] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:34:26] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 00:34:26] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 00:37:49] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:37:49] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:37:49] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:37:49] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:57] "GET /?id=51bcfdad-d86d-4985-9b82-37e26996940f&vscodeBrowserReqId=1756770777940 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:57] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:57] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:57] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:57] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:58] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:58] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:58] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:52:58] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:17] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:55:17] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:17] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:55:17] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:17] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:18] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:18] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:18] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:55:18] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /?id=51bcfdad-d86d-4985-9b82-37e26996940f&vscodeBrowserReqId=1756771097481 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:58:17] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:59:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:59:16] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 00:59:16] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:59:16] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 00:59:16] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /?id=607a958b-6a2f-49d9-9bb5-769116dbebcb&vscodeBrowserReqId=1756771613223 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:06:53] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:07:31] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:10:41] "GET /?id=bc79c1d9-2653-4b1e-954b-3d28edba9071&vscodeBrowserReqId=1756771841633 HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:10:41] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:10:41] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:10:41] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34850)
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /sections/skills.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34852)
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /sections/experience.html HTTP/1.1" 200 -
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+----------------------------------------
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:55] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:56] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:56] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:12:56] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:14:21] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:14:21] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:14:21] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57444)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+127.0.0.1 - - [02/Sep/2025 01:14:21] "GET /sections/experience.html HTTP/1.1" 200 -
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:14:22] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:14:22] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:43] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:43] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:15:43] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:43] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 41178)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:15:43] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:44] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:44] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:46] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:15:46] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:19:00] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:21:28] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:21:29] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:21:29] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 01:21:29] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42936)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/http/server.py", line 731, in send_head
+    f = open(path, 'rb')
+        ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/abadi/Desktop/Bamorovat.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 676, in do_GET
+    f = self.send_head()
+        ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/server.py", line 733, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.12/http/server.py", line 491, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:21:29] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:24:05] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:24:05] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:24:05] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:27:12] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:32:18] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:32:18] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:18] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:18] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:32] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 01:32:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:33] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:32:34] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:32:34] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:32:34] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:35:12] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:35:12] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:35:12] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:30] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:36:30] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:36:30] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:36:31] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:36:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:36:40] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:40:39] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:40:39] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:40:39] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:40:39] "GET /assets/images/experince_pics/GEITCO_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET /assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34810)
+Traceback (most recent call last):
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET /sections/experience.html HTTP/1.1" 200 -
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:42:23] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /assets/images/experince_pics/RAICo-logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:44:04] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59686)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:45:18] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:50:19] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:53:05] "GET /assets/images/experince_pics/RAICo-logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:53:22] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:53:22] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:53:22] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:54:43] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:55:03] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:55:03] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:55:03] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/RAICo-logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:56:22] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 01:56:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 01:58:35] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:58:35] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 01:58:36] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:58:36] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 01:58:36] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:00:18] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:00:18] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:00:18] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:00:18] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:15] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:15] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:02:15] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:15] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:15] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:33] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:02:33] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:04:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:04:32] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:04:32] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:04:32] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:05:04] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:05:04] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:05:04] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48516)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:09] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 02:06:09] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48540)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/http/server.py", line 731, in send_head
+    f = open(path, 'rb')
+        ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/abadi/Desktop/Bamorovat.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 676, in do_GET
+    f = self.send_head()
+        ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/server.py", line 733, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.12/http/server.py", line 491, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/RAICo-logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:06:48] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49536)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:08:20] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:09:43] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:09:43] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:09:43] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51594)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:09:55] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:09:55] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:09:55] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:09:55] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:09:55] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55662)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:10:22] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:10:22] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:10:22] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 43210)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:10:41] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:10:41] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:10:41] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54224)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:11:39] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 36358)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:13:27] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:13:27] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:27] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:13:27] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55758)
+127.0.0.1 - - [02/Sep/2025 02:13:27] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+----------------------------------------
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+Exception occurred during processing of request from ('127.0.0.1', 55766)
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+----------------------------------------
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/profile-photo.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/av_banner.gif HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/about-me-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/skills-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/work_experience_banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/about.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/skills.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/projects.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/publications.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /sections/education.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/aidrivers_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/Conigital_Logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/UoM_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/RAICo-logo.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/UH_logo.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/mrl_qiau_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/GuilanScienceandTechnologyPark.svg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/IAQ_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/IAU_rasht_logo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:13:39] "GET /assets/images/experince_pics/Sampad.svg.png HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:15:09] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:15:09] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:16:27] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:16:27] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:16:27] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:16:27] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:16:48] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:16:48] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:16:48] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 02:16:48] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58414)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/http/server.py", line 731, in send_head
+    f = open(path, 'rb')
+        ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/abadi/Desktop/Bamorovat.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 676, in do_GET
+    f = self.send_head()
+        ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/server.py", line 733, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.12/http/server.py", line 491, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:18:11] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:18:11] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:18:11] code 404, message File not found
+127.0.0.1 - - [02/Sep/2025 02:18:11] "GET /favicon.ico HTTP/1.1" 404 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37096)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/http/server.py", line 731, in send_head
+    f = open(path, 'rb')
+        ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/abadi/Desktop/Bamorovat.github.io/favicon.ico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 676, in do_GET
+    f = self.send_head()
+        ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/server.py", line 733, in send_head
+    self.send_error(HTTPStatus.NOT_FOUND, "File not found")
+  File "/usr/lib/python3.12/http/server.py", line 491, in send_error
+    self.wfile.write(body)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:18:12] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:19:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:19:14] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:19:14] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:19:14] "GET /sections/about.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59972)
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/http/server.py", line 1311, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "/usr/lib/python3.12/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3.12/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib/python3.12/http/server.py", line 878, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib/python3.12/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+  File "/usr/lib/python3.12/socketserver.py", line 840, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [02/Sep/2025 02:19:14] "GET /sections/experience.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:20:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:20:12] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET /assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET /assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET /assets/images/work_experience_banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET /sections/experience.html HTTP/1.1" 200 -
+127.0.0.1 - - [02/Sep/2025 02:25:23] "GET /assets/images/experince_pics/GEITCO_logo_white.png HTTP/1.1" 304 -

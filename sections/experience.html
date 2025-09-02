@@ -1,106 +1,321 @@
 <!-- Experience Section (fragment) -->
 <h2 class="section-title">Professional Experience</h2>
-<div class="timeline">
-    <div class="timeline-item">
-        <div class="timeline-date">January 2025 - Present</div>
-        <h3 class="timeline-title">Autonomy Scientist</h3>
-        <div class="timeline-company">AIDRIVERS, London, UK</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Leading development of real-time autonomy stack for autonomous vehicles in PSA Singapore smart port operations.
-        </p>
-        <ul>
-            <li><strong>Real-time Autonomy Stack:</strong> Lead development of autonomous vehicle systems using C++ and ROS2 for smart port operations</li>
-            <li><strong>Deep Learning Models:</strong> Designed and deployed advanced models for LiDAR-camera fusion, curb detection, and rain resilience</li>
-            <li><strong>Path Planning Framework:</strong> Built comprehensive framework for dynamic routing and safety-critical path planning</li>
-            <li><strong>Smart Port Integration:</strong> Implementing AV solutions specifically tailored for PSA Singapore smart port environment</li>
-            <li><strong>Performance Optimization:</strong> Ensuring real-time performance for safety-critical autonomous vehicle operations</li>
-        </ul>
+
+<!-- INDUSTRY EXPERIENCE -->
+<h3 style="color: #fff; margin: 3rem 0 2rem 0; border-bottom: 2px solid rgba(255, 255, 255, 0.4); padding-bottom: 0.5rem;">
+    <i class="fas fa-industry"></i> Industry Experience
+</h3>
+<div class="experience-summary">
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Autonomy Scientist</h4>
+                <p class="experience-company">AiDrivers</p>
+                <p class="experience-brief">Self-driving truck company</p>
+                <span class="experience-date">Jan 2025 - Current</span>
+            </div>
+            <div class="company-logo">
+                <img src="assets/images/experince_pics/aidrivers_logo.jpeg" alt="AiDrivers Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Autonomy Scientist focusing on LiDAR-camera fusion and motion planning.</p> -->
+        <button type="button" class="details-link" data-target="industry-1">
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="industry-1" class="experience-details" style="display: none;">
+            <p class="experience-description">Led autonomy team for LiDAR-camera fusion and motion planning in autonomous trucks.</p>
+            <ul>
+                <li><strong>Autonomy Team Leadership:</strong> Led autonomy team for self-driving truck development</li>
+                <li><strong>LiDAR-Camera Fusion:</strong> Developed advanced fusion algorithms for 3D object detection</li>
+                <li><strong>Motion Planning:</strong> Designed and implemented motion-planning algorithms for autonomous trucks</li>
+                <li><strong>3D Object Detection:</strong> Advanced object detection systems for autonomous vehicle perception</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="timeline-item">
-        <div class="timeline-date">March 2024 - December 2024</div>
-        <h3 class="timeline-title">Robotic Software Specialist</h3>
-        <div class="timeline-company">University of Manchester, Manchester, UK</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Advanced robotics software development for UAV, UGV, and AUV systems with focus on autonomous navigation and mapping.
-        </p>
-        <ul>
-            <li><strong>Multi-Platform Development:</strong> Developed software for UAV, UGV, and AUV using ROS1/2, Docker, and C++/Python</li>
-            <li><strong>Visual-Inertial SLAM:</strong> Integrated advanced SLAM systems for real-time localization and mapping</li>
-            <li><strong>LiDAR-based Mapping:</strong> Implemented tunnel mapping solutions using LiDAR sensor technology</li>
-            <li><strong>UAV Tracking Systems:</strong> Developed UAV Vicon tracking for precise indoor navigation</li>
-            <li><strong>Documentation & Automation:</strong> Authored comprehensive technical documentation and built automation pipelines using Power Automate</li>
-            <li><strong>Research Collaboration:</strong> Collaborated with research teams on cutting-edge robotics projects</li>
-        </ul>
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Perception Engineer</h4>
+                <p class="experience-company">Conigital</p>
+                <p class="experience-brief">Self-driving car company</p>
+                <span class="experience-date">Feb 2022 - Mar 2024</span>
+            </div>
+            <div class="company-logo large-logo">
+                <img src="assets/images/experince_pics/Conigital_Logo.svg" alt="Conigital Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Perception Engineer specializing in sensor fusion systems.</p> -->
+        <button type="button" class="details-link" data-target="industry-2">
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="industry-2" class="experience-details" style="display: none;">
+            <p class="experience-description">Developed perception pipelines including DMS and advanced sensor fusion systems.</p>
+            <ul>
+                <li><strong>Perception Pipelines:</strong> Developed DMS (Driver Monitoring System) and panoramic fusion systems</li>
+                <li><strong>Camera-LiDAR Fusion:</strong> Implemented advanced sensor fusion for enhanced perception</li>
+                <li><strong>Sensor Calibration:</strong> Calibrated cameras, LiDAR, and radar sensors for optimal performance</li>
+                <li><strong>Modular Sensor Suite:</strong> Designed comprehensive modular sensor suite architecture</li>
+                <li><strong>Machine Learning Development:</strong> 2D/3D deep learning on KITTI, Waymo, and nuScenes datasets</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="timeline-item">
-        <div class="timeline-date">February 2022 - February 2024</div>
-        <h3 class="timeline-title">Robotics Software Engineer - Perception Team</h3>
-        <div class="timeline-company">Conigital, Birmingham, UK</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Built deep learning pipelines for autonomous vehicle perception with focus on safety-critical applications.
-        </p>
-        <ul>
-            <li><strong>Deep Learning Pipelines:</strong> Built comprehensive pipelines for object detection using YOLOv5/v6, PointPillars, and FCOS3D</li>
-            <li><strong>LiDAR-Camera Fusion:</strong> Fused LiDAR and camera data for enhanced perception in urban autonomous vehicle scenarios</li>
-            <li><strong>Dataset Integration:</strong> Worked with industry-standard datasets including NuScenes and KITTI for model training and validation</li>
-            <li><strong>Multi-Sensor AV Suites:</strong> Developed comprehensive autonomous vehicle sensor suites for real-world deployment</li>
-            <li><strong>Driver Monitoring Systems:</strong> Led development of DMS pipeline for driver state monitoring and safety</li>
-            <li><strong>Urban AV Scenarios:</strong> Specialized in perception challenges specific to urban autonomous driving environments</li>
-        </ul>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">February 2019 - February 2024</div>
-        <h3 class="timeline-title">PhD Researcher in Computer Science</h3>
-        <div class="timeline-company">University of Hertfordshire, Hatfield, UK</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Specialized research in Human Activity Recognition for human-robot interaction and ambient assisted living applications.
-        </p>
-        <ul>
-            <li><strong>Dataset Creation:</strong> Created Robot House Multiview Dataset for Human Activity Recognition in human-robot interaction</li>
-            <li><strong>Deep Learning Architectures:</strong> Designed SlowFast and Dual-Stream C3D architectures for multi-view learning</li>
-            <li><strong>Research Publications:</strong> Published research at IEEE RA-L, BioRob, ACHI, UKRAS conferences and journals</li>
-            <li><strong>Multi-view Learning:</strong> Developed novel approaches for human activity recognition from multiple camera perspectives</li>
-            <li><strong>Human-Robot Interaction:</strong> Focused on visual understanding for ambient assisted living and elderly care applications</li>
-            <li><strong>Academic Collaboration:</strong> Collaborated with international research teams and supervised graduate student projects</li>
-        </ul>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">October 2019 - February 2022 (2.5 years)</div>
-        <h3 class="timeline-title">Visiting Lecturer</h3>
-        <div class="timeline-company">Department of Computer Science, University of Hertfordshire</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Teaching and mentoring graduate students in advanced computer science topics while conducting Ph.D. research.
-        </p>
-        <ul>
-            <li><strong>Machine Learning & Neural Computing:</strong> Delivered comprehensive courses covering theoretical foundations and practical applications</li>
-            <li><strong>Advanced Masters Projects:</strong> Supervised 15+ graduate capstone projects in robotics and AI</li>
-            <li><strong>Ethics in Computing:</strong> Taught legal and ethical considerations in AI and robotics applications</li>
-            <li><strong>Human-Computer Interaction:</strong> Explored user-centered design principles for intelligent systems</li>
-            <li><strong>Student Mentorship:</strong> Guided 8 Master's and 3 Bachelor's thesis projects to successful completion</li>
-            <li><strong>Curriculum Development:</strong> Contributed to course material development and assessment design</li>
-        </ul>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-date">April 2009 - November 2018 (9+ years)</div>
-        <h3 class="timeline-title">R&D Manager & Senior Robotics Engineer</h3>
-        <div class="timeline-company">GEIT.Co - Advanced Technology Solutions</div>
-        <p style="margin-bottom: 1rem; color: var(--text-secondary); font-style: italic;">
-            Led interdisciplinary teams in developing innovative robotics solutions for industrial and healthcare applications.
-        </p>
-        <ul>
-            <li><strong>Research Leadership:</strong> Managed 20+ person R&D team focusing on robotics and computer vision technologies</li>
-            <li><strong>Industrial Robotics:</strong> Designed and implemented automated manufacturing solutions reducing operational costs by 35%</li>
-            <li><strong>Healthcare Robots:</strong> Developed service robots for hospital environments including navigation and patient interaction systems</li>
-            <li><strong>ROS Development:</strong> Created comprehensive ROS packages for SOSCO's mobile robot platform enhancing modularity and scalability</li>
-            <li><strong>Grant Writing:</strong> Secured $2M+ in research funding through successful proposal writing and project management</li>
-            <li><strong>Competition Organization:</strong> Organized and judged National Student RoboCup competitions, fostering next-generation talent</li>
-            <li><strong>Technology Transfer:</strong> Successfully transitioned 5 research projects from laboratory to commercial applications</li>
-            <li><strong>International Collaboration:</strong> Established partnerships with European research institutions and technology companies</li>
-        </ul>
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>R&D Team Lead</h4>
+                <p class="experience-company">GEITCo</p>
+                <p class="experience-brief">Robotic research company</p>
+                <span class="experience-date">May 2010 - Oct 2018</span>
+            </div>
+            <div class="company-logo large-logo">
+                <img src="assets/images/experince_pics/GEITCO_logo_white.png" alt="GEITCo Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">R&D Team Lead in robotics research and competitions.</p> -->
+                <button type="button" class="details-link" data-target='industry-3'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="industry-3" class="experience-details" style="display: none;">
+            <p class="experience-description">Led R&D teams in robotics research, securing funding and organizing national competitions.</p>
+            <ul>
+                <li><strong>ROS Software Development:</strong> Prepared comprehensive ROS software for SosCo Robot platform</li>
+                <li><strong>Team Leadership:</strong> Led teams to secure funds and grants for robotics research projects</li>
+                <li><strong>Competition Design:</strong> Designed and organized National Robotics Competitions</li>
+                <li><strong>Research Supervision:</strong> Led and supervised researchers in advanced robotics projects</li>
+                <li><strong>Grant Acquisition:</strong> Successfully secured funding for multiple R&D initiatives</li>
+            </ul>
+        </div>
     </div>
 </div>
+
+<!-- RESEARCH EXPERIENCE -->
+<h3 style="color: #fff; margin: 3rem 0 2rem 0; border-bottom: 2px solid rgba(255, 255, 255, 0.4); padding-bottom: 0.5rem;">
+    <i class="fas fa-microscope"></i> Research Experience
+</h3>
+<div class="experience-summary">
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Robotic Software Specialist</h4>
+                <p class="experience-company">University of Manchester - RAICo</p>
+                <p class="experience-brief">Research institution</p>
+                <span class="experience-date">Mar 2024 - Dec 2024</span>
+            </div>
+            <div class="company-logo dual-logo">
+                <img src="assets/images/experince_pics/UoM_logo.png" alt="University of Manchester Logo">
+                <img src="assets/images/experince_pics/RAICo-logo.svg" alt="RAICo Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Robotics Software Specialist for multi-platform systems.</p> -->
+        <button type="button" class="details-link" data-target='research-1'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="research-1" class="experience-details" style="display: none;">
+            <p class="experience-description">Advanced robotics software for UAV, UGV, and AUV systems with SLAM and mapping.</p>
+            <ul>
+                <li><strong>Multi-Platform Development:</strong> Developed software for UAV, UGV, and AUV using ROS1/2, Docker, and C++/Python</li>
+                <li><strong>Visual-Inertial SLAM:</strong> Integrated advanced SLAM systems for real-time localization and mapping</li>
+                <li><strong>LiDAR-based Mapping:</strong> Implemented tunnel mapping solutions using LiDAR sensor technology</li>
+                <li><strong>UAV Tracking Systems:</strong> Developed UAV Vicon tracking for precise indoor navigation</li>
+                <li><strong>Documentation & Automation:</strong> Authored comprehensive technical documentation and built automation pipelines</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Graduate Research Scholar (PhD)</h4>
+                <p class="experience-company">University of Hertfordshire</p>
+                <p class="experience-brief">Research university</p>
+                <span class="experience-date">Feb 2019 - Feb 2024</span>
+            </div>
+            <div class="company-logo large-logo">
+                <img src="assets/images/experince_pics/UH_logo.png" alt="University of Hertfordshire Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">PhD Scholar in Human Activity Recognition and robotics.</p> -->
+        <button type="button" class="details-link" data-target='research-2'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="research-2" class="experience-details" style="display: none;">
+            <p class="experience-description">Human Activity Recognition research for human-robot interaction and ambient assisted living.</p>
+            <ul>
+                <li><strong>Dataset Creation:</strong> Created Robot House Multiview Dataset for Human Activity Recognition</li>
+                <li><strong>Deep Learning Architectures:</strong> Designed SlowFast and Dual-Stream C3D architectures for multi-view learning</li>
+                <li><strong>Research Publications:</strong> Published research at IEEE RA-L, BioRob, ACHI, UKRAS conferences and journals</li>
+                <li><strong>Multi-view Learning:</strong> Novel approaches for human activity recognition from multiple camera perspectives</li>
+                <li><strong>Human-Robot Interaction:</strong> Visual understanding for ambient assisted living applications</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>@Home League RoboCup Team</h4>
+                <p class="experience-company">IAU Qazvin - MRL</p>
+                <p class="experience-brief">Research laboratory</p>
+                <span class="experience-date">Sep 2011 - Jun 2016</span>
+            </div>
+            <div class="company-logo">
+                <img src="assets/images/experince_pics/mrl_qiau_logo.jpeg" alt="MRL IAU Qazvin Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">RoboCup competition development for autonomous service robots in domestic environments.</p> -->
+        <button type="button" class="details-link" data-target='research-3'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="research-3" class="experience-details" style="display: none;">
+            <p class="experience-description">RoboCup competition development for autonomous service robots in domestic environments.</p>
+            <ul>
+                <li><strong>RoboCup Competition:</strong> Developed autonomous service robots for domestic environments</li>
+                <li><strong>Human-Robot Interaction:</strong> Implemented natural language processing and gesture recognition</li>
+                <li><strong>Navigation Systems:</strong> Developed indoor navigation and mapping for service robots</li>
+                <li><strong>Computer Vision:</strong> Object recognition and manipulation for household tasks</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Visiting Researcher</h4>
+                <p class="experience-company">Guilan Science and Technology Park</p>
+                <p class="experience-brief">Technology park</p>
+                <span class="experience-date">Jan 2010 - Sep 2017</span>
+            </div>
+            <div class="company-logo large-logo">
+                <img src="assets/images/experince_pics/GuilanScienceandTechnologyPark.svg" alt="Guilan Science and Technology Park Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Technology development research with focus on robotics and automation systems.</p> -->
+        <button type="button" class="details-link" data-target='research-4'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="research-4" class="experience-details" style="display: none;">
+            <p class="experience-description">Technology development research with focus on robotics and automation systems.</p>
+            <ul>
+                <li><strong>Technology Development:</strong> Advanced research in robotics and automation systems</li>
+                <li><strong>Industry Collaboration:</strong> Bridged academic research with practical applications</li>
+                <li><strong>Innovation Projects:</strong> Contributed to technology transfer initiatives</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TEACHING EXPERIENCE -->
+<h3 style="color: #fff; margin: 3rem 0 2rem 0; border-bottom: 2px solid rgba(255, 255, 255, 0.4); padding-bottom: 0.5rem;">
+    <i class="fas fa-chalkboard-teacher"></i> Teaching Experience
+</h3>
+<div class="experience-summary">
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Visiting Lecturer</h4>
+                <p class="experience-company">University of Hertfordshire</p>
+                <p class="experience-brief">Research university</p>
+                <span class="experience-date">Sep 2019 - Jan 2022</span>
+            </div>
+            <div class="company-logo large-logo">
+                <img src="assets/images/experince_pics/UH_logo.png" alt="University of Hertfordshire Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Visiting Lecturer in AI and Machine Learning.</p> -->
+        <button type="button" class="details-link" data-target='teaching-1'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="teaching-1" class="experience-details" style="display: none;">
+            <p class="experience-description">Graduate-level courses in Machine Learning, Ethics, and Human-Computer Interaction.</p>
+            <ul>
+                <li><strong>Machine Learning & Advanced MSc Project:</strong> Delivered comprehensive courses covering theoretical foundations and practical applications</li>
+                <li><strong>Legal and Ethical Practices:</strong> Taught legal and ethical considerations in AI and robotics applications</li>
+                <li><strong>Human Dimensions of Computing:</strong> Explored user-centered design principles for intelligent systems</li>
+                <li><strong>Student Mentorship:</strong> Supervised graduate capstone projects in robotics and AI</li>
+                <li><strong>Curriculum Development:</strong> Contributed to course material development and assessment design</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Graduate Teaching Assistant</h4>
+                <p class="experience-company">IAU Qazvin</p>
+                <p class="experience-brief">University</p>
+                <span class="experience-date">Sep 2012 - Sep 2013</span>
+            </div>
+            <div class="company-logo">
+                <img src="assets/images/experince_pics/IAQ_logo.jpeg" alt="IAU Qazvin Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Computer Vision course instruction and student support.</p> -->
+        <button type="button" class="details-link" data-target='teaching-2'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="teaching-2" class="experience-details" style="display: none;">
+            <p class="experience-description">Computer Vision course instruction and student support.</p>
+            <ul>
+                <li><strong>Computer Vision:</strong> Assisted in teaching advanced computer vision concepts and practical implementations</li>
+                <li><strong>Student Support:</strong> Provided guidance and support to students in coursework and projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Visiting Lecturer</h4>
+                <p class="experience-company">IAU Rasht</p>
+                <p class="experience-brief">University</p>
+                <span class="experience-date">Sep 2011 - Sep 2015</span>
+            </div>
+            <div class="company-logo">
+                <img src="assets/images/experince_pics/IAU_rasht_logo.jpeg" alt="IAU Rasht Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Computer Vision, Robotics, and C/C++ Programming courses.</p> -->
+        <button type="button" class="details-link" data-target='teaching-3'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="teaching-3" class="experience-details" style="display: none;">
+            <p class="experience-description">Computer Vision, Robotics, and C/C++ Programming courses.</p>
+            <ul>
+                <li><strong>Computer Vision:</strong> Taught advanced computer vision techniques and applications</li>
+                <li><strong>Robotics:</strong> Delivered comprehensive robotics courses covering theory and practice</li>
+                <li><strong>C/C++ Programming:</strong> Taught programming fundamentals and advanced concepts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="experience-header">
+            <div class="experience-title-group">
+                <h4>Lecturer</h4>
+                <p class="experience-company">Rasht High Schools</p>
+                <p class="experience-brief">High school education</p>
+                <span class="experience-date">Sep 2011 - Sep 2015</span>
+            </div>
+            <div class="company-logo">
+                <img src="assets/images/experince_pics/Sampad.svg.png" alt="Sampad Logo">
+            </div>
+        </div>
+        <!-- <p class="experience-brief">Research methodology, robotics, and electronics fundamentals.</p> -->
+        <button type="button" class="details-link" data-target='teaching-4'>
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+        <div id="teaching-4" class="experience-details" style="display: none;">
+            <p class="experience-description">Research methodology, robotics, and electronics fundamentals.</p>
+            <ul>
+                <li><strong>Fundamentals of Research:</strong> Introduced students to research methodology and scientific thinking</li>
+                <li><strong>Robotics:</strong> Taught basic robotics concepts and hands-on projects</li>
+                <li><strong>Electronics:</strong> Delivered foundational electronics courses and practical workshops</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
