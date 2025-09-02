@@ -515,7 +515,7 @@ body {
 
 #experience {
     background:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('../images/work_experience_banner.png');
     background-size: cover, cover;
     background-position: center center;
@@ -531,6 +531,18 @@ body {
     padding-right: calc(50vw - 50%);
     min-height: 70vh;
     color: #fff;
+}
+
+/* Add full-width separator line after experience section */
+#experience::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: #e5e7eb;
+    z-index: 10;
 }
 
 /* Ensure experience title is readable on the banner */
