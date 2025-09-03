@@ -17,12 +17,17 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background: var(--background);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Common section styles */
