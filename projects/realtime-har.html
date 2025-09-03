@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Real-time Human Activity Recognition System for Human-Robot Interaction">
+    <title>Real-time HAR for HRI Project - Mohammad Hossein Bamorovat Abadi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .hri-diagram {
+            background: var(--section-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .activity-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            border-top: 3px solid #7c3aed;
+        }
+        .performance-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .metric-card {
+            background: var(--section-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #7c3aed;
+        }
+        .metric-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #7c3aed;
+            display: block;
+        }
+        .pipeline-step {
+            background: white;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #a855f7;
+            box-shadow: var(--card-shadow);
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-robot"></i> Real-time HAR for HRI</h1>
+            <p>Advanced Real-time Human Activity Recognition system designed for seamless Human-Robot Interaction scenarios</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <a href="../index.html#projects" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <div class="card">
+            <h2>Project Overview</h2>
+            <p>
+                The Real-time Human Activity Recognition (HAR) system for Human-Robot Interaction (HRI) scenarios is an advanced AI-powered perception system that enables robots to understand and respond to human activities in real-time. This system combines computer vision, machine learning, and real-time processing to create natural and intuitive interactions between humans and robots.
+            </p>
+            
+            <h3>Research Context</h3>
+            <p>
+                This project addresses the critical challenge of enabling robots to understand human intentions and activities in real-time, facilitating more natural and effective human-robot collaboration. The system is designed to work in dynamic environments where quick response times and high accuracy are essential.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>System Architecture</h2>
+            <div class="hri-diagram">
+                <i class="fas fa-brain" style="font-size: 3rem; color: #7c3aed; margin-bottom: 1rem;"></i>
+                <p><strong>Real-time Processing Pipeline</strong></p>
+                <p>Continuous analysis of human activities for intelligent robot responses</p>
+            </div>
+            
+            <h3>Core Components</h3>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <i class="fas fa-eye" style="font-size: 2rem; color: #7c3aed; margin-bottom: 0.5rem;"></i>
+                    <h4>Vision Module</h4>
+                    <p>Real-time pose estimation and motion tracking</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-microchip" style="font-size: 2rem; color: #7c3aed; margin-bottom: 0.5rem;"></i>
+                    <h4>ML Engine</h4>
+                    <p>Deep learning models for activity classification</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-clock" style="font-size: 2rem; color: #7c3aed; margin-bottom: 0.5rem;"></i>
+                    <h4>Real-time Processor</h4>
+                    <p>Low-latency activity recognition pipeline</p>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-robot" style="font-size: 2rem; color: #7c3aed; margin-bottom: 0.5rem;"></i>
+                    <h4>Robot Interface</h4>
+                    <p>Seamless integration with robotic systems</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recognized Activities</h2>
+            
+            <h3>Basic Human Activities</h3>
+            <ul>
+                <li><strong>Gestures:</strong> Hand signals, pointing, waving, thumbs up/down</li>
+                <li><strong>Postures:</strong> Standing, sitting, walking, running, jumping</li>
+                <li><strong>Facial Expressions:</strong> Emotions and intent recognition</li>
+                <li><strong>Body Language:</strong> Confidence levels, attention states</li>
+            </ul>
+            
+            <h3>Interactive Behaviors</h3>
+            <ul>
+                <li><strong>Attention Direction:</strong> Gaze tracking and focus detection</li>
+                <li><strong>Interaction Intent:</strong> Approaching, departing, waiting</li>
+                <li><strong>Communication Signals:</strong> Nodding, shaking head, shrugging</li>
+                <li><strong>Task-specific Actions:</strong> Picking, placing, pushing, pulling</li>
+            </ul>
+            
+            <h3>Contextual Understanding</h3>
+            <ul>
+                <li><strong>Environment Awareness:</strong> Spatial context and object relations</li>
+                <li><strong>Temporal Patterns:</strong> Activity sequences and transitions</li>
+                <li><strong>Multi-person Scenarios:</strong> Group dynamics and interactions</li>
+                <li><strong>Task Context:</strong> Work-specific activity recognition</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Performance Metrics</h2>
+            <div class="performance-metrics">
+                <div class="metric-card">
+                    <span class="metric-number">95%+</span>
+                    <div>Accuracy</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">&lt;100ms</span>
+                    <div>Response Time</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">30</span>
+                    <div>FPS Processing</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">25+</span>
+                    <div>Activity Classes</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">92%</span>
+                    <div>Real-time Precision</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">15+</span>
+                    <div>Concurrent Users</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Technical Implementation</h2>
+            
+            <h3>Processing Pipeline</h3>
+            <div class="pipeline-step">
+                <h4>1. Data Acquisition</h4>
+                <p>Multi-modal sensor input from RGB cameras, depth sensors, and IMU devices</p>
+            </div>
+            <div class="pipeline-step">
+                <h4>2. Feature Extraction</h4>
+                <p>Real-time pose estimation, skeleton tracking, and motion feature computation</p>
+            </div>
+            <div class="pipeline-step">
+                <h4>3. Activity Classification</h4>
+                <p>Deep neural networks for real-time activity recognition and confidence scoring</p>
+            </div>
+            <div class="pipeline-step">
+                <h4>4. Context Integration</h4>
+                <p>Temporal smoothing, context-aware filtering, and multi-person tracking</p>
+            </div>
+            <div class="pipeline-step">
+                <h4>5. Robot Response</h4>
+                <p>Activity-based robot behavior generation and adaptive interaction strategies</p>
+            </div>
+            
+            <h3>Machine Learning Models</h3>
+            <ul>
+                <li><strong>CNN-LSTM Architecture:</strong> Spatial-temporal feature learning</li>
+                <li><strong>Transformer Networks:</strong> Attention-based activity recognition</li>
+                <li><strong>Real-time Optimization:</strong> Model quantization and GPU acceleration</li>
+                <li><strong>Online Learning:</strong> Adaptive models for user-specific behaviors</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>HRI Applications</h2>
+            
+            <h3>Service Robotics</h3>
+            <ul>
+                <li><strong>Healthcare Assistants:</strong> Patient monitoring and assistance</li>
+                <li><strong>Elderly Care:</strong> Activity monitoring and emergency detection</li>
+                <li><strong>Hospitality Robots:</strong> Guest interaction and service delivery</li>
+                <li><strong>Educational Robots:</strong> Student engagement and learning assistance</li>
+            </ul>
+            
+            <h3>Industrial Applications</h3>
+            <ul>
+                <li><strong>Collaborative Manufacturing:</strong> Safe human-robot collaboration</li>
+                <li><strong>Quality Control:</strong> Human operator behavior analysis</li>
+                <li><strong>Training Systems:</strong> Skill assessment and feedback</li>
+                <li><strong>Safety Monitoring:</strong> Hazardous activity detection</li>
+            </ul>
+            
+            <h3>Research & Development</h3>
+            <ul>
+                <li><strong>Behavior Studies:</strong> Human activity pattern analysis</li>
+                <li><strong>Interaction Design:</strong> Natural interface development</li>
+                <li><strong>Social Robotics:</strong> Emotion-aware robot behaviors</li>
+                <li><strong>Accessibility:</strong> Assistive technology for disabled users</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>System Demo & Validation</h2>
+            <div class="hri-diagram">
+                <i class="fas fa-play-circle" style="font-size: 3rem; color: #a855f7; margin-bottom: 1rem;"></i>
+                <p><strong>Live Demonstration</strong></p>
+                <p>Real-time activity recognition with robot response visualization</p>
+                <p><em>Interactive demo showing human activities and corresponding robot behaviors</em></p>
+            </div>
+            
+            <h3>Validation Results</h3>
+            <ul>
+                <li><strong>Cross-subject Evaluation:</strong> Consistent performance across different users</li>
+                <li><strong>Multi-environment Testing:</strong> Robust performance in various settings</li>
+                <li><strong>Real-time Benchmarks:</strong> Extensive latency and accuracy testing</li>
+                <li><strong>User Studies:</strong> Natural interaction assessment with human subjects</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Publications & Research</h2>
+            
+            <h3>Related Publications</h3>
+            <ul>
+                <li><strong>Conference Papers:</strong> Real-time HAR methodologies and HRI applications</li>
+                <li><strong>Journal Articles:</strong> Deep learning approaches for activity recognition</li>
+                <li><strong>Workshop Presentations:</strong> Practical HRI system implementations</li>
+                <li><strong>Technical Reports:</strong> System architecture and performance analysis</li>
+            </ul>
+            
+            <h3>Available Resources</h3>
+            <ul>
+                <li><strong>Source Code:</strong> Complete implementation with documentation</li>
+                <li><strong>Datasets:</strong> Annotated activity datasets for HRI scenarios</li>
+                <li><strong>Trained Models:</strong> Pre-trained neural networks for activity recognition</li>
+                <li><strong>Integration APIs:</strong> Robot platform integration interfaces</li>
+            </ul>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>Project Impact</h2>
+            <p>
+                The Real-time HAR system for HRI scenarios advances the field of human-robot interaction by enabling robots to understand and respond to human activities with unprecedented speed and accuracy. This technology opens new possibilities for natural, intuitive human-robot collaboration across multiple domains.
+            </p>
+            
+            <div style="margin-top: 2rem;">
+                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Discuss Research
+                </a>
+                <a href="../index.html#projects" class="btn btn-outline" style="margin-left: 1rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const backButton = document.querySelector('.back-button');
+            if (backButton) {
+                backButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = '../index.html#projects';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

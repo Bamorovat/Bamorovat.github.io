@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="RHM Dataset - Multiview Human Activity Recognition Benchmark">
+    <title>RHM Dataset Project - Mohammad Hossein Bamorovat Abadi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-button:hover {
+            text-decoration: underline;
+        }
+        .project-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .dataset-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: var(--section-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 3px solid var(--accent-color);
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        .papers-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .paper-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: var(--card-shadow);
+        }
+        .paper-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .dataset-preview {
+            background: var(--section-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-database"></i> RHM Dataset</h1>
+            <p>A comprehensive multiview visual dataset for human activity recognition designed for assistive robots and HRI scenarios</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <a href="../index.html#projects" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <div class="card">
+            <h2>Dataset Overview</h2>
+            <p>
+                The RHM (Real-time Human Activity Monitoring) Dataset is a comprehensive multiview visual dataset specifically designed for human activity recognition in assistive robotics and Human-Robot Interaction (HRI) scenarios. This dataset provides researchers and developers with a robust benchmark for evaluating and developing HAR systems that can operate effectively in real-world environments.
+            </p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Multiview Capture:</strong> 4 synchronized camera views for comprehensive activity coverage</li>
+                <li><strong>Diverse Activities:</strong> Wide range of daily living activities and interactions</li>
+                <li><strong>HRI Focus:</strong> Specifically designed for human-robot interaction scenarios</li>
+                <li><strong>High Quality:</strong> Professional-grade video capture with consistent lighting and setup</li>
+                <li><strong>Benchmark Ready:</strong> Pre-processed and annotated for immediate research use</li>
+            </ul>
+
+            <div class="dataset-stats">
+                <div class="stat-card">
+                    <span class="stat-number">4</span>
+                    <div>Camera Views</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">XX</span>
+                    <div>Activity Classes</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">XXX</span>
+                    <div>Video Sequences</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">XX hrs</span>
+                    <div>Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Dataset Structure</h2>
+            <p>The RHM dataset is organized to facilitate easy access and use for research purposes:</p>
+            
+            <h3>Camera Views</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <strong>View 1</strong><br>
+                    Front Perspective
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <strong>View 2</strong><br>
+                    Side Perspective
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <strong>View 3</strong><br>
+                    Top Perspective
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <strong>View 4</strong><br>
+                    Diagonal Perspective
+                </div>
+            </div>
+
+            <h3>Activity Categories</h3>
+            <p>The dataset includes various daily living activities relevant to assistive robotics and HRI scenarios.</p>
+        </div>
+
+        <div class="card">
+            <h2>Dataset Preview</h2>
+            <div class="dataset-preview">
+                <i class="fas fa-play-circle" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <p><strong>Dataset Animation Preview</strong></p>
+                <p>Animated GIF showing all activity classes from all camera views</p>
+                <p><em>Preview will be added here showing the comprehensive nature of the dataset</em></p>
+            </div>
+            
+            <div class="dataset-preview">
+                <i class="fas fa-images" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
+                <p><strong>Sample Images</strong></p>
+                <p>Representative images from the dataset showing the quality and diversity of captured activities</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Related Publications</h2>
+            <p>The RHM dataset has been featured in several research publications:</p>
+            
+            <div class="papers-list">
+                <div class="paper-item">
+                    <div class="paper-title">Paper 1: RHM Dataset for Human Activity Recognition</div>
+                    <p>Original paper introducing the dataset, its collection methodology, and baseline performance results.</p>
+                </div>
+                
+                <div class="paper-item">
+                    <div class="paper-title">Paper 2: Multiview HAR for Assistive Robotics</div>
+                    <p>Application of the RHM dataset in developing assistive robotic systems with enhanced human understanding.</p>
+                </div>
+                
+                <div class="paper-item">
+                    <div class="paper-title">Paper 3: Real-time Processing Techniques for Multiview HAR</div>
+                    <p>Advanced processing techniques developed using the RHM dataset for real-time activity recognition.</p>
+                </div>
+                
+                <div class="paper-item">
+                    <div class="paper-title">Paper 4: Benchmark Evaluation of HAR Systems</div>
+                    <p>Comprehensive evaluation of state-of-the-art HAR systems using the RHM dataset as a benchmark.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Applications</h2>
+            <p>The RHM dataset is particularly valuable for:</p>
+            <ul>
+                <li><strong>Assistive Robotics:</strong> Developing robots that can understand and respond to human activities</li>
+                <li><strong>Smart Home Systems:</strong> Creating intelligent environments that adapt to user behavior</li>
+                <li><strong>Healthcare Monitoring:</strong> Building systems for elderly care and health monitoring</li>
+                <li><strong>HRI Research:</strong> Advancing human-robot interaction through better activity understanding</li>
+            </ul>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>Access the Dataset</h2>
+            <p>
+                The RHM dataset is available for research purposes. Please cite the original publication when using this dataset in your research.
+            </p>
+            
+            <div style="margin-top: 2rem;">
+                <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Access Dataset
+                </a>
+                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-outline" style="margin-left: 1rem;">
+                    <i class="fas fa-envelope"></i> Contact for Details
+                </a>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <a href="../index.html#projects" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const backButton = document.querySelector('.back-button');
+            if (backButton) {
+                backButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = '../index.html#projects';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,42 +1,90 @@
 /* Projects Section Styles */
 #projects {
-    background: linear-gradient(45deg, var(--section-bg) 0%, rgba(6, 214, 160, 0.02) 100%);
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../images/projects_banner.png');
+    background-size: cover, cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    min-height: 70vh;
+    color: #fff;
 }
 
-#projects::before {
+/* Add full-width separator line after projects section */
+#projects::after {
     content: '';
     position: absolute;
-    top: 20%;
-    right: -50px;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, transparent 70%);
-    opacity: 0.04;
-    border-radius: 20px;
-    transform: rotate(45deg);
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: #e5e7eb;
+    z-index: 10;
+}
+
+/* Ensure projects title is readable on the banner */
+#projects .section-title {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#projects h3 i {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Ensure all text in projects section is white */
+#projects, #projects * {
+    color: inherit;
+}
+
+#projects p, #projects span, #projects div, #projects a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#projects h1, #projects h2, #projects h3, #projects h4, #projects h5, #projects h6 {
+    color: #ffffff;
 }
 
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin: 2rem 0;
 }
 
 .project-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 0.75rem;
     padding: 0;
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition: var(--transition);
-    border-top: 4px solid var(--accent-color);
     overflow: hidden;
+    backdrop-filter: blur(6px);
+    position: relative;
+    color: #ffffff;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .project-image {
@@ -57,7 +105,7 @@
 .project-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: #ffffff;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -65,7 +113,7 @@
 }
 
 .project-description {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.9) !important;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -78,13 +126,13 @@
 }
 
 .tech-tag {
-    background: var(--section-bg);
-    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     padding: 0.3rem 0.7rem;
     border-radius: 0.5rem;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid #e5e7eb;
 }
 
 .project-links {
@@ -93,19 +141,68 @@
 }
 
 .project-link {
-    color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 0.3rem;
     padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 0.5rem;
     transition: var(--transition);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .project-link:hover {
-    background: var(--primary-color);
-    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Projects Section Bottom Card */
+#projects .card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+#projects .card h3 {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+#projects .card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Ensure buttons in projects section are properly styled */
+#projects .btn {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+#projects .btn-primary {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+#projects .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+#projects .btn-outline {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#projects .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
 }
