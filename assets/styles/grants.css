@@ -75,6 +75,25 @@
     flex: 1;
 }
 
+/* Grant Status */
+.grant-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.grant-status.grant {
+    background: rgba(59, 130, 246, 0.9);
+    color: #fff;
+}
+
+.grant-status.award {
+    background: rgba(16, 185, 129, 0.9);
+    color: #fff;
+}
+
 /* Grant Actions */
 .grant-actions {
     padding: 0 1.5rem 1.5rem 1.5rem;
