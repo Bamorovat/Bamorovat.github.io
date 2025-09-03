@@ -1,40 +1,730 @@
 <!-- Publications Section (fragment) -->
+<h2 class="section-title">Publications List</h2>
+
 <!-- Publication Statistics -->
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
-        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">9+</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">12</div>
         <div style="color: var(--text-secondary);">Publications</div>
     </div>
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
-        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">250+</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">43</div>
         <div style="color: var(--text-secondary);">Citations</div>
     </div>
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
-        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">h-index: 8</div>
-        <div style="color: var(--text-secondary);">Google Scholar</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">5</div>
+        <div style="color: var(--text-secondary);">h-index</div>
+        <div style="color: var(--text-secondary); font-size: 0.875rem;">Google Scholar</div>
     </div>
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
-        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">4</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">1</div>
+        <div style="color: var(--text-secondary);">i10-index</div>
+        <div style="color: var(--text-secondary); font-size: 0.875rem;">Google Scholar</div>
+    </div>
+    <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">2</div>
         <div style="color: var(--text-secondary);">Datasets Created</div>
     </div>
 </div>
 
-<div class="card">
-    <h3 style="color: var(--primary-color); margin-bottom: 2rem;"><i class="fas fa-star"></i> Featured Publications</h3>
-
+    <!-- Publication 1 -->
     <div class="publication-item">
-        <div class="publication-title">RHM: Robot House Multi-view Human Activity Recognition Dataset</div>
-        <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
-        <p><em>ACHI 2023 - The Sixteenth International Conference on Advances in Computer-Human Interactions, Venice, Italy</em></p>
-        <p style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;"><strong>Impact:</strong> First multiview dataset for HAR in smart homes • 45+ citations</p>
-        <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="publication-link"><i class="fas fa-external-link-alt"></i> View Publication</a>
+        <div class="publication-header">
+            <div class="publication-title">
+                Multi-View Fusion and Feature Extraction: Enhancing HAR for Assistive Robotics
+            </div>
+            <div class="publication-status submitted">Submitted</div>
+        </div>
+        <div class="publication-actions">
+            <a href="javascript:void(0)" class="publication-btn disabled"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link disabled" data-target="bibtex-pub1">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub1">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub1" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, Farshid Amirabdollahian</p>
+                <p><strong>Journal:</strong> IEEE Robotics and Automation Letters (RA-L)</p>
+                <p><strong>Status:</strong> Submitted</p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>Abstract will be available upon publication.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub1" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">BibTeX citation will be available upon publication.</pre>
+                <button onclick="copyBibTeX('pub1')" class="copy-btn disabled">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
     </div>
 
+    <!-- Publication 2 -->
     <div class="publication-item">
-        <div class="publication-title">Affordable Robot Mapping Using Omnidirectional Vision</div>
-        <p><strong>Mohammad Hossein Bamorovat Abadi</strong>, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
-        <p><em>UKRAS21, 2021</em></p>
-        <p style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">Achievement: Cost-effective SLAM solution • Best Paper nominee</p>
-        <a href="https://uhra.herts.ac.uk/handle/2299/27083" target="_blank" class="publication-link"><i class="fas fa-external-link-alt"></i> View Publication</a>
+        <div class="publication-header">
+            <div class="publication-title">
+                Robotic Vision and Multi-View Synergy: Action and activity recognition in assisted living scenarios
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14524/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub2">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub2">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub2" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> 2024 IEEE RAS EMBS 10th International Conference on Biomedical Robotics and Biomechatronics (BioRob), pp. 789-794. IEEE, 2024</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/BioRob60516.2024.10719749" target="_blank">10.1109/BioRob60516.2024.10719749</a></p>
+                <p><strong>ISBN:</strong> 979-8-3503-8652-3</p>
+                <p><strong>URL:</strong> <a href="https://uhra.herts.ac.uk/id/eprint/14524/" target="_blank">https://uhra.herts.ac.uk/id/eprint/14524/</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>The significance of Human-Robot Interaction (HRI) is increasingly evident when integrating robotics within human-centric settings. A crucial component of effective HRI is Human Activity Recognition (HAR), which is instrumental in enabling robots to respond aptly in human presence, especially within Ambient Assisted Living (AAL) environments. Since robots are generally mobile and their visual perception is often compromised by motion and noise, this paper evaluates methods by merging the robot's mobile perspective with a static viewpoint utilising multi-view deep learning models. We introduce a dual-stream Convolutional 3D (C3D) model to improve vision-based HAR accuracy for robotic applications. Utilising the Robot House Multiview (RHM) dataset, which encompasses a robotic perspective along with three static views (Front, Back, Top), we examine the efficacy of our model and conduct comparisons with the dual-stream ConvNet and Slow-Fast models. The primary objective of this study is to enhance the accuracy of robot viewpoints by integrating them with static views using dual-stream models. The metrics for evaluation include Top-1 and Top-5 accuracy. Our findings reveal that the integration of static views with robotic perspectives significantly boosts HAR accuracy in both Top-1 and Top-5 metrics across all models tested. Moreover, the proposed dual-stream C3D model demonstrates superior performance compared to the other contemporary models in our evaluations.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub2" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14524,
+    year = {2024},
+    doi = {10.1109/BioRob60516.2024.10719749},
+    series = {Proceedings of the IEEE RAS and EMBS International Conference on Biomedical Robotics and Biomechatronics},
+    publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+    pages = {789--794},
+    address = {DEU},
+    journal = {2024 10th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics, BioRob 2024 :},
+    note = {© 2024 IEEE. This is the accepted manuscript version of an article which has been published in final form at https://doi.org/10.1109/BioRob60516.2024.10719749},
+    booktitle = {2024 IEEE RAS EMBS 10th International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
+    month = {October},
+    title = {Robotic Vision and Multi-View Synergy: Action and activity recognition in assisted living scenarios},
+    abstract = {The significance of Human-Robot Interaction (HRI) is increasingly evident when integrating robotics within human-centric settings. A crucial component of effective HRI is Human Activity Recognition (HAR), which is instrumental in enabling robots to respond aptly in human presence, especially within Ambient Assisted Living (AAL) environments. Since robots are generally mobile and their visual perception is often compromised by motion and noise, this paper evaluates methods by merging the robot's mobile perspective with a static viewpoint utilising multi-view deep learning models. We introduce a dual-stream Convolutional 3D (C3D) model to improve vision-based HAR accuracy for robotic applications. Utilising the Robot House Multiview (RHM) dataset, which encompasses a robotic perspective along with three static views (Front, Back, Top), we examine the efficacy of our model and conduct comparisons with the dual-stream ConvNet and Slow-Fast models. The primary objective of this study is to enhance the accuracy of robot viewpoints by integrating them with static views using dual-stream models. The metrics for evaluation include Top-1 and Top-5 accuracy. Our findings reveal that the integration of static views with robotic perspectives significantly boosts HAR accuracy in both Top-1 and Top-5 metrics across all models tested. Moreover, the proposed dual-stream C3D model demonstrates superior performance compared to the other contemporary models in our evaluations.},
+    isbn = {979-8-3503-8652-3},
+    url = {https://uhra.herts.ac.uk/id/eprint/14524/},
+    author = {Bamorovat Abadi, Mohammad and Shahabian Alashti, Mohamad Reza and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub2')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
     </div>
-</div>
+
+    <!-- Publication 3 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Efficient Skeleton-based Human Activity Recognition in Ambient Assisted Living Scenarios with Multi-view CNN
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14523/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub3">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub3">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub3" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohamad Reza Shahabian Alashti, Mohammad Bamorovat Abadi, Patrick Holthaus, Catherine Menon, Farshid Amirabdollahian</p>
+                <p><strong>Conference:</strong> 2024 IEEE RAS EMBS 10th International Conference on Biomedical Robotics and Biomechatronics (BioRob)</p>
+                <p><strong>Year:</strong> 2024</p>
+                <p><strong>Pages:</strong> 979-984</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/BioRob60516.2024.10719939" target="_blank">10.1109/BioRob60516.2024.10719939</a></p>
+                <p><strong>ISBN:</strong> 979-8-3503-8652-3</p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>Human activity recognition (HAR) plays a critical role in diverse applications and domains, from assessments of ambient assistive living (AAL) settings and the development of smart environments to human-robot interaction (HRI) scenarios. However, using mobile robot cameras in such contexts has limitations like restricted field of view and possible noise. Therefore, employing additional fixed cameras can enhance the field of view and reduce susceptibility to noise. Nevertheless, integrating additional camera perspectives increases complexity, a concern exacerbated by the number of real-time processes that robots should perform in the AAL scenario. This paper introduces our methodology that facilitates the combination of multiple views and compares different aspects of fusing information at low, medium and high levels. Their comparison is guided by parameters such as the number of training parameters, floating-point operations per second (FLOPs), training time, and accuracy. Our findings uncover a paradigm shift, challenging conventional beliefs by demonstrating that simplistic CNN models outperform their more complex counterparts using this innovation. Additionally, the pivotal role of pipeline and data combination emerges as a crucial factor in achieving better accuracy levels. In this study, integrating the additional view with the Robot-view resulted in an accuracy increase of up to 25%. Ultimately, we have successfully attained a streamlined and efficient multi-view HAR pipeline, which will now be incorporated into AAL interaction scenarios.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub3" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14523,
+    year = {2024},
+    doi = {10.1109/BioRob60516.2024.10719939},
+    series = {Proceedings of the IEEE RAS and EMBS International Conference on Biomedical Robotics and Biomechatronics},
+    publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+    pages = {979--984},
+    address = {DEU},
+    journal = {2024 10th IEEE RAS/EMBS International Conference for Biomedical Robotics and Biomechatronics, BioRob 2024 :},
+    note = {{\copyright} 2024 IEEE. This is the accepted manuscript version of an article which has been published in final form at https://doi.org/10.1109/BioRob60516.2024.10719939},
+    booktitle = {2024 IEEE RAS EMBS 10th International Conference on Biomedical Robotics and Biomechatronics (BioRob)},
+    month = {October},
+    title = {Efficient Skeleton-based Human Activity Recognition in Ambient Assisted Living Scenarios with Multi-view CNN},
+    abstract = {Human activity recognition (HAR) plays a critical role in diverse applications and domains, from assessments of ambient assistive living (AAL) settings and the development of smart environments to human-robot interaction (HRI) scenarios. However, using mobile robot cameras in such contexts has limitations like restricted field of view and possible noise. Therefore, employing additional fixed cameras can enhance the field of view and reduce susceptibility to noise. Never-theless, integrating additional camera perspectives increases complexity, a concern exacerbated by the number of real-time processes that robots should perform in the AAL scenario. This paper introduces our methodology that facilitates the combination of multiple views and compares different aspects of fusing information at low, medium and high levels. Their comparison is guided by parameters such as the number of training parameters, floating-point operations per second (FLOPs), training time, and accuracy. Our findings uncover a paradigm shift, challenging conventional beliefs by demonstrating that simplistic CNN models outperform their more complex counterparts using this innovation. Additionally, the pivotal role of pipeline and data combination emerges as a crucial factor in achieving better accuracy levels. In this study, integrating the additional view with the Robot-view resulted in an accuracy increase of up to 25 \%. Ultimately, we have successfully attained a streamlined and efficient multi-view HAR pipeline, which will now be incorporated into AAL interaction scenarios.},
+    isbn = {979-8-3503-8652-3},
+    url = {https://uhra.herts.ac.uk/id/eprint/14523/},
+    author = {Shahabian Alashti, Mohamad Reza and Bamorovat Abadi, Mohammad and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub3')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 4 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                RHM: Robot House Multi-view Human Activity Recognition Dataset
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14434/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub4">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub4">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub4" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions. IARIA, 2023</p>
+                <p><strong>ISBN:</strong> 978-1-68558-078-0</p>
+                <p><strong>URL:</strong> <a href="https://uhra.herts.ac.uk/id/eprint/14434/" target="_blank">https://uhra.herts.ac.uk/id/eprint/14434/</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>With the recent increased development of deep neural networks and dataset capabilities, the Human Action Recognition (HAR) domain is growing rapidly in terms of both the available datasets and deep models. Despite this, there are some lacks at datasets specifically covering the Robotics field and Human-Robot interaction. We prepare and introduce a new multi-view dataset to address this. The Robot House Multi-View dataset (RHM) contains four views: Front, Back, Ceiling, and Robot Views. There are 14 classes with 6701 video clips for each view, making a total of 26804 video clips for the four views. The lengths of the video clips are between 1 to 5 seconds. The videos with the same number and the same classes are synchronized in different views. In the second part of this paper, we consider how single streams afford activity recognition using established state-of-the-art models. We then assess the affordance for each of the views based on information theoretic modelling and mutual information concept. Furthermore, we benchmark the performance of different views, thus establishing the strengths and weaknesses of each view relevant to their information content and performance of the benchmark. Our results lead us to conclude that multi-view and multi-stream activity recognition has the added potential to improve activity recognition results.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub4" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14434,
+    journal = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions :},
+    address = {ITA},
+    year = {2023},
+    note = {© 2023, IARIA.},
+    month = {April},
+    booktitle = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions},
+    publisher = {IARIA},
+    title = {RHM: Robot House Multi-view Human Activity Recognition Dataset},
+    abstract = {With the recent increased development of deep neural networks and dataset capabilities, the Human Action Recognition (HAR) domain is growing rapidly in terms of both the available datasets and deep models. Despite this, there are some lacks at datasets specifically covering the Robotics field and Human-Robot interaction. We prepare and introduce a new multi-view dataset to address this. The Robot House Multi-View dataset (RHM) contains four views: Front, Back, Ceiling, and Robot Views. There are 14 classes with 6701 video clips for each view, making a total of 26804 video clips for the four views. The lengths of the video clips are between 1 to 5 seconds. The videos with the same number and the same classes are synchronized in different views. In the second part of this paper, we consider how single streams afford activity recognition using established state-of-the-art models. We then assess the affordance for each of the views based on information theoretic modelling and mutual information concept. Furthermore, we benchmark the performance of different views, thus establishing the strengths and weaknesses of each view relevant to their information content and performance of the benchmark. Our results lead us to conclude that multi-view and multi-stream activity recognition has the added potential to improve activity recognition results.},
+    isbn = {978-1-68558-078-0},
+    url = {https://uhra.herts.ac.uk/id/eprint/14434/},
+    author = {Bamorovat Abadi, Mohammad and Shahabian Alashti, Mohamad Reza and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub4')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 5 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                RH-HAR-SK: A Multi-view Dataset with Skeleton Data for Ambient Assisted Living Research
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14432/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub5">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub5">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub5" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions. IARIA, 2023</p>
+                <p><strong>ISBN:</strong> 978-1-68558-078-0</p>
+                <p><strong>URL:</strong> <a href="https://uhra.herts.ac.uk/id/eprint/14432/" target="_blank">https://uhra.herts.ac.uk/id/eprint/14432/</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>Human and activity detection has always been a vital task in Human-Robot Interaction (HRI) scenarios, such as those involving assistive robots. In particular, skeleton-based Human Activity Recognition (HAR) offers a robust and effective detection method based on human biomechanics. Recent advancements in human pose estimation have made it possible to extract skeleton positioning data accurately and quickly using affordable cameras. In interaction with a human, robots can therefore capture detailed information from a close distance and flexible perspective. However, recognition accuracy is susceptible to robot movements, where the robot often fails to capture the entire scene. To address this we propose the adoption of external cameras to improve the accuracy of activity recognition on a mobile robot. In support of this proposal, we present the dataset RH-HAR-SK that combines multiple camera perspectives augmented with human skeleton extraction obtained by the HRNet pose estimation. We apply qualitative and quantitative analysis techniques to the extracted skeleton and its joints to demonstrate the additional value of external cameras to the robot's recognition pipeline. Results show that while the robot's camera can provide optimal recognition accuracy in some specific scenarios, an external camera increases overall performance.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub5" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14432,
+    journal = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions :},
+    address = {ITA},
+    year = {2023},
+    note = {© 2023 IARIA.},
+    month = {April},
+    booktitle = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions},
+    publisher = {IARIA},
+    title = {RH-HAR-SK: A Multi-view Dataset with Skeleton Data for Ambient Assisted Living Research},
+    abstract = {Human and activity detection has always been a vital task in Human-Robot Interaction (HRI) scenarios, such as those involving assistive robots. In particular, skeleton-based Human Activity Recognition (HAR) offers a robust and effective detection method based on human biomechanics. Recent advancements in human pose estimation have made it possible to extract skeleton positioning data accurately and quickly using affordable cameras. In interaction with a human, robots can therefore capture detailed information from a close distance and flexible perspective. However, recognition accuracy is susceptible to robot movements, where the robot often fails to capture the entire scene. To address this we propose the adoption of external cameras to improve the accuracy of activity recognition on a mobile robot. In support of this proposal, we present the dataset RH-HAR-SK that combines multiple camera perspectives augmented with human skeleton extraction obtained by the HRNet pose estimation. We apply qualitative and quantitative analysis techniques to the extracted skeleton and its joints to demonstrate the additional value of external cameras to the robot's recognition pipeline. Results show that while the robot's camera can provide optimal recognition accuracy in some specific scenarios, an external camera increases overall performance.},
+    isbn = {978-1-68558-078-0},
+    url = {https://uhra.herts.ac.uk/id/eprint/14432/},
+    author = {Shahabian Alashti, Mohamad Reza and Bamorovat Abadi, Mohammad and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub5')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 6 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Lightweight human activity recognition for ambient assisted living
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14433/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub6">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub6">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub6" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohamad Reza Shahabian Alashti, Mohammad Hossein Bamorovat Abadi, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions. IARIA, 2023</p>
+                <p><strong>ISBN:</strong> 978-1-68558-078-0</p>
+                <p><strong>URL:</strong> <a href="https://uhra.herts.ac.uk/id/eprint/14433/" target="_blank">https://uhra.herts.ac.uk/id/eprint/14433/</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>Ambient assisted living (AAL) systems aim to improve the safety, comfort, and quality of life for the populations with specific attention given to prolonging personal independence during later stages of life. Human activity recognition (HAR) plays a crucial role in enabling AAL systems to recognise and understand human actions. Multi-view human activity recognition (MV-HAR) techniques are particularly useful for AAL systems as they can use information from multiple sensors to capture different perspectives of human activities and can help to improve the robustness and accuracy of activity recognition. In this work, we propose a lightweight activity recognition pipeline that utilizes skeleton data from multiple perspectives to combine the advantages of both approaches and thereby enhance an assistive robot's perception of human activity. The pipeline includes data sampling, input data type, and representation and classification methods. Our method modifies a classic LeNet classification model (M-LeNet) and uses a Vision Transformer (ViT) for the classification task. Experimental evaluation on a multi-perspective dataset of human activities in the home (RH-HAR-SK) compares the performance of these two models and indicates that combining camera views can improve recognition accuracy. Furthermore, our pipeline provides a more efficient and scalable solution in the AAL context, where bandwidth and computing resources are often limited.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub6" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14433,
+    journal = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions :},
+    address = {ITA},
+    year = {2023},
+    note = {© 2023, IARIA.},
+    month = {April},
+    booktitle = {ACHI 2023: The Sixteenth International Conference on Advances in Computer-Human Interactions},
+    publisher = {IARIA},
+    title = {Lightweight human activity recognition for ambient assisted living},
+    abstract = {Ambient assisted living (AAL) systems aim to improve the safety, comfort, and quality of life for the populations with specific attention given to prolonging personal independence during later stages of life. Human activity recognition (HAR) plays a crucial role in enabling AAL systems to recognise and understand human actions. Multi-view human activity recognition (MV-HAR) techniques are particularly useful for AAL systems as they can use information from multiple sensors to capture different perspectives of human activities and can help to improve the robustness and accuracy of activity recognition. In this work, we propose a lightweight activity recognition pipeline that utilizes skeleton data from multiple perspectives to combine the advantages of both approaches and thereby enhance an assistive robot's perception of human activity. The pipeline includes data sampling, input data type, and representation and classification methods. Our method modifies a classic LeNet classification model (M-LeNet) and uses a Vision Transformer (ViT) for the classification task. Experimental evaluation on a multi-perspective dataset of human activities in the home (RH-HAR-SK) compares the performance of these two models and indicates that combining camera views can improve recognition accuracy. Furthermore, our pipeline provides a more efficient and scalable solution in the AAL context, where bandwidth and computing resources are often limited.},
+    isbn = {978-1-68558-078-0},
+    url = {https://uhra.herts.ac.uk/id/eprint/14433/},
+    author = {Shahabian Alashti, Mohamad Reza and Bamorovat Abadi, Mohammad and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub6')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 7 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Affordable robot mapping using omnidirectional vision
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14328/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub7">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub7">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub7" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, Farshid Amirabdollahian</p>
+                <p><strong>Conference:</strong> The 4th UK-RAS Conference for PhD Students & Early-Career Researchers on 'Robotics at Home'</p>
+                <p><strong>Year:</strong> 2021</p>
+                <p><strong>Pages:</strong> 29-30</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.31256/If7Nm5Z" target="_blank">10.31256/If7Nm5Z</a></p>
+                <p><strong>Publisher:</strong> EPSRC UK-RAS Network</p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>Mapping is a fundamental requirement for robot navigation. In this paper, we introduce a novel visual mapping method that relies solely on a single omnidirectional camera. We present a metric that allows us to generate a map from the input image by using a visual Sonar approach. The combination of the visual sonars with the robot's odometry enables us to determine a relation equation and subsequently generate a map that is suitable for robot navigation. Results based on visual map comparison indicate that our approach is comparable with the established solutions based on RGB-D cameras or laser-based sensors. We now embark on evaluating our accuracy against the established methods.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub7" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14328,
+    year = {2021},
+    doi = {10.31256/If7Nm5Z},
+    series = {UKRAS21 Conference: Robotics at home Proceedings},
+    publisher = {EPSRC UK-RAS Network},
+    pages = {29--30},
+    address = {GBR},
+    journal = {4th UKRAS21 Conference: Robotics at home Proceedings :},
+    note = {{\copyright} 2021 EPSRC UK-Robotics and Autonomous Systems (UK-RAS) Network. This is an open access conference paper distributed under the terms of the Creative Commons Attribution License (CC BY), https://creativecommons.org/licenses/by/4.0/},
+    booktitle = {The 4th UK-RAS Conference for PhD Students \& Early-Career Researchers on 'Robotics at Home'},
+    month = {July},
+    title = {Affordable robot mapping using omnidirectional vision},
+    abstract = {Mapping is a fundamental requirement for robot navigation.In this paper, we introduce a novel visual mapping method that relies solely on a single omnidirectional camera.We present a metric that allows us to generate a map from the input image by using a visual Sonar approach.The combination of the visual sonars with the robot's odometry enables us to determine a relation equation and subsequently generate a map that is suitable for robot navigation.Results based on visual map comparison indicate that our approach is comparable with the established solutions based on RGB-D cameras or laser-based sensors. We now embark on evaluating our accuracy against the established methods.},
+    url = {https://uhra.herts.ac.uk/id/eprint/14328/},
+    author = {Bamorovat Abadi, Mohammad and Shahabian Alashti, Mohamad Reza and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub7')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 8 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Robot house human activity recognition dataset
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14327/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub8">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub8">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub8" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> 4th UK-RAS Conference: Robotics at Home (UKRAS21), 19–20. Hatfield, UK, 2021</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.31256/Bw7Kt2N" target="_blank">10.31256/Bw7Kt2N</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>Human activity recognition is one of the most challenging tasks in computer vision. State-of-the art approaches such as deep learning techniques thereby often rely on large labelled datasets of human activities. However, currently available datasets are suboptimal for learning human activities in companion robotics scenarios at home, for example, missing crucial perspectives. With this as a consideration, we present the University of Hertfordshire Robot House Human Activity Recognition Dataset (RH-HAR-1). It contains RGB videos of a human engaging in daily activities, taken from four different cameras. Importantly, this dataset contains two non-standard perspectives: a ceiling-mounted fisheye camera and a mobile robot's view. In the first instance, RH-HAR-1 covers five daily activities with a total of more than 10,000 videos.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub8" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14327,
+    year = {2021},
+    doi = {10.31256/Bw7Kt2N},
+    series = {UKRAS21 Conference: Robotics at home Proceedings},
+    publisher = {EPSRC UK-RAS Network},
+    pages = {19--20},
+    address = {GBR},
+    journal = {4th UKRAS21 Conference: Robotics at home Proceedings},
+    note = {© 2021 EPSRC UK-Robotics and Autonomous Systems (UK-RAS) Network. This is an open access conference paper distributed under the terms of the Creative Commons Attribution License (CC BY), https://creativecommons.org/licenses/by/4.0/},
+    booktitle = {The 4th UK-RAS Conference for PhD Students & Early-Career Researchers on 'Robotics at Home'},
+    month = {July},
+    title = {Robot house human activity recognition dataset},
+    abstract = {Human activity recognition is one of the most challenging tasks in computer vision. State-of-the art approaches such as deep learning techniques thereby often rely on large labelled datasets of human activities. However, currently available datasets are suboptimal for learning human activities in companion robotics scenarios at home, for example, missing crucial perspectives. With this as a consideration, we present the University of Hertfordshire Robot House Human Activity Recognition Dataset (RH-HAR-1). It contains RGB videos of a human engaging in daily activities, taken from four different cameras. Importantly, this dataset contains two non-standard perspectives: a ceiling-mounted fisheye camera and a mobile robot's view. In the first instance, RH-HAR-1 covers five daily activities with a total of more than 10,000 videos.},
+    url = {https://uhra.herts.ac.uk/id/eprint/14327/},
+    author = {Bamorovat Abadi, Mohammad and Shahabian Alashti, Mohamad Reza and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub8')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 9 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Human activity recognition in robocup@home: inspiration from online benchmarks
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://uhra.herts.ac.uk/id/eprint/14329/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub9">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub9">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+                <div class="publication-details" id="details-pub9" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohamad Reza Shahabian Alashti, Patrick Holthaus, Catherine Menon, and Farshid Amirabdollahian</p>
+                <p><strong>Published in:</strong> 4th UKRAS Conference: Towards Autonomous Robotic Systems. Springer, Cham. pp. 319-336. 2023</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.31256/Os6Aw4Y" target="_blank">10.31256/Os6Aw4Y</a></p>
+            </div>
+            <div class="abstract-section">
+                <h4>Abstract</h4>
+                <p>The RoboCup@Home competition is a renowned international platform for advancing household service robotics. It provides a standardized assessment framework through which researchers can evaluate their robotic systems in realistic home scenarios. Human Activity Recognition (HAR) is a crucial component of these scenarios, yet there has been limited exploration of how HAR methodologies employed in RoboCup@Home compare to those in the broader computer vision and machine learning communities. This paper bridges this gap by analyzing HAR approaches in RoboCup@Home through the lens of online benchmarks and standardized datasets. We provide a comprehensive review of HAR methodologies currently implemented in RoboCup@Home teams and compare them with state-of-the-art approaches from academic and industry research. Additionally, we examine the datasets commonly used for HAR evaluation and discuss how insights from established online benchmarks can enhance the robustness and performance of HAR systems in domestic robotics applications. Our analysis reveals several opportunities for integration between competition-driven approaches and academic research, potentially leading to more effective household service robots.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub9" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@inproceedings{herts14329,
+    year = {2021},
+    doi = {10.31256/Os6Aw4Y},
+    series = {UKRAS21 Conference: Robotics at home Proceedings},
+    publisher = {EPSRC UK-RAS Network},
+    pages = {27--28},
+    address = {GBR},
+    journal = {4th UKRAS21 Conference: Robotics at home Proceedings},
+    note = {© 2021 EPSRC UK-Robotics and Autonomous Systems (UK-RAS) Network. This is an open access conference paper distributed under the terms of the Creative Commons Attribution License (CC BY), https://creativecommons.org/licenses/by/4.0/},
+    booktitle = {The 4th UK-RAS Conference for PhD Students & Early-Career Researchers on 'Robotics at Home'},
+    month = {July},
+    title = {Human activity recognition in RoboCup@home: Inspiration from online benchmarks},
+    abstract = {Human activity recognition is an important aspect of many robotics applications. In this paper, we discuss how well the RoboCup@home competition accounts for the importance of such recognition algorithms. Using public benchmarks as an inspiration, we propose to add a new task that specifically tests the performance of human activity recognition in this league. We suggest that human-robot interaction research in general can benefit from the addition of such a task as RoboCup@home is considered to accelerate, regulate, and consolidate the field.},
+    url = {https://uhra.herts.ac.uk/id/eprint/14329/},
+    author = {Shahabian Alashti, Mohamad Reza and Bamorovat Abadi, Mohammad and Holthaus, Patrick and Menon, Catherine and Amirabdollahian, Farshid}
+}</pre>
+                <button onclick="copyBibTeX('pub9')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 10 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Side Sonar Vision Applied to Omni-directional Images to Navigate Mobile Robots
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://ieeexplore.ieee.org/abstract/document/8003665" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub10">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub10">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub10" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohammadreza Asghari Oskoei, Ahmad Fakharian</p>
+                <p><strong>Conference:</strong> 2017 5th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)</p>
+                <p><strong>Year:</strong> 2017</p>
+                <p><strong>Pages:</strong> 97-102</p>
+                <p><strong>Date of Conference:</strong> 07-09 March 2017</p>
+                <p><strong>Location:</strong> Qazvin, Iran</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/CFIS.2017.8003665" target="_blank">10.1109/CFIS.2017.8003665</a></p>
+                <p><strong>Electronic ISBN:</strong> 978-1-5090-4008-7</p>
+                <p><strong>Print on Demand ISBN:</strong> 978-1-5090-4009-4</p>
+                <p><strong>Keywords:</strong> Sonar navigation, Sonar, Trajectory, Collision avoidance, Mobile robots, Sonar Vision, Omni-directional Vision, Navigation, Mobile Robot, Side Sonar Vision</p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>This paper presents a novel method of sonar vision, called side sonar vision (SSV), to navigate mobile robots in a known environment. It adopts Omni-directional images and divides surrounding sonar vision into three parts: front, right and left sides. These sides are under continuous scrutiny of individual agents. SSV analyses data of each side, separately, and produces two key parameters: angle and length. The parameters are sent to multi-layer controlling module of navigation that has two main nodes: path estimation and trajectory. The proposed method does not require any calibration or image conversion. The experiments show that the robot moves the way smoothly without colliding obstacle. It could track up to 98% of the path, automatically, without any collision with obstacles. The process time for this work was about 120 ms.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub10" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@INPROCEEDINGS{8003665,
+    author={Abadi, Mohammad Hossein Bamorovat and Oskoei, Mohammadreza Asghari and Fakharian, Ahmad},
+    booktitle={2017 5th Iranian Joint Congress on Fuzzy and Intelligent Systems (CFIS)}, 
+    title={Side sonar vision applied to Omni-directional images to navigate mobile robots}, 
+    year={2017},
+    volume={},
+    number={},
+    pages={97-102},
+    keywords={Sonar navigation;Sonar;Trajectory;Collision avoidance;Mobile robots;Sonar Vision;Omni-directional Vision;Navigation;Mobile Robot;Side Sonar Vision},
+    doi={10.1109/CFIS.2017.8003665}
+}</pre>
+                <button onclick="copyBibTeX('pub10')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 11 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Effects of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-319-22873-0_4" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub11">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub11">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub11" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohammadreza Asghari Oskoei</p>
+                <p><strong>Book:</strong> Intelligent Robotics and Applications</p>
+                <p><strong>Year:</strong> 2015</p>
+                <p><strong>Pages:</strong> 37-48</p>
+                <p><strong>Publisher:</strong> Springer International Publishing</p>
+                <p><strong>Address:</strong> Cham</p>
+                <p><strong>ISBN:</strong> 978-3-319-22873-0</p>
+                <p><strong>Editors:</strong> Honghai Liu, Naoyuki Kubota, Xiangyang Zhu, Rüdiger Dillmann</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/978-3-319-22873-0_4" target="_blank">10.1007/978-3-319-22873-0_4</a></p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>In this paper, we present a omnidirectional vision-based navigation system that includes three approaches: obstacle avoidance based on sonar vision, direction estimation based on sonar vision and confection method of obstacle avoidance and direction estimation. This paper peruses effects of the mirror in omnidirectional vision applied to mobile robot navigation, as well. We design and establish four mirrors: small non-uniform pixel-density hyperbolic mirror, small uniform pixel density hyperbolic mirror, large non-uniform pixel density hyperbolic mirror and spherical mirror. This paper provides autonomous navigation for a mobile robot in an unknown environments. We use omnidirectional images without any prior calibration and detects static and dynamic obstacles. Our experiments operates in indoor environment with our particular sonar vision. The result show that small uniform pixel density hyperbolic mirror have best performance and big non-uniform pixel density hyperbolic mirror have weak performance in vision base mobile robot navigation. Also, the experimental results show acceptable performance considering computation costs in our sonar vision algorithm.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub11" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@InProceedings{10.1007/978-3-319-22873-0_4,
+    author="Abadi, Mohammad Hossein Bamorovat
+    and Oskoei, Mohammadreza Asghari",
+    editor="Liu, Honghai
+    and Kubota, Naoyuki
+    and Zhu, Xiangyang
+    and Dillmann, R{\"u}diger",
+    title="Effects of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision",
+    booktitle="Intelligent Robotics and Applications",
+    year="2015",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="37--48",
+    abstract="In this paper, we present a omnidirectional vision-based navigation system that includes three approaches: obstacle avoidance based on sonar vision, direction estimation based on sonar vision and confection method of obstacle avoidance and direction estimation. This paper peruses effects of the mirror in omnidirectional vision applied to mobile robot navigation, as well. We design and establish four mirrors: small non-uniform pixel-density hyperbolic mirror, small uniform pixel density hyperbolic mirror, large non-uniform pixel density hyperbolic mirror and spherical mirror. This paper provides autonomous navigation for a mobile robot in an unknown environments. We use omnidirectional images without any prior calibration and detects static and dynamic obstacles. Our experiments operates in indoor environment with our particular sonar vision. The result show that small uniform pixel density hyperbolic mirror have best performance and big non-uniform pixel density hyperbolic mirror have weak performance in vision base mobile robot navigation. Also, the experimental results show acceptable performance considering computation costs in our sonar vision algorithm.",
+    isbn="978-3-319-22873-0"
+}</pre>
+                <button onclick="copyBibTeX('pub11')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication 12 -->
+    <div class="publication-item">
+        <div class="publication-header">
+            <div class="publication-title">
+                Mobile robot navigation using sonar vision algorithm applied to omnidirectional vision
+            </div>
+            <div class="publication-status published">Published</div>
+        </div>
+        <div class="publication-actions">
+            <a href="https://ieeexplore.ieee.org/abstract/document/7270728" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <button type="button" class="publication-btn details-link" data-target="bibtex-pub12">
+                <i class="fas fa-chevron-down"></i> BibTeX
+            </button>
+            <button type="button" class="publication-btn details-link" data-target="details-pub12">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="publication-details" id="details-pub12" style="display: none;">
+            <div class="publication-meta">
+                <p><strong>Authors:</strong> Mohammad Hossein Bamorovat Abadi, Mohammadreza A. Oskoei, Ahmad Fakharian</p>
+                <p><strong>Conference:</strong> 2015 AI & Robotics (IRANOPEN)</p>
+                <p><strong>Year:</strong> 2015</p>
+                <p><strong>Pages:</strong> 1-6</p>
+                <p><strong>Date of Conference:</strong> 12-12 April 2015</p>
+                <p><strong>Location:</strong> Qazvin, Iran</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1109/RIOS.2015.7270728" target="_blank">10.1109/RIOS.2015.7270728</a></p>
+                <p><strong>Electronic ISBN:</strong> 978-1-4799-8733-7</p>
+                <p><strong>USB ISBN:</strong> 978-1-4799-8732-0</p>
+                <p><strong>Keywords:</strong> Sonar, Robots, Sonar navigation, Visualization, Collision avoidance, Mirrors, Robot Navigation, Omnidirectional Vision, Mobile Robot, Vision Navigation</p>
+            </div>
+            <div class="abstract">
+                <h4>Abstract</h4>
+                <p>This paper presents a sonar vision algorithm applied to omnidirectional vision. It provides autonomous navigation for a mobile robot in an unknown environment. It uses omnidirectional images without any prior calibration and detects static and dynamic obstacles. It estimates the most intended path based on visual sonar beams in front of the robot. The proposed method was tested on a mobile robot in indoor environment. The experimental results show acceptable performance considering computation costs.</p>
+            </div>
+        </div>
+        <div class="publication-bibtex" id="bibtex-pub12" style="display: none;">
+            <div class="bibtex-section">
+                <h4>BibTeX Citation</h4>
+                <pre class="bibtex-code">@INPROCEEDINGS{7270728,
+    author={Bamorovat Abadi, Mohammad Hossein and Oskoei, Mohammadreza A. and Fakharian, Ahmad},
+    booktitle={2015 AI & Robotics (IRANOPEN)}, 
+    title={Mobile robot navigation using sonar vision algorithm applied to omnidirectional vision}, 
+    year={2015},
+    volume={},
+    number={},
+    pages={1-6},
+    keywords={Sonar;Robots;Sonar navigation;Visualization;Collision avoidance;Mirrors;Robot Navigation;Omnidirectional Vision;Mobile Robot;Vision Navigation},
+    doi={10.1109/RIOS.2015.7270728}
+}</pre>
+                <button onclick="copyBibTeX('pub12')" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+<script>
+function togglePublication(pubId) {
+    const details = document.getElementById('details-' + pubId);
+    
+    if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
+
+function showBibTeX(pubId) {
+    const modal = document.getElementById('bibtex-' + pubId);
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function hideBibTeX(pubId) {
+    const modal = document.getElementById('bibtex-' + pubId);
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function copyBibTeX(pubId) {
+    const bibtexCode = document.querySelector(`#bibtex-${pubId} .bibtex-code`);
+    if (bibtexCode) {
+        navigator.clipboard.writeText(bibtexCode.textContent).then(() => {
+            const copyBtn = document.querySelector(`#bibtex-${pubId} .copy-btn`);
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            copyBtn.style.background = '#10b981';
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+                copyBtn.style.background = '';
+            }, 2000);
+        });
+    }
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.classList.contains('bibtex-modal')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+</script>

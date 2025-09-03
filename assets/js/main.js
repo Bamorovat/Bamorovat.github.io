@@ -90,19 +90,24 @@ document.addEventListener('click', function(e) {
         
         const icon = detailsLink.querySelector('i');
         
+        // Detect if this is a BibTeX button based on the target ID
+        const isBibTeX = targetId.startsWith('bibtex-');
+        const showText = isBibTeX ? 'BibTeX' : 'View Details';
+        const hideText = isBibTeX ? 'Hide BibTeX' : 'Hide Details';
+        
         if (details.style.display === 'none' || details.style.display === '') {
             details.style.display = 'block';
             if (icon) {
                 icon.className = 'fas fa-chevron-up';
             }
-            detailsLink.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Details';
+            detailsLink.innerHTML = `<i class="fas fa-chevron-up"></i> ${hideText}`;
             console.log('Showing details for:', targetId);
         } else {
             details.style.display = 'none';
             if (icon) {
                 icon.className = 'fas fa-chevron-down';
             }
-            detailsLink.innerHTML = '<i class="fas fa-chevron-down"></i> View Details';
+            detailsLink.innerHTML = `<i class="fas fa-chevron-down"></i> ${showText}`;
             console.log('Hiding details for:', targetId);
         }
         
