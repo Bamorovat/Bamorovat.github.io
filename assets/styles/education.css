@@ -16,6 +16,8 @@
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
     color: #fff;
+    min-height: auto !important;
+    padding-bottom: 2rem;
 }
 
 /* Ensure education title is readable on the banner */
