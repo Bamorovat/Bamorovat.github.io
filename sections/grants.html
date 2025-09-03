@@ -1,0 +1,161 @@
+<!-- Grants and Funds Section (fragment) -->
+<h2 class="section-title">Grants and Funds</h2>
+
+    <!-- Grant 1 -->
+    <div class="grant-item">
+        <div class="grant-header">
+            <div class="grant-title">
+                University of Hertfordshire PhD Fund
+            </div>
+        </div>
+        <div class="grant-actions">
+            <button type="button" class="grant-btn details-link" data-target="details-grant1">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="grant-details" id="details-grant1" style="display: none;">
+            <div class="grant-meta">
+                <p><strong>Award Type:</strong> Full PhD Scholarship</p>
+                <p><strong>Duration:</strong> 2019 - 2023 (4 years)</p>
+                <p><strong>Funding Body:</strong> University of Hertfordshire, United Kingdom</p>
+                <p><strong>Location:</strong> Hatfield, Hertfordshire, United Kingdom</p>
+                <p><strong>Research Area:</strong> Human Activity Recognition (HAR) using deep learning and multi-view robotic vision systems</p>
+            </div>
+            <div class="grant-description">
+                <h4>Project Description:</h4>
+                <p>Awarded a full fund PhD scholarship by the University of Hertfordshire to conduct research in Human Activity Recognition (HAR) using deep learning and multi-view robotic vision systems in ambient assisted living scenarios.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grant 2 -->
+    <div class="grant-item">
+        <div class="grant-header">
+            <div class="grant-title">
+                Mirror-Based Omnidirectional Vision System
+            </div>
+        </div>
+        <div class="grant-actions">
+            <button type="button" class="grant-btn details-link" data-target="details-grant2">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="grant-details" id="details-grant2" style="display: none;">
+            <div class="grant-meta">
+                <p><strong>Award Type:</strong> Applied Research Grant</p>
+                <p><strong>Duration:</strong> 2013</p>
+                <p><strong>Funding Body:</strong> Guilan Science and Technology Park</p>
+                <p><strong>Location:</strong> Guilan Province, Iran</p>
+                <p><strong>Role:</strong> Project Leader and Principal Investigator</p>
+            </div>
+            <div class="grant-description">
+                <h4>Project Description:</h4>
+                <p>Designed and evaluated mirror configurations to improve panoramic image quality and robot awareness in dynamic environments. This project focused on developing omnidirectional vision systems for enhanced robotic perception and navigation capabilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grant 3 -->
+    <div class="grant-item">
+        <div class="grant-header">
+            <div class="grant-title">
+                Software Upgrade for Omnidirectional Vision
+            </div>
+        </div>
+        <div class="grant-actions">
+            <button type="button" class="grant-btn details-link" data-target="details-grant3">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="grant-details" id="details-grant3" style="display: none;">
+            <div class="grant-meta">
+                <p><strong>Award Type:</strong> Applied Research Grant</p>
+                <p><strong>Duration:</strong> 2014</p>
+                <p><strong>Funding Body:</strong> Guilan Science and Technology Park</p>
+                <p><strong>Location:</strong> Guilan Province, Iran</p>
+                <p><strong>Role:</strong> Project Leader and Principal Investigator</p>
+            </div>
+            <div class="grant-description">
+                <h4>Project Description:</h4>
+                <p>Refactored the processing pipeline for increased efficiency and robustness in dynamic scenes, improving visual tracking and mapping. This software development project enhanced the omnidirectional vision system's performance and reliability in real-world applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grant 4 -->
+    <div class="grant-item">
+        <div class="grant-header">
+            <div class="grant-title">
+                Stair-Climbing Robot
+            </div>
+        </div>
+        <div class="grant-actions">
+            <button type="button" class="grant-btn details-link" data-target="details-grant4">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="grant-details" id="details-grant4" style="display: none;">
+            <div class="grant-meta">
+                <p><strong>Award Type:</strong> Prototype Development Grant</p>
+                <p><strong>Duration:</strong> 2015</p>
+                <p><strong>Funding Body:</strong> Guilan Science and Technology Park</p>
+                <p><strong>Location:</strong> Guilan Province, Iran</p>
+                <p><strong>Role:</strong> Project Leader and Principal Investigator</p>
+            </div>
+            <div class="grant-description">
+                <h4>Project Description:</h4>
+                <p>Designed and implemented a mobile robot capable of navigating stairs using a hybrid wheel-track mechanism and feedback control. This innovative robotics project addressed the challenge of multi-terrain navigation for autonomous mobile robots.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grant 5 -->
+    <div class="grant-item">
+        <div class="grant-header">
+            <div class="grant-title">
+                Miniature Traffic Awareness Robot for Education
+            </div>
+        </div>
+        <div class="grant-actions">
+            <button type="button" class="grant-btn details-link" data-target="details-grant5">
+                <i class="fas fa-chevron-down"></i> View Details
+            </button>
+        </div>
+        <div class="grant-details" id="details-grant5" style="display: none;">
+            <div class="grant-meta">
+                <p><strong>Award Type:</strong> Educational Technology Grant</p>
+                <p><strong>Duration:</strong> 2015</p>
+                <p><strong>Funding Body:</strong> Guilan Science and Technology Park</p>
+                <p><strong>Location:</strong> Guilan Province, Iran</p>
+                <p><strong>Role:</strong> Project Leader and Principal Investigator</p>
+            </div>
+            <div class="grant-description">
+                <h4>Project Description:</h4>
+                <p>Developed a small-scale mobile robot aimed at educating children about traffic rules using visual and sensor-based interaction. This educational robotics project combined technology with pedagogy to create an innovative learning tool for traffic safety education.</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Add click handlers for grant details
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsButtons = document.querySelectorAll('.grant-btn.details-link');
+    detailsButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const details = document.getElementById(targetId);
+            const chevron = this.querySelector('i');
+            
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                chevron.classList.remove('fa-chevron-down');
+                chevron.classList.add('fa-chevron-up');
+            } else {
+                details.style.display = 'none';
+                chevron.classList.remove('fa-chevron-up');
+                chevron.classList.add('fa-chevron-down');
+            }
+        });
+    });
+});
+</script>
