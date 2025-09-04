@@ -59,7 +59,42 @@ function scrollToTop() {
 }
 
 // Initialize active navigation on page load
-document.addEventListener('DOMContentLoaded', updateActiveNavigation);
+document.addEventListener('DOMContentLoaded', function() {
+    updateActiveNavigation();
+    
+    // Check if we need to scroll to a specific publication
+    const targetPublication = sessionStorage.getItem('targetPublication');
+    if (targetPublication) {
+        // Clear the stored target
+        sessionStorage.removeItem('targetPublication');
+        
+        // Wait a bit for the page to load and sections to be ready, then scroll to publication
+        setTimeout(() => {
+            // First ensure we're in the publications section
+            const publicationsSection = document.getElementById('publications');
+            if (publicationsSection) {
+                publicationsSection.scrollIntoView({ behavior: 'smooth' });
+                
+                // Then scroll to the specific publication after a short delay
+                setTimeout(() => {
+                    const targetElement = document.getElementById(targetPublication);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                        // Add a highlight effect
+                        targetElement.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
+                        targetElement.style.transition = 'background-color 0.3s ease';
+                        setTimeout(() => {
+                            targetElement.style.backgroundColor = '';
+                        }, 2000);
+                    }
+                }, 500);
+            }
+        }, 300);
+    }
+});
 
 // Event delegation for experience details toggle - works with dynamically loaded content
 document.addEventListener('click', function(e) {

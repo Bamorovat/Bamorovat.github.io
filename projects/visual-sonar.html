@@ -66,6 +66,11 @@
             font-weight: 600;
             color: var(--primary-color);
             margin-bottom: 0.5rem;
+            transition: var(--transition);
+        }
+        .paper-title:hover {
+            color: var(--accent-color);
+            text-decoration: underline !important;
         }
     </style>
 </head>
@@ -120,11 +125,8 @@
         <div class="card">
             <h2>Demo Video</h2>
             <p>Watch the Visual Sonar system in action, demonstrating real-time navigation capabilities:</p>
-            <!-- Placeholder for video - you'll need to add the actual YouTube embed -->
-            <div style="background: var(--section-bg); padding: 3rem; text-align: center; border-radius: 12px; margin: 1rem 0;">
-                <i class="fab fa-youtube" style="font-size: 3rem; color: #ff0000; margin-bottom: 1rem;"></i>
-                <p><strong>Demo Video Coming Soon</strong></p>
-                <p>YouTube demonstration of the Visual Sonar navigation system</p>
+            <div style="margin: 2rem 0; text-align: center;">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/JKRwDcHyVbo?si=RIE-oyffxGRvLpfc" title="Visual Sonar Mobile Robot Navigation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="max-width: 100%; border-radius: 12px; box-shadow: var(--card-shadow);"></iframe>
             </div>
         </div>
 
@@ -134,23 +136,23 @@
             
             <div class="papers-list">
                 <div class="paper-item">
-                    <div class="paper-title">Paper 1: Omnidirectional Vision System for Mobile Robotics</div>
-                    <p>Detailed analysis of the omnidirectional vision system design and implementation for mobile robot applications.</p>
+                    <a href="javascript:void(0)" onclick="navigateToPublication('pub-mobile-sonar')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Mobile robot navigation using sonar vision algorithm applied to omnidirectional vision</a>
+                    <p>Comprehensive study on integrating sonar vision algorithms with omnidirectional vision systems for enhanced mobile robot navigation capabilities.</p>
                 </div>
                 
                 <div class="paper-item">
-                    <div class="paper-title">Paper 2: Visual Sonar Algorithms for Real-time Navigation</div>
-                    <p>Novel algorithms for visual sonar processing enabling real-time distance estimation and obstacle detection.</p>
+                    <a href="javascript:void(0)" onclick="navigateToPublication('pub-mirrors-effects')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Effects of Mirrors in Mobile Robot Navigation Based on Omnidirectional Vision</a>
+                    <p>Analysis of mirror effects and their impact on omnidirectional vision-based navigation systems, providing insights for improved system design.</p>
                 </div>
                 
                 <div class="paper-item">
-                    <div class="paper-title">Paper 3: Advanced Mobile Robot Navigation Framework</div>
-                    <p>Comprehensive navigation framework integrating visual sonar with path planning algorithms.</p>
+                    <a href="javascript:void(0)" onclick="navigateToPublication('pub-side-sonar')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Side Sonar Vision Applied to Omni-directional Images to Navigate Mobile Robots</a>
+                    <p>Novel approach to applying side sonar vision techniques to omnidirectional imagery for enhanced mobile robot navigation and obstacle avoidance.</p>
                 </div>
                 
                 <div class="paper-item">
-                    <div class="paper-title">Paper 4: Performance Evaluation of Omnidirectional Visual Systems</div>
-                    <p>Comparative analysis and performance evaluation of omnidirectional vision systems in various environments.</p>
+                    <a href="javascript:void(0)" onclick="navigateToPublication('pub-affordable-mapping')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Affordable robot mapping using omnidirectional vision</a>
+                    <p>Cost-effective solutions for robot mapping utilizing omnidirectional vision systems, making advanced navigation technology more accessible.</p>
                 </div>
             </div>
         </div>
@@ -162,7 +164,7 @@
             </p>
             
             <div style="margin-top: 2rem;">
-                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-primary">
+                <a href="mailto:m.bamorovvat@gmail.com" class="btn btn-primary">
                     <i class="fas fa-envelope"></i> Discuss This Project
                 </a>
                 <a href="../index.html#projects" class="btn btn-outline" style="margin-left: 1rem;">
@@ -173,6 +175,15 @@
     </div>
 
     <script>
+        // Function to navigate to specific publication
+        function navigateToPublication(publicationId) {
+            // Store the target publication ID for after navigation
+            sessionStorage.setItem('targetPublication', publicationId);
+            
+            // Navigate to the main page with publications section
+            window.location.href = '../index.html#publications';
+        }
+        
         // Smooth scroll for navigation
         document.addEventListener('DOMContentLoaded', function() {
             const backButton = document.querySelector('.back-button');
