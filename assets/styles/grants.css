@@ -181,6 +181,45 @@
     margin-bottom: 1rem;
 }
 
+/* List items styling for better readability */
+.grant-description ul {
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+
+.grant-description li {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.grant-description li strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.grant-description li em {
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+}
+
+/* Make award titles and descriptions pure white */
+.grant-description li strong,
+.grant-description li,
+.grant-description ul li {
+    color: #ffffff !important;
+}
+
+/* Ensure all text in award lists is white */
+.grant-description ul li,
+.grant-description ul li strong,
+.grant-description ul li em,
+.grant-description ul li br + em {
+    color: #ffffff !important;
+}
+
 /* Grant Projects */
 .grant-projects {
     margin-top: 1rem;
