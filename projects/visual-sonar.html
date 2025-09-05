@@ -26,129 +26,220 @@
         <div class="card">
             <h2>Project Overview</h2>
             <p>
-                The Visual Sonar project represents a revolutionary breakthrough in mobile robot navigation that transforms visual information from omnidirectional cameras into sonar-like depth perception. This biomimetic technology draws inspiration from natural sonar systems found in bats and dolphins, enabling autonomous navigation without expensive laser scanners or complex sensor fusion systems.
+                The Visual Sonar project represents a breakthrough in affordable mobile robot navigation, transforming visual information from omnidirectional cameras into sonar-like depth perception. By mimicking natural sonar systems found in bats and dolphins, this innovative approach enables autonomous navigation without expensive laser scanners or complex sensor arrays.
             </p>
             
-            <h3>Core Innovation: Sonar Vision Algorithm</h3>
             <p>
-                At the foundation of this research is a novel sonar vision algorithm that processes omnidirectional images without any prior calibration. The system autonomously detects both static and dynamic obstacles in unknown environments, providing real-time navigation capabilities for mobile robots. This approach eliminates the need for expensive RGB-D cameras or laser-based sensors while maintaining comparable accuracy.
+                This research demonstrates that sophisticated navigation and mapping capabilities can be achieved using minimal hardware - a single omnidirectional camera - while maintaining performance comparable to expensive RGB-D cameras and laser-based systems. The solution makes advanced robotics more accessible and economically viable across various applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Core Innovation: Visual Sonar Algorithm</h2>
+            <p>
+                At the heart of this research is a novel sonar vision algorithm that processes omnidirectional images without requiring any prior calibration. The system autonomously detects both static and dynamic obstacles in unknown environments, providing real-time navigation capabilities that rival traditional sensor-based approaches.
             </p>
             
             <div style="text-align: center; margin: 2rem 0;">
                 <img src="../assets/images/projects/visual_sonar/visual-sonar-vectors.jpg" alt="Visual Sonar Algorithm Concept" class="project-image small">
-                <p class="image-caption">Visual Sonar algorithm concept showing omnidirectional vision processing</p>
+                <p class="image-caption">Visual Sonar algorithm concept: transforming omnidirectional visual data into sonar-like distance measurements</p>
             </div>
             
-            <h3>Multi-Layer Image Processing Architecture</h3>
+            <h3>Key Advantages</h3>
+            <ul>
+                <li><strong>No Calibration Required:</strong> Processes raw omnidirectional images directly</li>
+                <li><strong>Cost-Effective:</strong> Eliminates need for expensive laser scanners or RGB-D cameras</li>
+                <li><strong>Real-Time Performance:</strong> Processes data in approximately 120 milliseconds</li>
+                <li><strong>High Accuracy:</strong> Achieves up to 98% path tracking accuracy with collision-free navigation</li>
+                <li><strong>Universal Application:</strong> Works in both known and unknown environments</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>System Architecture</h2>
             <p>
-                The Visual Sonar system employs a sophisticated multi-layer image processing architecture designed to transform raw omnidirectional visual data into actionable navigation information. This layered approach ensures robust and reliable processing of complex visual scenes while maintaining real-time performance requirements for mobile robot navigation.
+                The Visual Sonar system employs a sophisticated multi-layer architecture designed for robust real-time processing. The system transforms raw visual data through several specialized layers, each optimized for specific tasks while maintaining parallel processing capabilities.
             </p>
             
             <div style="text-align: center; margin: 2rem 0;">
                 <img src="../assets/images/projects/visual_sonar/mage-Processing-Architecture.jpg" alt="Multi-Layer Image Processing Architecture" class="project-image">
-                <p class="image-caption">Comprehensive multi-layer image processing architecture for Visual Sonar system</p>
+                <p class="image-caption">Multi-layer image processing architecture enabling real-time visual sonar transformation</p>
             </div>
             
-            <h4>Architecture Layers</h4>
-            <div style="margin: 1.5rem 0;">
-                <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
-                    <li><strong>Input Layer:</strong> Raw omnidirectional image acquisition from 360-degree camera systems</li>
-                    <li><strong>Preprocessing Layer:</strong> Image enhancement, noise reduction, and light reflection removal</li>
-                    <li><strong>Feature Extraction Layer:</strong> Identification of visual landmarks and obstacle boundaries</li>
-                    <li><strong>Sonar Conversion Layer:</strong> Transformation of visual information into sonar-like distance measurements</li>
-                    <li><strong>Multi-Agent Processing Layer:</strong> Side Sonar Vision with independent zone analysis</li>
-                    <li><strong>Decision Layer:</strong> Path planning and navigation command generation</li>
-                    <li><strong>Output Layer:</strong> Real-time control signals for robot movement and mapping</li>
-                </ul>
+            <h3>Processing Layers</h3>
+            <div class="architecture-layers">
+                <div class="layer-item">
+                    <h4><i class="fas fa-camera"></i> Input Layer</h4>
+                    <p>Raw omnidirectional image acquisition from 360-degree camera systems</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-filter"></i> Preprocessing Layer</h4>
+                    <p>Image enhancement, noise reduction, and light reflection removal</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-search"></i> Feature Extraction Layer</h4>
+                    <p>Identification of visual landmarks and obstacle boundaries</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-wave-square"></i> Sonar Conversion Layer</h4>
+                    <p>Transformation of visual information into sonar-like distance measurements</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-users"></i> Multi-Agent Processing</h4>
+                    <p>Side Sonar Vision with independent zone analysis</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-route"></i> Decision Layer</h4>
+                    <p>Path planning and navigation command generation</p>
+                </div>
+                <div class="layer-item">
+                    <h4><i class="fas fa-play"></i> Output Layer</h4>
+                    <p>Real-time control signals for robot movement and mapping</p>
+                </div>
             </div>
-            
+        </div>
+
+        <div class="card">
+            <h2>Robot Control Architecture</h2>
             <p>
-                This multi-layer architecture enables the system to handle complex environmental conditions while maintaining the 120ms processing time requirement. Each layer is optimized for specific tasks, allowing for parallel processing and efficient resource utilization. The modular design also facilitates easy maintenance and future enhancements to individual processing components.
-            </p>
-            
-            <h4>Robot Control Architecture</h4>
-            <p>
-                The navigation system employs a sophisticated multi-layer architecture where different nodes and modules work simultaneously to ensure robust robot control. The main omnidirectional image undergoes preprocessing before being distributed to two critical processing nodes: the Path Estimate node and the Side Sonar Vision (SSV) node.
+                The navigation system integrates multiple specialized nodes working simultaneously to ensure robust robot control. Each node handles specific aspects of navigation while contributing to the overall decision-making process.
             </p>
             
             <div style="text-align: center; margin: 2rem 0;">
                 <img src="../assets/images/projects/visual_sonar/Multi Layers Architecture for Robot Control.png" alt="Multi-Layer Robot Control Architecture" class="project-image">
-                <p class="image-caption">Comprehensive multi-layer architecture for robot control showing interconnected nodes and data flow</p>
+                <p class="image-caption">Comprehensive robot control architecture showing node integration and data flow</p>
             </div>
             
-            <h4>Node Integration and Data Flow</h4>
-            <div style="margin: 1.5rem 0;">
-                <p><strong>Path Estimate Node:</strong> Calculates environmental data and produces linear and angular velocity commands based on the final vector angle of sonar vision. The system uses adaptive speed control where closer obstacles result in reduced forward speed and increased turning precision.</p>
+            <h3>Navigation Nodes</h3>
+            <div class="node-grid">
+                <div class="node-item">
+                    <h4><i class="fas fa-route"></i> Path Estimate Node</h4>
+                    <p>Calculates environmental data and produces velocity commands based on sonar vision analysis. Uses adaptive speed control where closer obstacles result in reduced forward speed and increased turning precision.</p>
+                </div>
                 
-                <p><strong>Side Sonar Vision (SSV) Node:</strong> Monitors the robot's surroundings in three strategic zones (front, right, left) and sends angle and length data to the navigation node. Each side operates independently, providing comprehensive environmental awareness.</p>
+                <div class="node-item">
+                    <h4><i class="fas fa-eye"></i> Side Sonar Vision (SSV) Node</h4>
+                    <p>Monitors three strategic zones (front, right, left) independently, providing comprehensive environmental awareness with angle and length data for each zone.</p>
+                </div>
                 
-                <p><strong>Trajectory Node:</strong> Receives odometry information from motor encoders and generates predetermined paths for the robot. This node creates the baseline navigation plan when no obstacles are detected.</p>
+                <div class="node-item">
+                    <h4><i class="fas fa-map-marked-alt"></i> Trajectory Node</h4>
+                    <p>Receives odometry information from motor encoders and generates predetermined paths. Creates baseline navigation plans when no obstacles are detected.</p>
+                </div>
                 
-                <p><strong>Navigation Node:</strong> Acts as the central decision-making unit, receiving data from all other nodes simultaneously. It intelligently switches between trajectory following and obstacle avoidance based on real-time SSV analysis. When the environment is clear, trajectory data is used; when obstacles are detected, path estimate data takes priority.</p>
+                <div class="node-item">
+                    <h4><i class="fas fa-brain"></i> Navigation Node</h4>
+                    <p>Central decision-making unit that intelligently switches between trajectory following and obstacle avoidance based on real-time environmental analysis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Side Sonar Vision (SSV) Innovation</h2>
+            <p>
+                A key breakthrough in this research is the Side Sonar Vision (SSV) system, which divides the robot's environment into three strategic monitoring zones. Each zone operates with independent intelligent agents that analyze data separately, enabling sophisticated multi-directional awareness.
+            </p>
+            
+            <h3>Multi-Agent Zone Analysis</h3>
+            <div class="ssv-features">
+                <div class="ssv-item">
+                    <h4><i class="fas fa-arrow-up"></i> Front Zone</h4>
+                    <p>Primary navigation zone for forward movement and obstacle detection</p>
+                </div>
+                <div class="ssv-item">
+                    <h4><i class="fas fa-arrow-right"></i> Right Zone</h4>
+                    <p>Right-side monitoring for corridor navigation and wall following</p>
+                </div>
+                <div class="ssv-item">
+                    <h4><i class="fas fa-arrow-left"></i> Left Zone</h4>
+                    <p>Left-side monitoring for comprehensive environmental awareness</p>
+                </div>
             </div>
             
-            <h4>Adaptive Control Algorithms</h4>
             <p>
-                The system implements sophisticated control algorithms that adjust robot behavior based on environmental conditions. The sensitivity of robot performance depends on parameters set in the SSV node - larger angle and length parameters make the robot maintain greater distances from obstacles, while smaller parameters allow closer navigation. This adaptive approach ensures both safety and efficiency in various operational scenarios.
+                The SSV system enables adaptive control where larger angle and length parameters maintain greater distances from obstacles, while smaller parameters allow closer navigation. This flexibility ensures both safety and efficiency across various operational scenarios.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Advanced Mirror Optimization</h2>
+            <p>
+                Extensive research has been conducted on optimizing omnidirectional vision through advanced mirror configurations. Four different mirror types were designed and evaluated to determine optimal performance characteristics.
             </p>
             
-            <h3>Advanced Mirror Optimization Research</h3>
+            <h3>Mirror Configuration Analysis</h3>
+            <div class="mirror-types">
+                <div class="mirror-item">
+                    <h4>Small Non-Uniform Hyperbolic</h4>
+                    <p>Compact design with variable pixel density distribution</p>
+                </div>
+                <div class="mirror-item">
+                    <h4>Small Uniform Hyperbolic</h4>
+                    <p>Optimal performance configuration with consistent pixel density</p>
+                </div>
+                <div class="mirror-item">
+                    <h4>Large Non-Uniform Hyperbolic</h4>
+                    <p>Extended field of view with variable density mapping</p>
+                </div>
+                <div class="mirror-item">
+                    <h4>Spherical Mirrors</h4>
+                    <p>Alternative configuration for specific application requirements</p>
+                </div>
+            </div>
+            
             <p>
-                Extensive research has been conducted on optimizing omnidirectional vision systems through advanced mirror configurations. Four different mirror types were designed and evaluated: small non-uniform pixel-density hyperbolic mirrors, small uniform pixel density hyperbolic mirrors, large non-uniform pixel density hyperbolic mirrors, and spherical mirrors. The research demonstrates that small uniform pixel density hyperbolic mirrors provide the best performance for vision-based mobile robot navigation.
+                Research findings demonstrate that <strong>small uniform pixel density hyperbolic mirrors</strong> provide the best performance for vision-based mobile robot navigation, offering optimal balance between image quality and processing efficiency.
             </p>
             
-            <h4>Light Reflection Processing</h4>
+            <h3>Light Reflection Processing</h3>
             <p>
-                A critical aspect of omnidirectional vision systems is handling light reflections from mirror surfaces, which can significantly impact image quality and navigation accuracy. Advanced image processing techniques have been developed to identify and remove these unwanted light reflections, ensuring cleaner visual data for the sonar vision algorithms. This preprocessing step is essential for maintaining the reliability of obstacle detection and navigation in various lighting conditions.
+                Advanced image processing techniques identify and remove unwanted light reflections from mirror surfaces, ensuring cleaner visual data for sonar algorithms. This preprocessing step is essential for maintaining navigation reliability across varying lighting conditions.
             </p>
             
             <div style="text-align: center; margin: 2rem 0;">
                 <img src="../assets/images/projects/visual_sonar/Remove-the-light-reflected-from-the-surface.jpg" alt="Light Reflection Removal Process" class="project-image">
-                <p class="image-caption">Advanced image processing technique for removing light reflections from omnidirectional mirror surfaces</p>
+                <p class="image-caption">Advanced light reflection removal process for enhanced image quality</p>
             </div>
-            
-            <h3>Side Sonar Vision (SSV) Innovation</h3>
+        </div>
+
+        <div class="card">
+            <h2>Affordable Mapping Solution</h2>
             <p>
-                A novel extension called Side Sonar Vision (SSV) divides the surrounding environment into three strategic zones: front, right, and left sides. Each zone is monitored by individual intelligent agents that analyze data separately and produce critical navigation parameters including angle and length measurements. This multi-agent approach enables the robot to achieve up to 98% path tracking accuracy with collision-free navigation, processing data in approximately 120 milliseconds.
-            </p>
-            
-            <h3>Affordable Mapping Solution</h3>
-            <p>
-                The research extends beyond navigation to include comprehensive mapping capabilities using only a single omnidirectional camera. By combining visual sonar data with robot odometry, the system generates accurate maps suitable for robot navigation. This affordable approach provides mapping quality comparable to established RGB-D camera and laser-based solutions, making advanced robotic mapping accessible to a broader range of applications.
+                Beyond navigation, the research extends to comprehensive mapping capabilities using only a single omnidirectional camera. By combining visual sonar data with robot odometry, the system generates accurate maps suitable for robot navigation at a fraction of traditional mapping system costs.
             </p>
             
             <div style="text-align: center; margin: 2rem 0;">
                 <img src="../assets/images/projects/visual_sonar/apping result with laser comparison in red.png" alt="Mapping Results Comparison" class="project-image">
-                <p class="image-caption">Mapping results showing comparison with laser-based sensors (highlighted in red)</p>
+                <p class="image-caption">Mapping results comparison: Visual Sonar output vs. laser-based sensors (highlighted in red)</p>
             </div>
             
-            <h3>Key Features</h3>
+            <h3>Mapping Advantages</h3>
             <ul>
-                <li><strong>Omnidirectional Vision System:</strong> 360-degree environmental perception without calibration</li>
-                <li><strong>Advanced Visual Sonar Algorithms:</strong> Real-time distance estimation and obstacle detection</li>
-                <li><strong>Multi-Agent Navigation:</strong> Side Sonar Vision with independent zone monitoring</li>
-                <li><strong>Affordable Mapping:</strong> Single-camera mapping solution comparable to expensive alternatives</li>
-                <li><strong>High Accuracy:</strong> Up to 98% path tracking accuracy with collision-free navigation</li>
-                <li><strong>Real-time Processing:</strong> 120ms processing time for efficient live robot operation</li>
+                <li><strong>Single Camera Solution:</strong> No additional sensors required</li>
+                <li><strong>Comparable Accuracy:</strong> Performance matching RGB-D and laser systems</li>
+                <li><strong>Cost Effective:</strong> Significant reduction in hardware requirements</li>
+                <li><strong>Real-Time Generation:</strong> Maps created during navigation</li>
             </ul>
+        </div>
 
-            <h3>Technical Specifications</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px;">
-                    <strong>Vision System:</strong><br>
-                    Omnidirectional camera with 360° field of view
+        <div class="card">
+            <h2>Technical Specifications & Performance</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4><i class="fas fa-camera"></i> Vision System</h4>
+                    <p>Omnidirectional camera with 360° field of view, no calibration required</p>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px;">
-                    <strong>Processing:</strong><br>
-                    Real-time visual processing algorithms
+                <div class="spec-item">
+                    <h4><i class="fas fa-clock"></i> Processing Speed</h4>
+                    <p>Real-time processing in approximately 120 milliseconds</p>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px;">
-                    <strong>Navigation:</strong><br>
-                    Advanced path planning and obstacle avoidance
+                <div class="spec-item">
+                    <h4><i class="fas fa-bullseye"></i> Navigation Accuracy</h4>
+                    <p>Up to 98% path tracking accuracy with collision-free navigation</p>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px;">
-                    <strong>Platform:</strong><br>
-                    Mobile robotic platform with integrated sensors
+                <div class="spec-item">
+                    <h4><i class="fas fa-robot"></i> Platform Compatibility</h4>
+                    <p>Compatible with various mobile robotic platforms and sensor configurations</p>
                 </div>
             </div>
             
@@ -156,11 +247,11 @@
             <div class="image-grid">
                 <div class="image-item">
                     <img src="../assets/images/projects/visual_sonar/ATRVjr_robot.jpg" alt="ATRV Jr Robot Platform">
-                    <p class="image-caption">ATRV Jr mobile robot platform used in experiments</p>
+                    <p class="image-caption">ATRV Jr mobile robot platform used in experimental validation</p>
                 </div>
                 <div class="image-item">
                     <img src="../assets/images/projects/visual_sonar/alibration and polynomial odometry fitting d.png" alt="Calibration and Odometry">
-                    <p class="image-caption">Calibration and polynomial odometry fitting process</p>
+                    <p class="image-caption">Calibration and polynomial odometry fitting process for enhanced accuracy</p>
                 </div>
             </div>
         </div>
