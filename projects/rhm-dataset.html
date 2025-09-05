@@ -8,90 +8,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <style>
-        .project-hero {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .project-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .project-hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .back-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .back-button:hover {
-            text-decoration: underline;
-        }
-        .project-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-        .dataset-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        .stat-card {
-            background: var(--section-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            border-top: 3px solid var(--accent-color);
-        }
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            display: block;
-        }
-        .papers-list {
-            display: grid;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-        .paper-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-color);
-            box-shadow: var(--card-shadow);
-        }
-        .paper-title {
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        .dataset-preview {
-            background: var(--section-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            margin: 2rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/styles/rhm-dataset.css">
 </head>
 <body>
     <div class="project-hero">
         <div class="hero-content">
             <h1><i class="fas fa-database"></i> RHM Dataset</h1>
             <p>A comprehensive multiview visual dataset for human activity recognition designed for assistive robots and HRI scenarios</p>
+            
+            <!-- Dataset Video Showcase -->
+            <div class="dataset-showcase">
+                <div class="showcase-header">
+                    <h3>Complete Dataset Overview: All Activities & Views</h3>
+                    <div class="showcase-info">
+                        <p><strong>26,804 videos</strong> across <strong>14 activities</strong> • <strong>4 synchronized viewpoints</strong> • RGB + Skeleton data</p>
+                    </div>
+                </div>
+                
+                <div class="video-matrix">
+                    <!-- Front View Row -->
+                    <div class="matrix-row">
+                        <div class="view-label">Front</div>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Walking/Walking_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Drinking/Drinking_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Bending/Bending_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/CarryingObject/CarryingObject_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Cleaning/Cleaning_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/ClosingCan/ClosingCan_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/LiftingObject/LiftingObject_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/OpeningCan/OpeningCan_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/PuttingDownObjects/PuttingDownObjects_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Reaching/Reaching_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/SittingDown/SittingDown_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingDown/StairsClimbingDown_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingUp/StairsClimbingUp_FrontView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StandingUp/StandingUp_FrontView.mp4" type="video/mp4"></video>
+                    </div>
+                    
+                    <!-- Back View Row -->
+                    <div class="matrix-row">
+                        <div class="view-label">Back</div>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Walking/Walking_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Drinking/Drinking_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Bending/Bending_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/CarryingObject/CarryingObject_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Cleaning/Cleaning_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/ClosingCan/ClosingCan_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/LiftingObject/LiftingObject_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/OpeningCan/OpeningCan_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/PuttingDownObjects/PuttingDownObjects_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Reaching/Reaching_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/SittingDown/SittingDown_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingDown/StairsClimbingDown_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingUp/StairsClimbingUp_BackView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StandingUp/StandingUp_BackView.mp4" type="video/mp4"></video>
+                    </div>
+                    
+                    <!-- Robot View Row -->
+                    <div class="matrix-row">
+                        <div class="view-label">Robot</div>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Walking/Walking_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Drinking/Drinking_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Bending/Bending_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/CarryingObject/CarryingObject_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Cleaning/Cleaning_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/ClosingCan/ClosingCan_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/LiftingObject/LiftingObject_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/OpeningCan/OpeningCan_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/PuttingDownObjects/PuttingDownObjects_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Reaching/Reaching_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/SittingDown/SittingDown_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingDown/StairsClimbingDown_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingUp/StairsClimbingUp_RobotView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StandingUp/StandingUp_RobotView.mp4" type="video/mp4"></video>
+                    </div>
+                    
+                    <!-- Omni View Row -->
+                    <div class="matrix-row">
+                        <div class="view-label">Omni</div>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Walking/Walking_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Drinking/Drinking_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Bending/Bending_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/CarryingObject/CarryingObject_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Cleaning/Cleaning_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/ClosingCan/ClosingCan_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/LiftingObject/LiftingObject_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/OpeningCan/OpeningCan_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/PuttingDownObjects/PuttingDownObjects_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/Reaching/Reaching_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/SittingDown/SittingDown_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingDown/StairsClimbingDown_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StairsClimbingUp/StairsClimbingUp_OmniView.mp4" type="video/mp4"></video>
+                        <video autoplay loop muted><source src="../assets/images/projects/rhm/gif/StandingUp/StandingUp_OmniView.mp4" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-dataset-links">
+                <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-1/" target="_blank" class="hero-dataset-btn">
+                    <i class="fas fa-download"></i>
+                    <span>RHM RGB Dataset</span>
+                </a>
+                <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-SK/" target="_blank" class="hero-dataset-btn">
+                    <i class="fas fa-download"></i>
+                    <span>RHM Skeleton Dataset</span>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -101,133 +123,369 @@
         </a>
 
         <div class="card">
-            <h2>Dataset Overview</h2>
+            <h2>Introduction</h2>
             <p>
-                The RHM (Real-time Human Activity Monitoring) Dataset is a comprehensive multiview visual dataset specifically designed for human activity recognition in assistive robotics and Human-Robot Interaction (HRI) scenarios. This dataset provides researchers and developers with a robust benchmark for evaluating and developing HAR systems that can operate effectively in real-world environments.
+                The Robot House Multi-View (RHM) Dataset represents a significant advancement in human activity recognition research, specifically designed for assistive robotics and ambient intelligence applications. Created in a typical British home environment, this comprehensive dataset addresses the critical need for understanding human activities in domestic settings where companion robots and smart home systems must operate effectively.
             </p>
             
-            <h3>Key Features</h3>
-            <ul>
-                <li><strong>Multiview Capture:</strong> 4 synchronized camera views for comprehensive activity coverage</li>
-                <li><strong>Diverse Activities:</strong> Wide range of daily living activities and interactions</li>
-                <li><strong>HRI Focus:</strong> Specifically designed for human-robot interaction scenarios</li>
-                <li><strong>High Quality:</strong> Professional-grade video capture with consistent lighting and setup</li>
-                <li><strong>Benchmark Ready:</strong> Pre-processed and annotated for immediate research use</li>
-            </ul>
+            <p>
+                What sets RHM apart is its focus on <strong>essential daily living activities</strong> that are crucial for independent living and home care scenarios. The dataset features synchronized multi-view recordings from four strategically positioned cameras, including a unique mobile robot perspective that provides dynamic viewpoints not available in traditional fixed-camera setups.
+            </p>
 
             <div class="dataset-stats">
                 <div class="stat-card">
-                    <span class="stat-number">4</span>
-                    <div>Camera Views</div>
+                    <span class="stat-number">26,804</span>
+                    <div>Total Video Clips</div>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">XX</span>
+                    <span class="stat-number">4</span>
+                    <div>Synchronized Views</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">14</span>
                     <div>Activity Classes</div>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">XXX</span>
-                    <div>Video Sequences</div>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">XX hrs</span>
-                    <div>Total Duration</div>
+                    <span class="stat-number">6,701</span>
+                    <div>Videos per View</div>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <h2>Dataset Structure</h2>
-            <p>The RHM dataset is organized to facilitate easy access and use for research purposes:</p>
+            <h2>Multi-Camera Setup</h2>
+            <p>
+                The RHM dataset employs a sophisticated four-camera configuration designed to capture comprehensive activity information from complementary perspectives. This multi-view approach enables robust activity recognition that can handle occlusions, varying lighting conditions, and different spatial relationships.
+            </p>
             
-            <h3>Camera Views</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
-                    <strong>View 1</strong><br>
-                    Front Perspective
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #3498db;">
+                    <h4><i class="fas fa-video" style="color: #3498db;"></i> FrontView Camera</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Type:</strong> Static wall-mounted</li>
+                        <li><strong>Resolution:</strong> 640 × 480 @ 30 FPS</li>
+                        <li><strong>Advantage:</strong> Elevated position captures table surfaces, stairs, and full room area</li>
+                        <li><strong>Performance:</strong> Most reliable for pose extraction</li>
+                    </ul>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
-                    <strong>View 2</strong><br>
-                    Side Perspective
+                
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #e74c3c;">
+                    <h4><i class="fas fa-video" style="color: #e74c3c;"></i> BackView Camera</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Type:</strong> Static wall-mounted</li>
+                        <li><strong>Resolution:</strong> 640 × 480 @ 30 FPS</li>
+                        <li><strong>Position:</strong> Opposite perspective to FrontView</li>
+                        <li><strong>Coverage:</strong> Complementary angles for activity verification</li>
+                    </ul>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
-                    <strong>View 3</strong><br>
-                    Top Perspective
+                
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2ecc71;">
+                    <h4><i class="fas fa-robot" style="color: #2ecc71;"></i> RobotView Camera</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Platform:</strong> <a href="https://fetchrobotics.com/" target="_blank">Fetch Mobile Robot</a></li>
+                        <li><strong>Resolution:</strong> 640 × 480 @ 30 FPS</li>
+                        <li><strong>Unique Feature:</strong> Dynamic following and head tracking</li>
+                        <li><strong>Strength:</strong> Excels in vertical movement activities</li>
+                    </ul>
                 </div>
-                <div style="background: var(--section-bg); padding: 1rem; border-radius: 8px; text-align: center;">
-                    <strong>View 4</strong><br>
-                    Diagonal Perspective
+                
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f39c12;">
+                    <h4><i class="fas fa-eye" style="color: #f39c12;"></i> OmniView Camera</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Type:</strong> Ceiling-mounted fish-eye</li>
+                        <li><strong>Resolution:</strong> 512 × 486 @ 30 FPS</li>
+                        <li><strong>Coverage:</strong> Complete room omnidirectional view</li>
+                        <li><strong>Note:</strong> Excluded from analysis due to pose extraction challenges</li>
+                    </ul>
                 </div>
             </div>
-
-            <h3>Activity Categories</h3>
-            <p>The dataset includes various daily living activities relevant to assistive robotics and HRI scenarios.</p>
         </div>
 
         <div class="card">
-            <h2>Dataset Preview</h2>
-            <div class="dataset-preview">
-                <i class="fas fa-play-circle" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <p><strong>Dataset Animation Preview</strong></p>
-                <p>Animated GIF showing all activity classes from all camera views</p>
-                <p><em>Preview will be added here showing the comprehensive nature of the dataset</em></p>
+            <h2>Activity Classes and Distribution</h2>
+            <p>
+                The 14 activity classes in RHM were carefully selected based on their importance for independent living and their relevance to assistive robotics applications. Each activity represents a fundamental daily task that companion robots and ambient systems must recognize to provide meaningful assistance.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                <div class="activity-item">
+                    <span class="activity-name">Lifting Objects</span>
+                    <span class="activity-count">700</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Reaching</span>
+                    <span class="activity-count">696</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Putting Objects Down</span>
+                    <span class="activity-count">649</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Cleaning</span>
+                    <span class="activity-count">448</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Sitting Down</span>
+                    <span class="activity-count">437</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Stretching</span>
+                    <span class="activity-count">433</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Stairs Climbing Up</span>
+                    <span class="activity-count">430</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Walking</span>
+                    <span class="activity-count">426</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Opening Can</span>
+                    <span class="activity-count">421</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Closing Can</span>
+                    <span class="activity-count">421</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Stairs Climbing Down</span>
+                    <span class="activity-count">413</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Carrying Objects</span>
+                    <span class="activity-count">412</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Drinking</span>
+                    <span class="activity-count">408</span>
+                </div>
+                <div class="activity-item">
+                    <span class="activity-name">Standing Up</span>
+                    <span class="activity-count">407</span>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--primary-color);">
+                <h4><i class="fas fa-info-circle" style="color: var(--primary-color);"></i> Activity Selection Rationale</h4>
+                <p style="margin: 0;">
+                    These activities span fundamental categories essential for home care: <strong>mobility</strong> (walking, stairs), <strong>object manipulation</strong> (lifting, carrying), <strong>self-care</strong> (drinking, stretching), and <strong>household tasks</strong> (cleaning, reaching). This comprehensive coverage ensures the dataset addresses real-world scenarios where assistive robots must demonstrate understanding and appropriate response capabilities.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Dataset Organization and Splits</h2>
+            <p>
+                The RHM dataset follows rigorous machine learning best practices with standardized train-validation-test splits that ensure reliable evaluation and comparison across different research approaches.
+            </p>
+            
+            <div class="dataset-splits">
+                <div class="split-card train">
+                    <div class="split-percentage">65%</div>
+                    <div><strong>Training Set</strong></div>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        4,278 videos per view<br>
+                        <strong>17,112 total videos</strong>
+                    </div>
+                </div>
+                <div class="split-card validation">
+                    <div class="split-percentage">15%</div>
+                    <div><strong>Validation Set</strong></div>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        1,076 videos per view<br>
+                        <strong>4,304 total videos</strong>
+                    </div>
+                </div>
+                <div class="split-card test">
+                    <div class="split-percentage">20%</div>
+                    <div><strong>Test Set</strong></div>
+                    <div style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                        1,347 videos per view<br>
+                        <strong>5,388 total videos</strong>
+                    </div>
+                </div>
             </div>
             
-            <div class="dataset-preview">
-                <i class="fas fa-images" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
-                <p><strong>Sample Images</strong></p>
-                <p>Representative images from the dataset showing the quality and diversity of captured activities</p>
+            <h3>Technical Specifications</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 6px;">
+                    <strong>Clip Duration:</strong> Variable 1-5 seconds
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 6px;">
+                    <strong>Synchronization:</strong> All 4 camera views perfectly aligned
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 6px;">
+                    <strong>Environment:</strong> Typical British home living room
+                </div>
+                <div style="background: var(--section-bg); padding: 1rem; border-radius: 6px;">
+                    <strong>Subjects:</strong> Single person per video clip
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>RHM Skeleton: Skeleton Extension</h2>
+            <p>
+                Building upon the RGB foundation, the <strong>RHM Skeleton</strong> dataset provides skeleton-based pose data extracted using state-of-the-art human pose estimation. This multi-modal extension enables researchers to explore both appearance-based and pose-based approaches to activity recognition, offering complementary perspectives for robust system development.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color);">
+                    <h4><i class="fas fa-cogs" style="color: var(--primary-color);"></i> Pose Extraction Pipeline</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Model:</strong> HRNet (COCO + MPII trained)</li>
+                        <li><strong>Output:</strong> 17 body keypoints per frame</li>
+                        <li><strong>Format:</strong> X, Y coordinates + confidence scores</li>
+                        <li><strong>Processing:</strong> JSON → 5D Tensor conversion</li>
+                    </ul>
+                </div>
+                
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--secondary-color);">
+                    <h4><i class="fas fa-database" style="color: var(--secondary-color);"></i> Dataset Structure</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Videos:</strong> 6,700 synchronized across views</li>
+                        <li><strong>Tensor Shape:</strong> [Sample, View, Frame, Pose, Coord]</li>
+                        <li><strong>Frame Sampling:</strong> Fixed lengths (34, 64, 128)</li>
+                        <li><strong>Quality Control:</strong> Confidence-based filtering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Comprehensive Quality Analysis</h3>
+            <p>
+                Extensive quality assessment reveals critical insights about pose extraction reliability across different camera views and activity types, providing valuable guidance for multi-view system design.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px;">
+                    <h4><i class="fas fa-camera" style="color: #3498db;"></i> Camera Performance Analysis</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Front View:</strong> Most reliable overall performance</li>
+                        <li><strong>Robot View:</strong> Excels in vertical movements (stairs)</li>
+                        <li><strong>Back View:</strong> Challenges with most pose types</li>
+                        <li><strong>Omni View:</strong> High failure rate (excluded)</li>
+                    </ul>
+                </div>
+                
+                <div style="background: var(--section-bg); padding: 1.5rem; border-radius: 8px;">
+                    <h4><i class="fas fa-user-check" style="color: #2ecc71;"></i> Joint Reliability Ranking</h4>
+                    <ul style="margin: 0.5rem 0;">
+                        <li><strong>Most Reliable:</strong> Left/Right Shoulders</li>
+                        <li><strong>Moderate:</strong> Head region (nose, eyes, ears)</li>
+                        <li><strong>Variable:</strong> Arms and hip joints</li>
+                        <li><strong>Challenging:</strong> Ankle joints (especially robot view)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 2rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid #f39c12;">
+                <h4><i class="fas fa-lightbulb" style="color: #f39c12;"></i> Key Research Insights</h4>
+                <ul style="margin: 0; columns: 1;">
+                    <li><strong>Activity-View Correlation:</strong> Vertical activities (stairs, sitting) show different reliability patterns across camera positions</li>
+                    <li><strong>Distance Effect:</strong> Mobile robot's proximity creates both advantages (detailed tracking) and challenges (occlusion)</li>
+                    <li><strong>Elevation Advantage:</strong> Higher-positioned cameras provide more consistent pose extraction</li>
+                    <li><strong>Joint Hierarchy:</strong> Core body joints (shoulders, hips) significantly more reliable than extremities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Research Impact and Applications</h2>
+            <p>
+                The RHM dataset addresses critical gaps in human activity recognition research, particularly in domestic environments where assistive technologies must operate reliably and safely.
+            </p>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h4><i class="fas fa-robot" style="color: var(--primary-color);"></i> Assistive Robotics</h4>
+                    <p>Enable home care robots to understand daily activities, predict user needs, and provide appropriate assistance while maintaining safety and privacy.</p>
+                </div>
+                
+                <div class="application-card">
+                    <h4><i class="fas fa-home" style="color: var(--primary-color);"></i> Ambient Intelligence</h4>
+                    <p>Develop smart home systems that adapt to user behavior patterns, optimize energy usage, and provide proactive support for independent living.</p>
+                </div>
+                
+                <div class="application-card">
+                    <h4><i class="fas fa-heartbeat" style="color: var(--primary-color);"></i> Healthcare Monitoring</h4>
+                    <p>Create non-intrusive monitoring systems for elderly care, rehabilitation tracking, and early detection of health changes through activity pattern analysis.</p>
+                </div>
+                
+                <div class="application-card">
+                    <h4><i class="fas fa-brain" style="color: var(--primary-color);"></i> Multi-View Learning</h4>
+                    <p>Advance computer vision research in multi-perspective analysis, view fusion techniques, and robust activity recognition under varying conditions.</p>
+                </div>
             </div>
         </div>
 
         <div class="card">
             <h2>Related Publications</h2>
-            <p>The RHM dataset has been featured in several research publications:</p>
+            <p>The RHM dataset evolution represents a comprehensive research trajectory spanning foundational work to advanced multi-modal analysis:</p>
             
-            <div class="papers-list">
-                <div class="paper-item">
-                    <div class="paper-title">Paper 1: RHM Dataset for Human Activity Recognition</div>
-                    <p>Original paper introducing the dataset, its collection methodology, and baseline performance results.</p>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px; padding: 1rem; margin: 1.5rem 0; color: #856404;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <i class="fas fa-exclamation-triangle" style="color: #f39c12;"></i>
+                    <strong>Citation Required</strong>
                 </div>
-                
-                <div class="paper-item">
-                    <div class="paper-title">Paper 2: Multiview HAR for Assistive Robotics</div>
-                    <p>Application of the RHM dataset in developing assistive robotic systems with enhanced human understanding.</p>
-                </div>
-                
-                <div class="paper-item">
-                    <div class="paper-title">Paper 3: Real-time Processing Techniques for Multiview HAR</div>
-                    <p>Advanced processing techniques developed using the RHM dataset for real-time activity recognition.</p>
-                </div>
-                
-                <div class="paper-item">
-                    <div class="paper-title">Paper 4: Benchmark Evaluation of HAR Systems</div>
-                    <p>Comprehensive evaluation of state-of-the-art HAR systems using the RHM dataset as a benchmark.</p>
-                </div>
+                <p style="margin: 0; font-size: 0.95rem;">Please cite the relevant papers below if you are using the datasets in your research.</p>
+            </div>
+            
+            <div class="paper-item">
+                <a href="javascript:void(0)" onclick="navigateToPublication('pub-rhm-dataset')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">RHM: Robot House Multi-view Human Activity Recognition Dataset</a>
+                <p>Comprehensive documentation of the multi-view RGB dataset, detailing collection methodology, synchronization techniques, and baseline performance evaluations.</p>
+            </div>
+            
+            <div class="paper-item">
+                <a href="javascript:void(0)" onclick="navigateToPublication('pub-rhm-skeleton')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">RH-HAR-SK: A Multi-view Dataset with Skeleton Data for Ambient Assisted Living Research</a>
+                <p>Advanced extension incorporating skeleton pose data, quality analysis across multiple views, and applications to ambient assisted living scenarios.</p>
+            </div>
+            
+            <div class="paper-item">
+                <a href="javascript:void(0)" onclick="navigateToPublication('pub-robot-house-dataset')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Robot house human activity recognition dataset</a>
+                <p>Original dataset introduction presenting the Robot House platform and initial activity recognition capabilities, laying groundwork for multi-view expansion.</p>
+            </div>
+            
+            <div class="paper-item">
+                <a href="javascript:void(0)" onclick="navigateToPublication('pub-robocup-har')" class="paper-title" style="text-decoration: none; color: var(--primary-color); cursor: pointer;">Human activity recognition in robocup@home: inspiration from online benchmarks</a>
+                <p>Foundational exploration of HAR challenges in domestic environments, establishing the conceptual framework that inspired the RHM dataset development.</p>
             </div>
         </div>
 
-        <div class="card">
-            <h2>Applications</h2>
-            <p>The RHM dataset is particularly valuable for:</p>
-            <ul>
-                <li><strong>Assistive Robotics:</strong> Developing robots that can understand and respond to human activities</li>
-                <li><strong>Smart Home Systems:</strong> Creating intelligent environments that adapt to user behavior</li>
-                <li><strong>Healthcare Monitoring:</strong> Building systems for elderly care and health monitoring</li>
-                <li><strong>HRI Research:</strong> Advancing human-robot interaction through better activity understanding</li>
-            </ul>
-        </div>
-
         <div class="card" style="text-align: center;">
-            <h2>Access the Dataset</h2>
+            <h2>Access the Datasets</h2>
             <p>
-                The RHM dataset is available for research purposes. Please cite the original publication when using this dataset in your research.
+                Both the RHM RGB dataset and RHM Skeleton dataset are available for research purposes. Please cite the relevant publications when using these datasets in your research.
             </p>
             
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; text-align: left;">
+                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--primary-color);">
+                    <h3 style="margin-top: 0; color: var(--primary-color); text-align: center;">
+                        <i class="fas fa-video"></i> RHM RGB Dataset
+                    </h3>
+                    <p>Multi-view RGB video dataset with 26,804 videos across 4 synchronized camera views covering 14 daily activities.</p>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-1/" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i> RHM Dataset
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--secondary-color);">
+                    <h3 style="margin-top: 0; color: var(--secondary-color); text-align: center;">
+                        <i class="fas fa-user"></i> RHM Skeleton Dataset
+                    </h3>
+                    <p>Skeleton pose dataset with 17 keypoints extracted from 6,700 synchronized videos using HRNet, stored in 5D tensor format.</p>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-SK/" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Skeleton Dataset
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             <div style="margin-top: 2rem;">
-                <a href="https://uhra.herts.ac.uk/handle/2299/27046" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-external-link-alt"></i> Access Dataset
-                </a>
-                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-outline" style="margin-left: 1rem;">
+                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-outline">
                     <i class="fas fa-envelope"></i> Contact for Details
                 </a>
             </div>
@@ -241,6 +499,15 @@
     </div>
 
     <script>
+        // Function to navigate to specific publication
+        function navigateToPublication(publicationId) {
+            // Store the target publication ID for after navigation
+            sessionStorage.setItem('targetPublication', publicationId);
+            
+            // Navigate to the main page with publications section
+            window.location.href = '../index.html#publications';
+        }
+        
         // Smooth scroll for navigation
         document.addEventListener('DOMContentLoaded', function() {
             const backButton = document.querySelector('.back-button');
