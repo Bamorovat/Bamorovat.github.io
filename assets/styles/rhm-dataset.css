@@ -551,6 +551,31 @@
     position: relative;
 }
 
+/* Video tooltip styling */
+.video-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    pointer-events: none;
+    z-index: 1000;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.video-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive design for video matrix */
 @media (max-width: 1400px) {
     .dataset-showcase {
