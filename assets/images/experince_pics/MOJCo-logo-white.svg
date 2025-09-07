@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512">
+  <title>MOJ.Co – wave + robot minimal logo (white)</title>
+  <g fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Robot head -->
+    <rect x="60" y="80" width="160" height="120" rx="24" ry="24"/>
+    <line x1="140" y1="60" x2="140" y2="80"/>
+    <circle cx="140" cy="50" r="10"/>
+    <circle cx="110" cy="140" r="8"/>
+    <circle cx="170" cy="140" r="8"/>
+
+    <!-- 'M' body/arms -->
+    <path d="M60 280 L120 320 L180 280 L240 320"/>
+    <circle cx="240" cy="320" r="16"/>
+
+    <!-- Link to wave -->
+    <line x1="256" y1="320" x2="300" y2="268"/>
+
+    <!-- Wave 'O' -->
+    <circle cx="350" cy="260" r="52"/>
+    <path d="M318 260 Q336 240 356 257 T382 262" />
+
+    <!-- Robotic 'J' arm + gripper -->
+    <path d="M392 292 L420 328 L420 354 Q420 382 396 382" />
+    <path d="M420 328 L442 314" />
+    <path d="M420 328 L434 350" />
+
+    <!-- Wordmark (light, small) -->
+    <g font-family="Inter, Arial, Helvetica, sans-serif" font-size="44" fill="#FFFFFF" stroke="none">
+      <text x="96" y="448" letter-spacing="2">MOJ.Co</text>
+    </g>
+  </g>
+</svg>
