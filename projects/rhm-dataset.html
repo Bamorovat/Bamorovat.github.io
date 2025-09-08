@@ -105,12 +105,12 @@
             </div>
             
             <div class="hero-dataset-links">
-                <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-1/" target="_blank" class="hero-dataset-btn">
-                    <i class="fas fa-download"></i>
+                <a href="#rgb-dataset" class="hero-dataset-btn hero-rgb-btn">
+                    <i class="fas fa-video"></i>
                     <span>RHM RGB Dataset</span>
                 </a>
-                <a href="https://robothouse-dev.herts.ac.uk/datasets/RHM/HAR-SK/" target="_blank" class="hero-dataset-btn">
-                    <i class="fas fa-download"></i>
+                <a href="#skeleton-dataset" class="hero-dataset-btn hero-skeleton-btn">
+                    <i class="fas fa-user"></i>
                     <span>RHM Skeleton Dataset</span>
                 </a>
                 <a href="#github-repositories" class="hero-dataset-btn hero-github-btn">
@@ -463,7 +463,7 @@
             </p>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; text-align: left;">
-                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--primary-color);">
+                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--primary-color);" id="rgb-dataset">
                     <h3 style="margin-top: 0; color: var(--primary-color); text-align: center;">
                         <i class="fas fa-video"></i> RHM RGB Dataset
                     </h3>
@@ -475,7 +475,7 @@
                     </div>
                 </div>
                 
-                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--secondary-color);">
+                <div style="background: var(--section-bg); padding: 2rem; border-radius: 8px; border-top: 4px solid var(--secondary-color);" id="skeleton-dataset">
                     <h3 style="margin-top: 0; color: var(--secondary-color); text-align: center;">
                         <i class="fas fa-user"></i> RHM Skeleton Dataset
                     </h3>
@@ -607,12 +607,13 @@
                 });
             }
             
-            // Smooth scroll for GitHub link
-            const githubLink = document.querySelector('a[href="#github-repositories"]');
-            if (githubLink) {
-                githubLink.addEventListener('click', function(e) {
+            // Smooth scroll for all hero navigation links
+            const heroNavLinks = document.querySelectorAll('a[href^="#"]');
+            heroNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const targetSection = document.getElementById('github-repositories');
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
@@ -620,7 +621,7 @@
                         });
                     }
                 });
-            }
+            });
         });
     </script>
 </body>

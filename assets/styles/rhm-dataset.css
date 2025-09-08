@@ -110,12 +110,16 @@
     margin-bottom: 0.3rem;
 }
 
-/* GitHub button styling in hero */
+/* Hero navigation buttons styling - all dark like GitHub */
+.hero-rgb-btn,
+.hero-skeleton-btn,
 .hero-github-btn {
     background: #24292e;
     border: 2px solid #24292e;
 }
 
+.hero-rgb-btn:hover,
+.hero-skeleton-btn:hover,
 .hero-github-btn:hover {
     background: transparent;
     color: #24292e;
