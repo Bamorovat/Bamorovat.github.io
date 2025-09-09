@@ -15,6 +15,21 @@
         <div class="hero-content">
             <h1><i class="fas fa-eye"></i> Visual Sonar</h1>
             <p>Mobile robot navigation using visual sonar via omnidirectional vision system</p>
+            
+            <div class="hero-demo" style="margin-top: 2rem;">
+                <img src="../assets/images/projects/visual_sonar/visual_sonar_demo.gif" alt="Visual Sonar Demo" class="hero-gif">
+            </div>
+            
+            <div class="hero-dataset-links">
+                <a href="#github-repository" class="hero-dataset-btn hero-github-btn">
+                    <i class="fab fa-github"></i>
+                    <span>Source Code</span>
+                </a>
+                <a href="#related-publications" class="hero-dataset-btn hero-papers-btn">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Research Papers</span>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -246,12 +261,21 @@
             <h3>Project Gallery</h3>
             <div class="image-grid">
                 <div class="image-item">
-                    <img src="../assets/images/projects/visual_sonar/ATRVjr_robot.jpg" alt="ATRV Jr Robot Platform">
+                    <img src="../assets/images/projects/visual_sonar/ATRVjr_robot.jpg" alt="ATRV Jr Robot Platform" class="clickable-image" onclick="openImageModal(this)">
                     <p class="image-caption">ATRV Jr mobile robot platform used in experimental validation</p>
                 </div>
                 <div class="image-item">
-                    <img src="../assets/images/projects/visual_sonar/alibration and polynomial odometry fitting d.png" alt="Calibration and Odometry">
+                    <img src="../assets/images/projects/visual_sonar/alibration and polynomial odometry fitting d.png" alt="Calibration and Odometry" class="clickable-image" onclick="openImageModal(this)">
                     <p class="image-caption">Calibration and polynomial odometry fitting process for enhanced accuracy</p>
+                </div>
+            </div>
+            
+            <!-- Image Modal -->
+            <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeImageModal()">&times;</span>
+                    <img id="modalImage" src="" alt="">
+                    <div class="modal-caption" id="modalCaption"></div>
                 </div>
             </div>
         </div>
@@ -264,7 +288,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="related-publications">
             <h2>Related Publications</h2>
             <p>This project has resulted in several peer-reviewed publications showcasing different aspects of the omnidirectional vision system and mobile robot navigation:</p>
             
@@ -291,44 +315,27 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" style="text-align: center;" id="github-repository">
             <h2>GitHub Repository & Resources</h2>
             <p>
                 Access the complete source code, documentation, and implementation details for the Visual Sonar project. The repository includes ROS packages, algorithms, and experimental configurations used in this research.
             </p>
             
-            <div class="project-links" style="margin-top: 1.5rem;">
-                <a href="https://github.com/Bamorovat/VisualSonarRos/tree/V.2.0-alpha" target="_blank" class="btn btn-primary" style="margin-right: 1rem;">
+            <div style="margin-top: 1.5rem;">
+                <a href="https://github.com/Bamorovat/VisualSonarRos" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-github"></i> View Source Code
-                </a>
-                <a href="https://github.com/Bamorovat/VisualSonarRos/tree/V.2.0-alpha#readme" target="_blank" class="btn btn-outline">
-                    <i class="fas fa-book"></i> Documentation
                 </a>
             </div>
             
-            <div style="margin-top: 1rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
                 <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
                     <i class="fas fa-info-circle"></i> 
                     <strong>Repository Features:</strong> Complete ROS implementation, Visual Sonar algorithms, Side Sonar Vision (SSV) components, experimental datasets, and configuration files for omnidirectional camera systems.
                 </p>
             </div>
-        </div>
-
-        <div class="card" style="text-align: center;">
-            <h2>Project Impact</h2>
-            <p>
-                The Visual Sonar project has made significant contributions to the field of mobile robotics by demonstrating that sophisticated navigation and mapping capabilities can be achieved using minimal hardware requirements. This research has proven that omnidirectional vision systems can replace expensive sensor arrays while maintaining high performance standards, making advanced robotics more accessible and economically viable.
-            </p>
-            
-            <p>
-                The developed algorithms and systems have broad applications across multiple domains including service robotics, autonomous vehicles, industrial automation, and cost-sensitive robotic applications. The 98% path tracking accuracy achieved with 120ms processing time demonstrates the practical viability of this technology for real-world deployment.
-            </p>
             
             <div style="margin-top: 2rem;">
-                <a href="mailto:m.bamorovvat@gmail.com" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i> Discuss This Project
-                </a>
-                <a href="../index.html#projects" class="btn btn-outline" style="margin-left: 1rem;">
+                <a href="../index.html#projects" class="btn btn-outline">
                     <i class="fas fa-arrow-left"></i> Back to Projects
                 </a>
             </div>
@@ -345,6 +352,36 @@
             window.location.href = '../index.html#publications';
         }
         
+        // Image modal functionality
+        function openImageModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            
+            modal.style.display = 'flex';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modalCaption.textContent = img.alt;
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+        
         // Smooth scroll for navigation
         document.addEventListener('DOMContentLoaded', function() {
             const backButton = document.querySelector('.back-button');
@@ -354,6 +391,22 @@
                     window.location.href = '../index.html#projects';
                 });
             }
+            
+            // Smooth scroll for all hero navigation links
+            const heroNavLinks = document.querySelectorAll('a[href^="#"]');
+            heroNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
