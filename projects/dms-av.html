@@ -8,85 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <style>
-        .project-hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        .project-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .project-hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .back-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .back-button:hover {
-            text-decoration: underline;
-        }
-        .project-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        .feature-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-            border-top: 4px solid var(--primary-color);
-            text-align: center;
-        }
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        .demo-preview {
-            background: var(--section-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .tech-specs {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        .spec-item {
-            background: var(--section-bg);
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-color);
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/styles/dms-av.css">
 </head>
 <body>
     <div class="project-hero">
         <div class="hero-content">
             <h1><i class="fas fa-car"></i> DMS for Autonomous Vehicles</h1>
-            <p>Advanced Driver Monitoring System with real-time eye tracking, yawn detection, and head orientation analysis</p>
+            <p>Advanced Driver Monitoring System for real-time drowsiness and attention detection using computer vision and ROS</p>
+            <div class="hero-banner-img">
+                <img src="../assets/images/projects/dms/dms_banner.png" alt="DMS Banner" class="hero-banner-pic">
+            </div>
+            <div class="hero-dataset-links">
+                <a href="#github-repository" class="hero-dataset-btn hero-github-btn">
+                    <i class="fab fa-github"></i>
+                    <span>Source Code</span>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -95,15 +32,16 @@
             <i class="fas fa-arrow-left"></i> Back to Projects
         </a>
 
-        <div class="card">
-            <h2>Project Overview</h2>
-            <p>
-                The Driver Monitoring System (DMS) for Autonomous Vehicles is a comprehensive safety solution developed at Conigital that combines advanced computer vision techniques with real-time processing to monitor driver behavior and alertness. This system represents a critical safety component for semi-autonomous and autonomous vehicles, ensuring driver readiness to take control when needed.
+        <div class="card project-overview">
+            <div class="overview-top">
+                <i class="fas fa-car-side overview-icon" aria-hidden="true"></i>
+                <h2>Project Overview</h2>
+            </div>
+            <p class="overview-lead">
+                <strong>ROS_DMS</strong> is a modular, real-time Driver Monitoring System for ROS, designed to detect drowsiness and attention using only a camera. It features robust eye calibration, blink/yawn detection, head pose estimation, and real-time alerts, making it ideal for autonomous and semi-autonomous vehicles.
             </p>
-            
-            <h3>Development Context</h3>
             <p>
-                This project was developed during my tenure as a Perception Engineer at Conigital, where I led the development of this comprehensive monitoring system. The project involved creating a complete end-to-end solution from algorithm development to deployment-ready code.
+                The system processes camera images to extract facial landmarks, computes eye and mouth aspect ratios, and triggers alerts for drowsiness or inattention. All processing is optimized for real-time performance on typical robotics hardware.
             </p>
         </div>
 
@@ -111,174 +49,93 @@
             <h2>Key Features</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <i class="fas fa-eye feature-icon"></i>
+                    <i class="fas fa-sliders-h feature-icon" aria-hidden="true"></i>
                     <h3>Eye Calibration</h3>
-                    <p>Advanced eye tracking calibration system for accurate blink detection and gaze analysis</p>
+                    <p>Automatic, per-driver calibration for robust thresholding.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <i class="fas fa-eye-slash feature-icon"></i>
+                    <i class="fas fa-eye feature-icon"></i>
                     <h3>Blink Detection</h3>
-                    <p>Real-time eye blink monitoring to assess driver alertness and detect microsleep episodes</p>
+                    <p>EAR-based blink and microsleep detection.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-tired feature-icon"></i>
                     <h3>Yawn Detection</h3>
-                    <p>Sophisticated facial analysis for detecting yawning patterns indicating driver fatigue</p>
+                    <p>MAR-based yawn/fatigue detection.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <i class="fas fa-head-side-mask feature-icon"></i>
-                    <h3>Head Orientation</h3>
-                    <p>3D head pose estimation to monitor driver attention and distraction levels</p>
+                    <i class="fas fa-head-side-mask feature-icon" aria-hidden="true"></i>
+                    <h3>Head Pose Estimation</h3>
+                    <p>3D head pose estimation for attention/distraction monitoring.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <i class="fas fa-clock feature-icon"></i>
+                    <i class="fas fa-bolt feature-icon"></i>
                     <h3>Real-time Processing</h3>
-                    <p>Optimized algorithms for real-time performance in automotive environments</p>
+                    <p>Optimized ROS nodes for interactive frame rates.</p>
                 </div>
-                
                 <div class="feature-card">
-                    <i class="fas fa-shield-alt feature-icon"></i>
-                    <h3>Safety Alerts</h3>
-                    <p>Intelligent alert system for notifying drivers and vehicle systems of attention issues</p>
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Alerts & Media</h3>
+                    <p>Audio alerts and configurable media files.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <h2>Technical Specifications</h2>
-            <div class="tech-specs">
-                <div class="spec-item">
-                    <strong>Processing Speed:</strong><br>
-                    Real-time performance at 30+ FPS
+        <div class="card capabilities redesigned-capabilities">
+            <div class="capabilities-header">
+                <i class="fas fa-bolt capability-header-icon" aria-hidden="true"></i>
+                <h2>Capabilities</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <i class="fas fa-user-check"></i>
+                    <span>Personalized calibration for each driver</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Eye Tracking Accuracy:</strong><br>
-                    Sub-pixel precision for eye center detection
+                <div class="capability-item">
+                    <i class="fas fa-eye"></i>
+                    <span>Robust blink and yawn detection</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Head Pose Accuracy:</strong><br>
-                    ±2° accuracy for orientation estimation
+                <div class="capability-item">
+                    <i class="fas fa-head-side-mask"></i>
+                    <span>3D head-pose estimation for distraction/attention</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Lighting Conditions:</strong><br>
-                    Robust performance in various lighting
+                <div class="capability-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Real-time audio/visual alerts</span>
                 </div>
-                <div class="spec-item">
-                    <strong>Hardware Requirements:</strong><br>
-                    Optimized for automotive-grade hardware
-                </div>
-                <div class="spec-item">
-                    <strong>Integration:</strong><br>
-                    Modular design for easy vehicle integration
+                <div class="capability-item">
+                    <i class="fas fa-cubes"></i>
+                    <span>Modular ROS node design for easy integration</span>
                 </div>
             </div>
         </div>
 
-        <div class="card">
-            <h2>System Components</h2>
-            
-            <h3>1. Eye Calibration Module</h3>
-            <p>
-                The eye calibration system performs initial setup to establish baseline eye characteristics for each individual driver. This personalization improves the accuracy of subsequent monitoring operations.
-            </p>
-            
-            <h3>2. Blink Detection Algorithm</h3>
-            <p>
-                Advanced computer vision algorithms analyze eye region characteristics to detect blink patterns. The system can distinguish between normal blinks, prolonged closures, and microsleep episodes.
-            </p>
-            
-            <h3>3. Yawn Detection System</h3>
-            <p>
-                Facial landmark detection and analysis algorithms monitor mouth region characteristics to identify yawning behavior, which is a key indicator of driver fatigue.
-            </p>
-            
-            <h3>4. Head Orientation Tracking</h3>
-            <p>
-                3D head pose estimation provides real-time monitoring of driver head position and orientation, enabling detection of distraction events and attention focus.
-            </p>
-        </div>
+        
 
-        <div class="card">
-            <h2>Demo & Implementation</h2>
-            <div class="demo-preview">
-                <i class="fas fa-video" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                <p><strong>System Demonstration Video</strong></p>
-                <p>Real-time demonstration of the DMS system showing all monitoring capabilities in action</p>
-                <p><em>Video demonstration showcasing the complete system functionality will be available</em></p>
-            </div>
-            
-            <h3>Available Resources</h3>
-            <ul>
-                <li><strong>Complete Source Code:</strong> Full implementation of all monitoring algorithms</li>
-                <li><strong>Documentation:</strong> Comprehensive technical documentation and API reference</li>
-                <li><strong>Performance Benchmarks:</strong> Detailed performance analysis and optimization results</li>
-                <li><strong>Integration Guide:</strong> Step-by-step integration instructions for automotive systems</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Applications & Impact</h2>
-            <p>This DMS system has applications across various automotive scenarios:</p>
-            
-            <h3>Primary Applications</h3>
-            <ul>
-                <li><strong>Semi-Autonomous Vehicles:</strong> Ensuring driver readiness for manual takeover</li>
-                <li><strong>Fleet Management:</strong> Monitoring commercial driver safety and compliance</li>
-                <li><strong>Advanced Driver Assistance:</strong> Integration with ADAS for enhanced safety</li>
-                <li><strong>Insurance Telematics:</strong> Driver behavior analysis for insurance applications</li>
-            </ul>
-            
-            <h3>Safety Benefits</h3>
-            <ul>
-                <li>Reduction in fatigue-related accidents</li>
-                <li>Improved driver awareness and attention</li>
-                <li>Enhanced safety in autonomous vehicle transitions</li>
-                <li>Real-time intervention capabilities</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>GitHub Repository & Implementation</h2>
+        <div class="card" style="text-align: center;" id="github-repository">
+            <h2>GitHub Repository & Resources</h2>
             <p>
-                Access the complete ROS-based implementation of the Driver Monitoring System, including all computer vision algorithms, real-time processing components, and integration modules for autonomous vehicle platforms.
+                Access the complete ROS-based implementation, including all detection nodes, calibration, and integration resources.
             </p>
-            
-            <div class="project-links" style="margin-top: 1.5rem;">
-                <a href="https://github.com/Bamorovat/ROS_DMS" target="_blank" class="btn btn-primary" style="margin-right: 1rem;">
+            <div style="margin-top: 1.5rem;">
+                <a href="https://github.com/Bamorovat/ROS_DMS" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-github"></i> View Source Code
                 </a>
-                <a href="https://github.com/Bamorovat/ROS_DMS#readme" target="_blank" class="btn btn-outline">
-                    <i class="fas fa-book"></i> Documentation
-                </a>
             </div>
-            
-            <div style="margin-top: 1rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
                 <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
                     <i class="fas fa-info-circle"></i> 
-                    <strong>Repository Features:</strong> Complete ROS implementation with eye tracking algorithms, blink detection, yawn detection, head pose estimation, real-time processing nodes, and integration interfaces for autonomous vehicle systems.
+                    <strong>Repository Features:</strong> Modular ROS nodes, real-time drowsiness/attention detection, calibration, alerts, and sample launch files.
                 </p>
             </div>
-        </div>
-
-        <div class="card" style="text-align: center;">
-            <h2>Project Outcomes</h2>
-            <p>
-                The DMS project successfully delivered a production-ready driver monitoring solution with comprehensive safety features. The system demonstrates the practical application of advanced computer vision in automotive safety systems.
-            </p>
-            
             <div style="margin-top: 2rem;">
-                <a href="mailto:mohammad.bamorovatAbadi@manchester.ac.uk" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i> Discuss Implementation
-                </a>
-                <a href="../index.html#projects" class="btn btn-outline" style="margin-left: 1rem;">
+                <a href="../index.html#projects" class="btn btn-outline">
                     <i class="fas fa-arrow-left"></i> Back to Projects
                 </a>
             </div>
         </div>
+
+
     </div>
 
     <script>
@@ -291,6 +148,25 @@
                     window.location.href = '../index.html#projects';
                 });
             }
+            
+            // Smooth scroll for all hero navigation links
+            const heroNavLinks = document.querySelectorAll('a[href^="#"]');
+            heroNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // if the href is just '#', allow default (or do nothing)
+                    const href = this.getAttribute('href');
+                    if (!href || href === '#') return;
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
