@@ -120,6 +120,14 @@
     color: #fff;
 }
 
+.publication-status.unpublished {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1e40af;
+    border: none;
+    font-style: normal;
+}
+
+
 /* Publication Actions */
 .publication-actions {
     padding: 0 1.5rem 1.5rem 1.5rem;

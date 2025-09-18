@@ -4,7 +4,7 @@
 <!-- Publication Statistics -->
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
-        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">12</div>
+        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">13</div>
         <div style="color: var(--text-secondary);">Publications</div>
     </div>
     <div style="text-align: center; padding: 1.5rem; background: var(--section-bg); border-radius: 0.75rem; border: 1px solid #e5e7eb;">
@@ -60,6 +60,63 @@
                 <h4>BibTeX Citation</h4>
                 <pre class="bibtex-code">BibTeX citation will be available upon publication.</pre>
                 <button onclick="copyBibTeX('pub1')" class="copy-btn disabled">
+                    <i class="fas fa-copy"></i> Copy to Clipboard
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication thesis -->
+    <div class="publication-item">
+    <div class="publication-header">
+        <div class="publication-title">
+            Advancing Human Activity Recognition in Ambient Assisted Living through Multi-View Robotics: the RHM Dataset and Dual-Stream C3D Model
+        </div>
+        <div class="publication-status unpublished">PhD Thesis</div>
+    </div>
+    <div class="publication-actions">
+        <a href="https://uhra.herts.ac.uk/id/eprint/25990/" class="publication-btn" target="_blank"><i class="fas fa-file-pdf"></i> Thesis</a>
+        <button type="button" class="publication-btn details-link" data-target="bibtex-thesis">
+            <i class="fas fa-chevron-down"></i> BibTeX
+        </button>
+        <button type="button" class="publication-btn details-link" data-target="details-thesis">
+            <i class="fas fa-chevron-down"></i> View Details
+        </button>
+    </div>
+    <div class="publication-details" id="details-thesis" style="display: none;">
+        <div class="publication-meta">
+            <p><strong>Author:</strong> Mohammad Hossein Bamorovat Abadi</p>
+            <p><strong>School:</strong> University of Hertfordshire</p>
+            <p><strong>Year:</strong> 2025</p>
+            <p><strong>Month:</strong> September</p>
+            <p><strong>Status:</strong> published</p>
+            <p><strong>URL:</strong> <a href="https://uhra.herts.ac.uk/id/eprint/25990/" target="_blank">https://uhra.herts.ac.uk/id/eprint/25990/</a></p>
+            <p><strong>Keywords:</strong> Human Activity Recognition (HAR), Human Robot Interaction (HRI), Multiview HAR, Multiview HAR dataset, Ambient Assistive Living (AAL).</p>
+        </div>
+        <div class="abstract-section">
+            <h4>Abstract</h4>
+            <p>This thesis investigates the intersection of Human Action Recognition (HAR) and Human-Robot Interaction (HRI), in Ambient Assistive Living (AAL) environments. The primary contribution of our research is the development of the Robot House Multi-View (RHM) dataset, featuring 26,804 RGB trimmed videos from four distinct views classified into 14 action classes: a dynamic robot view, static top view, and static front and back views.<br><br>
+            <b>Dataset:</b> The RHM dataset addresses significant gaps in existing HAR datasets, particularly within the HRI domain. To validate the dataset, a comprehensive approach using Deep learning (DL) and Mutual Information (MI) was employed. The dynamic robot view presents unique challenges due to lower accuracy in comparison to static views, attributed to its inherent variability and motion. A novel MI metric was introduced to analyse temporal dependencies and information redundancy across video frames. State-of-the-art DL models, including C3D, R(2+1)D, R3D, and SlowFast, were tested on the RHM dataset.<br><br>
+            <b>Methodology:</b> The thesis introduces a novel multi-stream model, the Dual-stream C3D, which integrates multiple views to enhance HAR accuracy. The combination of Front and Robot views in this model shows the highest accuracy, highlighting the potential of multi-view integration for improving action recognition performance. Specifically, the model demonstrated a 10% increase in Top-1 accuracy for the robot view when combined with other views, such as the front view. However, despite these improvements, consistent confusion patterns among certain action classes persist, suggesting the need for further refinement in feature extraction in recognition models.<br><br>
+            <b>Feature Extraction Techniques:</b> Additionally, the research introduces and evaluates three novel feature extraction techniques: Motion Aggregation (MAg), Differential Motion Trajectory (DMT), and Frame Variation Mapper (FVM). These techniques target different temporal aspects of video frames and are shown to significantly enhance the performance of HAR models. Experimental results indicate that the combination of Normal frames in the first stream and DMT in the second stream achieves the highest accuracy, particularly for the Front-Robot viewpoint pair. These findings underscore the adaptability and effectiveness of these feature extraction methods across various models and viewpoints.<br><br>
+            <b>Conclusion:</b> In summary, this thesis presents the RHM dataset as a substantial contribution to HAR and HRI, offering innovative methodologies and insights that significantly improve action recognition accuracy in AAL scenarios. The integration of multi-view data, novel deep learning models, and advanced feature extraction techniques collectively advance the state-of-the-art in HAR within the context of assistive robotics.</p>
+        </div>
+    </div>
+    <div class="publication-bibtex" id="bibtex-thesis" style="display: none;">
+        <div class="bibtex-section">
+            <h4>BibTeX Citation</h4>
+            <pre class="bibtex-code">@unpublished{herts25990,
+        note = {Unpublished},
+        year = {2025},
+        school = {University of Hertfordshire},
+        title = {Advancing Human Activity Recognition in Ambient Assisted Living through Multi-View Robotics: the RHM Dataset and Dual-Stream C3D Model},
+        month = {September},
+        abstract = {This thesis investigates the intersection of Human Action Recognition (HAR) and Human-Robot Interaction (HRI), in Ambient Assistive Living (AAL) environments. The primary contribution of our research is the development of the Robot House Multi-View (RHM) dataset, featuring 26,804 RGB trimmed videos from four distinct views classified into 14 action classes: a dynamic robot view, static top view, and static front and back views.\\nDataset: The RHM dataset addresses significant gaps in existing HAR datasets, particularly within the HRI domain. To validate the dataset, a comprehensive approach using Deep learning (DL) and Mutual Information (MI) was employed. The dynamic robot view presents unique challenges due to lower accuracy in comparison to static views, attributed to its inherent variability and motion. A novel MI metric was introduced to analyse temporal dependencies and information redundancy across video frames. State-of-the-art DL models, including C3D, R(2+1)D, R3D, and SlowFast, were tested on the RHM dataset.\\nMethodology: The thesis introduces a novel multi-stream model, the Dual-stream C3D, which integrates multiple views to enhance HAR accuracy. The combination of Front and Robot views in this model shows the highest accuracy, highlighting the potential of multi-view integration for improving action recognition performance. Specifically, the model demonstrated a 10% increase in Top-1 accuracy for the robot view when combined with other views, such as the front view. However, despite these improvements, consistent confusion patterns among certain action classes persist, suggesting the need for further refinement in feature extraction in recognition models.\\nFeature Extraction Techniques: Additionally, the research introduces and evaluates three novel feature extraction techniques: Motion Aggregation (MAg), Differential Motion Trajectory (DMT), and Frame Variation Mapper (FVM). These techniques target different temporal aspects of video frames and are shown to significantly enhance the performance of HAR models. Experimental results indicate that the combination of Normal frames in the first stream and DMT in the second stream achieves the highest accuracy, particularly for the Front-Robot viewpoint pair. These findings underscore the adaptability and effectiveness of these feature extraction methods across various models and viewpoints.\\nConclusion: In summary, this thesis presents the RHM dataset as a substantial contribution to HAR and HRI, offering innovative methodologies and insights that significantly improve action recognition accuracy in AAL scenarios. The integration of multi-view data, novel deep learning models, and advanced feature extraction techniques collectively advance the state-of-the-art in HAR within the context of assistive robotics.},
+        url = {https://uhra.herts.ac.uk/id/eprint/25990/},
+        author = {Bamorovat Abadi, Mohammad Hossein},
+        keywords = {Human Activity Recognition (HAR), Human Robot Interaction (HRI), Multiview HAR, Multiview HAR dataset, Ambient Assistive Living (AAL).}
+    }</pre>
+                <button onclick="copyBibTeX('thesis')" class="copy-btn">
                     <i class="fas fa-copy"></i> Copy to Clipboard
                 </button>
             </div>
