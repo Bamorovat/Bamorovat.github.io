@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Real-time Panorama for AV — Three-camera ROS stitcher using OpenCV homographies">
+    <title>Real-time Panorama for AV - Mohammad Hossein Bamorovat Abadi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/styles/panorama-ros.css">
+</head>
+<body>
+    <div class="project-hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-panorama"></i> Real-time Panorama for AV</h1>
+            <p>ROS (catkin) node that fuses left/center/right cameras into a single panoramic stream using OpenCV homographies — published as <code>sensor_msgs/CompressedImage</code></p>
+
+            <!-- Hero Image -->
+            <div class="hero-visual">
+                <img src="../assets/images/projects/panorama/panorama.png" alt="Real-time panorama example" class="hero-image">
+            </div>
+
+            <div class="hero-dataset-links">
+                <a href="https://github.com/Bamorovat/Panorama-Ros" target="_blank" class="hero-dataset-btn hero-github-btn">
+                    <i class="fab fa-github"></i><span>Source Code</span>
+                </a>
+                <a href="#documentation" class="hero-dataset-btn hero-papers-btn">
+                    <i class="fas fa-book"></i><span>README & Docs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <a href="../index.html#projects" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+
+        <!-- Introduction -->
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>
+                <strong>Real-time Panorama for AV</strong> is a ROS package that subscribes to three camera streams (left, center, right), stitches frames with homographies, and republishes a single panoramic image — all using compressed transport for efficiency.
+                The node is designed for autonomous vehicle perception stacks that benefit from a wide field-of-view image on a single topic.
+            </p>
+
+            <div class="dataset-stats">
+                <div class="stat-card">
+                    <span class="stat-number">3 → 1</span>
+                    <div>Camera Streams</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Homography</span>
+                    <div>Warping Method</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">Compressed</span>
+                    <div>IO Transport</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">MIT</span>
+                    <div>License</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multi-Camera Setup -->
+        <div class="card">
+            <h2>Multi-Camera Setup</h2>
+            <p>
+                Typical AV rigs mount a <em>left</em>, <em>center</em>, and <em>right</em> camera. The stitcher aligns left/right to a panorama plane using calibrated homographies and crops center/right with fixed ROIs before concatenation.
+            </p>
+
+            <div class="camera-views">
+                <div class="camera-card">
+                    <h4><i class="fas fa-arrow-left"></i> LeftView</h4>
+                    <ul>
+                        <li>Warped via <code>pts_left_1/2</code> (JSON)</li>
+                        <li>Target size: <code>1075 × 720</code></li>
+                        <li>Gives peripheral road-edge context</li>
+                    </ul>
+                </div>
+                <div class="camera-card">
+                    <h4><i class="fas fa-arrows-alt-h"></i> CenterView</h4>
+                    <ul>
+                        <li>Reference FoV (no warp)</li>
+                        <li>Crop: <code>y=0,h=720,x=0,w=1168</code></li>
+                        <li>Main scene for downstream modules</li>
+                    </ul>
+                </div>
+                <div class="camera-card">
+                    <h4><i class="fas fa-arrow-right"></i> RightView</h4>
+                    <ul>
+                        <li>Warped via <code>pts_right_1/2</code> (JSON)</li>
+                        <li>Target size: <code>1280 × 720</code></li>
+                        <li>Crop: <code>y=0,h=720,x=268,w=1280</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features (one row, compact) -->
+        <div class="card">
+            <h2>Key Features</h2>
+            <div class="feature-grid feature-grid--one-line">
+                <div class="feature-card feature-card--compact">
+                    <i class="fas fa-sliders-h feature-icon feature-icon--compact"></i>
+                    <h3>Three-to-One Stitch</h3>
+                    <p>Left/Center/Right → single panoramic topic for simpler downstream subscribers.</p>
+                </div>
+                <div class="feature-card feature-card--compact">
+                    <i class="fas fa-bolt feature-icon feature-icon--compact"></i>
+                    <h3>Lightweight & Real-time</h3>
+                    <p>Compressed transport in/out; fixed warps and ROIs for deterministic speed.</p>
+                </div>
+                <div class="feature-card feature-card--compact">
+                    <i class="fas fa-cog feature-icon feature-icon--compact"></i>
+                    <h3>Parametrized</h3>
+                    <p>ROS params for topics and <code>config_path</code>; JSON-driven calibration.</p>
+                </div>
+                <div class="feature-card feature-card--compact">
+                    <i class="fas fa-code-branch feature-icon feature-icon--compact"></i>
+                    <h3>Catkin Package</h3>
+                    <p>Python scripts via <code>catkin_install_python</code>; clear deps in CMake/manifest.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Specs -->
+        <div class="card" id="documentation">
+            <h2>Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4><i class="fas fa-stream"></i> Topics (Default)</h4>
+                    <p><code>/camera/left/image_raw/compressed</code><br>
+                       <code>/camera/center/image_raw/compressed</code><br>
+                       <code>/camera/right/image_raw/compressed</code><br>
+                       → <code>/camera/panorama/image_raw/compressed</code></p>
+                </div>
+                <div class="spec-item">
+                    <h4><i class="fas fa-tools"></i> Deps</h4>
+                    <p>cv_bridge, image_transport, rospy, sensor_msgs, std_msgs</p>
+                </div>
+                <div class="spec-item">
+                    <h4><i class="fas fa-laptop-code"></i> Env</h4>
+                    <p>ROS Kinetic/Melodic/Noetic • Python 3.6+ • OpenCV 3.0+ (4+ ideal) • NumPy</p>
+                </div>
+                <div class="spec-item">
+                    <h4><i class="fas fa-vector-square"></i> Warps/Crops</h4>
+                    <p>Left warp → 1075×720 • Right warp → 1280×720<br>
+                       Center crop → x:0 w:1168 • Right crop → x:268 w:1280</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub / Repo -->
+        <div class="card" style="text-align: center;" id="github-repository">
+            <h2>GitHub Repository & Resources</h2>
+            <p>Complete ROS implementation, calibration JSON, and build configs.</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="https://github.com/Bamorovat/Panorama-Ros" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View Source Code
+                </a>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border-color);">
+                <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Repository Layout:</strong> <code>scripts/panorama.py</code>, <code>scripts/stiching.py</code>, <code>config/ranger_uk.JSON</code>, <code>CMakeLists.txt</code>, <code>package.xml</code>, <code>setup.py</code>, <code>README.md</code>
+                </p>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <a href="../index.html#projects" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth nav + back like other pages
+        document.addEventListener('DOMContentLoaded', function() {
+            const backButton = document.querySelector('.back-button');
+            if (backButton) {
+                backButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.location.href = '../index.html#projects';
+                });
+            }
+            const heroNavLinks = document.querySelectorAll('a[href^="#"]');
+            heroNavLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (!href || href === '#') return;
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
